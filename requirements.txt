@@ -1,0 +1,4 @@
+numpy>=1.26
+matplotlib>=3.8
+Pillow>=10.0
+# documents: node + docx (npm), LibreOffice

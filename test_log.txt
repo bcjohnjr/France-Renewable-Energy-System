@@ -1,0 +1,388 @@
+PASS F0 V6 fuel cost reproduced exactly (Brest-type kelp, no diversion)
+PASS F0 V6 litres reproduced
+PASS DKQ/cascade: reactor energy closes
+PASS DKQ/cascade: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS DKQ/cascade: internal water transfers net to zero
+PASS DKQ/cascade: no heat credit in any sales line
+PASS DKQ/hp_only: reactor energy closes
+PASS DKQ/hp_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS DKQ/hp_only: internal water transfers net to zero
+PASS DKQ/hp_only: no heat credit in any sales line
+PASS DKQ/hp_swro: reactor energy closes
+PASS DKQ/hp_swro: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS DKQ/hp_swro: internal water transfers net to zero
+PASS DKQ/hp_swro: no heat credit in any sales line
+PASS DKQ/energy_only: reactor energy closes
+PASS DKQ/energy_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS DKQ/energy_only: internal water transfers net to zero
+PASS DKQ/energy_only: no heat credit in any sales line
+PASS DKQ: distillate ledger closes
+PASS DKQ: MED heat used <= available
+PASS DKQ: enterprise ledger sums to consolidated co-product value
+PASS DKQ: honey used <= produced
+PASS DKQ: kelp-captured N <= dissolved N
+PASS LEH/cascade: reactor energy closes
+PASS LEH/cascade: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LEH/cascade: internal water transfers net to zero
+PASS LEH/cascade: no heat credit in any sales line
+PASS LEH/hp_only: reactor energy closes
+PASS LEH/hp_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LEH/hp_only: internal water transfers net to zero
+PASS LEH/hp_only: no heat credit in any sales line
+PASS LEH/hp_swro: reactor energy closes
+PASS LEH/hp_swro: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LEH/hp_swro: internal water transfers net to zero
+PASS LEH/hp_swro: no heat credit in any sales line
+PASS LEH/energy_only: reactor energy closes
+PASS LEH/energy_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LEH/energy_only: internal water transfers net to zero
+PASS LEH/energy_only: no heat credit in any sales line
+PASS LEH: distillate ledger closes
+PASS LEH: MED heat used <= available
+PASS LEH: enterprise ledger sums to consolidated co-product value
+PASS LEH: honey used <= produced
+PASS LEH: kelp-captured N <= dissolved N
+PASS BRE/cascade: reactor energy closes
+PASS BRE/cascade: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS BRE/cascade: internal water transfers net to zero
+PASS BRE/cascade: no heat credit in any sales line
+PASS BRE/hp_only: reactor energy closes
+PASS BRE/hp_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS BRE/hp_only: internal water transfers net to zero
+PASS BRE/hp_only: no heat credit in any sales line
+PASS BRE/hp_swro: reactor energy closes
+PASS BRE/hp_swro: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS BRE/hp_swro: internal water transfers net to zero
+PASS BRE/hp_swro: no heat credit in any sales line
+PASS BRE/energy_only: reactor energy closes
+PASS BRE/energy_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS BRE/energy_only: internal water transfers net to zero
+PASS BRE/energy_only: no heat credit in any sales line
+PASS BRE: distillate ledger closes
+PASS BRE: MED heat used <= available
+PASS BRE: enterprise ledger sums to consolidated co-product value
+PASS BRE: honey used <= produced
+PASS BRE: kelp-captured N <= dissolved N
+PASS STN/cascade: reactor energy closes
+PASS STN/cascade: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS STN/cascade: internal water transfers net to zero
+PASS STN/cascade: no heat credit in any sales line
+PASS STN/hp_only: reactor energy closes
+PASS STN/hp_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS STN/hp_only: internal water transfers net to zero
+PASS STN/hp_only: no heat credit in any sales line
+PASS STN/hp_swro: reactor energy closes
+PASS STN/hp_swro: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS STN/hp_swro: internal water transfers net to zero
+PASS STN/hp_swro: no heat credit in any sales line
+PASS STN/energy_only: reactor energy closes
+PASS STN/energy_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS STN/energy_only: internal water transfers net to zero
+PASS STN/energy_only: no heat credit in any sales line
+PASS STN: distillate ledger closes
+PASS STN: MED heat used <= available
+PASS STN: enterprise ledger sums to consolidated co-product value
+PASS STN: honey used <= produced
+PASS STN: kelp-captured N <= dissolved N
+PASS LRO/cascade: reactor energy closes
+PASS LRO/cascade: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LRO/cascade: internal water transfers net to zero
+PASS LRO/cascade: no heat credit in any sales line
+PASS LRO/hp_only: reactor energy closes
+PASS LRO/hp_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LRO/hp_only: internal water transfers net to zero
+PASS LRO/hp_only: no heat credit in any sales line
+PASS LRO/hp_swro: reactor energy closes
+PASS LRO/hp_swro: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LRO/hp_swro: internal water transfers net to zero
+PASS LRO/hp_swro: no heat credit in any sales line
+PASS LRO/energy_only: reactor energy closes
+PASS LRO/energy_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS LRO/energy_only: internal water transfers net to zero
+PASS LRO/energy_only: no heat credit in any sales line
+PASS LRO: distillate ledger closes
+PASS LRO: MED heat used <= available
+PASS LRO: enterprise ledger sums to consolidated co-product value
+PASS LRO: honey used <= produced
+PASS LRO: kelp-captured N <= dissolved N
+PASS FOS/cascade: reactor energy closes
+PASS FOS/cascade: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS FOS/cascade: internal water transfers net to zero
+PASS FOS/cascade: no heat credit in any sales line
+PASS FOS/hp_only: reactor energy closes
+PASS FOS/hp_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS FOS/hp_only: internal water transfers net to zero
+PASS FOS/hp_only: no heat credit in any sales line
+PASS FOS/hp_swro: reactor energy closes
+PASS FOS/hp_swro: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS FOS/hp_swro: internal water transfers net to zero
+PASS FOS/hp_swro: no heat credit in any sales line
+PASS FOS/energy_only: reactor energy closes
+PASS FOS/energy_only: each low-T MWh served once (loop, condenser heat pumps or outage backup)
+PASS FOS/energy_only: internal water transfers net to zero
+PASS FOS/energy_only: no heat credit in any sales line
+PASS FOS: distillate ledger closes
+PASS FOS: MED heat used <= available
+PASS FOS: enterprise ledger sums to consolidated co-product value
+PASS FOS: honey used <= produced
+PASS FOS: kelp-captured N <= dissolved N
+PASS F5 Ulva site produces no alginate
+PASS F5 forcing alginate from Ulva raises
+PASS F5 smokehouse only at salmonid sites
+PASS F6 MED design feasible with stated approaches
+PASS F6 derived MED thermal energy 60-100 kWh/m3
+PASS F6 COP 50<-30 C below Carnot
+PASS F6 COP 70<-30 C below Carnot
+PASS F6 COP 70<-18 C below Carnot
+PASS F6 COP 31<-18 C below Carnot
+PASS F4 at the break-even price the packaging line adds zero net cash
+PASS F2 hubs for hybrid fuel use modelled fuel per hub
+PASS F7 hybrid fuel priced at renewable cost, not diesel
+PASS F3 every Monte Carlo input is active (inactive: [])
+PASS F3 Monte Carlo deterministic
+PASS DKQ: SWRO electricity = W*kWh/m3
+PASS DKQ: MED and SWRO polish the same volume
+PASS DKQ: SWRO polishing = EDI + second RO pass; MED = EDI
+PASS DKQ: SWRO makes the same annual water, meets the same internal uses and the same demineralised sales as MED
+PASS DKQ: SWRO heat supply identical to heat-pump-only
+PASS DKQ: prawn carries capital
+PASS DKQ: finfish_imta carries capital
+PASS DKQ: honey carries capital
+PASS DKQ: alginate plant carries capital
+PASS DKQ: cascade heat-pump capacity <= heat-pump-only capacity
+PASS LEH: SWRO electricity = W*kWh/m3
+PASS LEH: MED and SWRO polish the same volume
+PASS LEH: SWRO polishing = EDI + second RO pass; MED = EDI
+PASS LEH: SWRO makes the same annual water, meets the same internal uses and the same demineralised sales as MED
+PASS LEH: SWRO heat supply identical to heat-pump-only
+PASS LEH: prawn carries capital
+PASS LEH: finfish_imta carries capital
+PASS LEH: honey carries capital
+PASS LEH: smokehouse carries capital
+PASS LEH: alginate plant carries capital
+PASS LEH: cascade heat-pump capacity <= heat-pump-only capacity
+PASS BRE: SWRO electricity = W*kWh/m3
+PASS BRE: MED and SWRO polish the same volume
+PASS BRE: SWRO polishing = EDI + second RO pass; MED = EDI
+PASS BRE: SWRO makes the same annual water, meets the same internal uses and the same demineralised sales as MED
+PASS BRE: SWRO heat supply identical to heat-pump-only
+PASS BRE: prawn carries capital
+PASS BRE: finfish_imta carries capital
+PASS BRE: honey carries capital
+PASS BRE: smokehouse carries capital
+PASS BRE: alginate plant carries capital
+PASS BRE: cascade heat-pump capacity <= heat-pump-only capacity
+PASS STN: SWRO electricity = W*kWh/m3
+PASS STN: MED and SWRO polish the same volume
+PASS STN: SWRO polishing = EDI + second RO pass; MED = EDI
+PASS STN: SWRO makes the same annual water, meets the same internal uses and the same demineralised sales as MED
+PASS STN: SWRO heat supply identical to heat-pump-only
+PASS STN: prawn carries capital
+PASS STN: finfish_imta carries capital
+PASS STN: honey carries capital
+PASS STN: alginate plant carries capital
+PASS STN: cascade heat-pump capacity <= heat-pump-only capacity
+PASS LRO: SWRO electricity = W*kWh/m3
+PASS LRO: MED and SWRO polish the same volume
+PASS LRO: SWRO polishing = EDI + second RO pass; MED = EDI
+PASS LRO: SWRO makes the same annual water, meets the same internal uses and the same demineralised sales as MED
+PASS LRO: SWRO heat supply identical to heat-pump-only
+PASS LRO: prawn carries capital
+PASS LRO: finfish_imta carries capital
+PASS LRO: honey carries capital
+PASS LRO: alginate plant carries capital
+PASS LRO: cascade heat-pump capacity <= heat-pump-only capacity
+PASS FOS: SWRO electricity = W*kWh/m3
+PASS FOS: MED and SWRO polish the same volume
+PASS FOS: SWRO polishing = EDI + second RO pass; MED = EDI
+PASS FOS: SWRO makes the same annual water, meets the same internal uses and the same demineralised sales as MED
+PASS FOS: SWRO heat supply identical to heat-pump-only
+PASS FOS: prawn carries capital
+PASS FOS: finfish_imta carries capital
+PASS FOS: honey carries capital
+PASS FOS: cascade heat-pump capacity <= heat-pump-only capacity
+PASS DKQ/cascade: enterprise ledgers sum exactly to consolidated net cash
+PASS DKQ/cascade: reactor-and-fuel-chain line identical across scenarios
+PASS DKQ/cascade: firm heat — heat pumps plus boilers cover every peak
+PASS DKQ/cascade: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS DKQ/hp_only: enterprise ledgers sum exactly to consolidated net cash
+PASS DKQ/hp_only: reactor-and-fuel-chain line identical across scenarios
+PASS DKQ/hp_only: firm heat — heat pumps plus boilers cover every peak
+PASS DKQ/hp_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS DKQ/hp_swro: enterprise ledgers sum exactly to consolidated net cash
+PASS DKQ/hp_swro: reactor-and-fuel-chain line identical across scenarios
+PASS DKQ/hp_swro: firm heat — heat pumps plus boilers cover every peak
+PASS DKQ/hp_swro: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS DKQ/energy_only: enterprise ledgers sum exactly to consolidated net cash
+PASS DKQ/energy_only: reactor-and-fuel-chain line identical across scenarios
+PASS DKQ/energy_only: firm heat — heat pumps plus boilers cover every peak
+PASS DKQ/energy_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS DKQ: heat-pump-only needs no boilers
+PASS DKQ: cascade buys more backup grid electricity than heat-pump-only
+PASS LEH/cascade: enterprise ledgers sum exactly to consolidated net cash
+PASS LEH/cascade: reactor-and-fuel-chain line identical across scenarios
+PASS LEH/cascade: firm heat — heat pumps plus boilers cover every peak
+PASS LEH/cascade: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LEH/hp_only: enterprise ledgers sum exactly to consolidated net cash
+PASS LEH/hp_only: reactor-and-fuel-chain line identical across scenarios
+PASS LEH/hp_only: firm heat — heat pumps plus boilers cover every peak
+PASS LEH/hp_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LEH/hp_swro: enterprise ledgers sum exactly to consolidated net cash
+PASS LEH/hp_swro: reactor-and-fuel-chain line identical across scenarios
+PASS LEH/hp_swro: firm heat — heat pumps plus boilers cover every peak
+PASS LEH/hp_swro: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LEH/energy_only: enterprise ledgers sum exactly to consolidated net cash
+PASS LEH/energy_only: reactor-and-fuel-chain line identical across scenarios
+PASS LEH/energy_only: firm heat — heat pumps plus boilers cover every peak
+PASS LEH/energy_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LEH: heat-pump-only needs no boilers
+PASS LEH: cascade buys more backup grid electricity than heat-pump-only
+PASS BRE/cascade: enterprise ledgers sum exactly to consolidated net cash
+PASS BRE/cascade: reactor-and-fuel-chain line identical across scenarios
+PASS BRE/cascade: firm heat — heat pumps plus boilers cover every peak
+PASS BRE/cascade: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS BRE/hp_only: enterprise ledgers sum exactly to consolidated net cash
+PASS BRE/hp_only: reactor-and-fuel-chain line identical across scenarios
+PASS BRE/hp_only: firm heat — heat pumps plus boilers cover every peak
+PASS BRE/hp_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS BRE/hp_swro: enterprise ledgers sum exactly to consolidated net cash
+PASS BRE/hp_swro: reactor-and-fuel-chain line identical across scenarios
+PASS BRE/hp_swro: firm heat — heat pumps plus boilers cover every peak
+PASS BRE/hp_swro: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS BRE/energy_only: enterprise ledgers sum exactly to consolidated net cash
+PASS BRE/energy_only: reactor-and-fuel-chain line identical across scenarios
+PASS BRE/energy_only: firm heat — heat pumps plus boilers cover every peak
+PASS BRE/energy_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS BRE: heat-pump-only needs no boilers
+PASS BRE: cascade buys more backup grid electricity than heat-pump-only
+PASS STN/cascade: enterprise ledgers sum exactly to consolidated net cash
+PASS STN/cascade: reactor-and-fuel-chain line identical across scenarios
+PASS STN/cascade: firm heat — heat pumps plus boilers cover every peak
+PASS STN/cascade: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS STN/hp_only: enterprise ledgers sum exactly to consolidated net cash
+PASS STN/hp_only: reactor-and-fuel-chain line identical across scenarios
+PASS STN/hp_only: firm heat — heat pumps plus boilers cover every peak
+PASS STN/hp_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS STN/hp_swro: enterprise ledgers sum exactly to consolidated net cash
+PASS STN/hp_swro: reactor-and-fuel-chain line identical across scenarios
+PASS STN/hp_swro: firm heat — heat pumps plus boilers cover every peak
+PASS STN/hp_swro: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS STN/energy_only: enterprise ledgers sum exactly to consolidated net cash
+PASS STN/energy_only: reactor-and-fuel-chain line identical across scenarios
+PASS STN/energy_only: firm heat — heat pumps plus boilers cover every peak
+PASS STN/energy_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS STN: heat-pump-only needs no boilers
+PASS STN: cascade buys more backup grid electricity than heat-pump-only
+PASS LRO/cascade: enterprise ledgers sum exactly to consolidated net cash
+PASS LRO/cascade: reactor-and-fuel-chain line identical across scenarios
+PASS LRO/cascade: firm heat — heat pumps plus boilers cover every peak
+PASS LRO/cascade: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LRO/hp_only: enterprise ledgers sum exactly to consolidated net cash
+PASS LRO/hp_only: reactor-and-fuel-chain line identical across scenarios
+PASS LRO/hp_only: firm heat — heat pumps plus boilers cover every peak
+PASS LRO/hp_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LRO/hp_swro: enterprise ledgers sum exactly to consolidated net cash
+PASS LRO/hp_swro: reactor-and-fuel-chain line identical across scenarios
+PASS LRO/hp_swro: firm heat — heat pumps plus boilers cover every peak
+PASS LRO/hp_swro: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LRO/energy_only: enterprise ledgers sum exactly to consolidated net cash
+PASS LRO/energy_only: reactor-and-fuel-chain line identical across scenarios
+PASS LRO/energy_only: firm heat — heat pumps plus boilers cover every peak
+PASS LRO/energy_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS LRO: heat-pump-only needs no boilers
+PASS LRO: cascade buys more backup grid electricity than heat-pump-only
+PASS FOS/cascade: enterprise ledgers sum exactly to consolidated net cash
+PASS FOS/cascade: reactor-and-fuel-chain line identical across scenarios
+PASS FOS/cascade: firm heat — heat pumps plus boilers cover every peak
+PASS FOS/cascade: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS FOS/hp_only: enterprise ledgers sum exactly to consolidated net cash
+PASS FOS/hp_only: reactor-and-fuel-chain line identical across scenarios
+PASS FOS/hp_only: firm heat — heat pumps plus boilers cover every peak
+PASS FOS/hp_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS FOS/hp_swro: enterprise ledgers sum exactly to consolidated net cash
+PASS FOS/hp_swro: reactor-and-fuel-chain line identical across scenarios
+PASS FOS/hp_swro: firm heat — heat pumps plus boilers cover every peak
+PASS FOS/hp_swro: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS FOS/energy_only: enterprise ledgers sum exactly to consolidated net cash
+PASS FOS/energy_only: reactor-and-fuel-chain line identical across scenarios
+PASS FOS/energy_only: firm heat — heat pumps plus boilers cover every peak
+PASS FOS/energy_only: outage heat between forced-outage share and full unavailability share of demand (refuelling in low-demand month)
+PASS FOS: heat-pump-only needs no boilers
+PASS FOS: cascade buys more backup grid electricity than heat-pump-only
+PASS DKQ: non-firm installs no boilers and leaves unmet heat
+PASS DKQ: non-firm unmet heat equals the heat the firm design takes from boilers (no heat from uninstalled heat pumps)
+PASS DKQ: non-firm outage grid electricity below firm (heat pumps capped at installed capacity)
+PASS DKQ: firm design leaves no unmet heat
+PASS DKQ/cascade: internal water = plant supply + mains (incl. outage purchases)
+PASS DKQ/hp_only: internal water = plant supply + mains (incl. outage purchases)
+PASS DKQ/hp_swro: internal water = plant supply + mains (incl. outage purchases)
+PASS DKQ: cascade buys mains water during MED/reactor outages
+PASS DKQ: distillate ledger = annual MED output
+PASS LEH: non-firm installs no boilers and leaves unmet heat
+PASS LEH: non-firm unmet heat equals the heat the firm design takes from boilers (no heat from uninstalled heat pumps)
+PASS LEH: non-firm outage grid electricity below firm (heat pumps capped at installed capacity)
+PASS LEH: firm design leaves no unmet heat
+PASS LEH/cascade: internal water = plant supply + mains (incl. outage purchases)
+PASS LEH/hp_only: internal water = plant supply + mains (incl. outage purchases)
+PASS LEH/hp_swro: internal water = plant supply + mains (incl. outage purchases)
+PASS LEH: cascade buys mains water during MED/reactor outages
+PASS LEH: distillate ledger = annual MED output
+PASS BRE: non-firm installs no boilers and leaves unmet heat
+PASS BRE: non-firm unmet heat equals the heat the firm design takes from boilers (no heat from uninstalled heat pumps)
+PASS BRE: non-firm outage grid electricity below firm (heat pumps capped at installed capacity)
+PASS BRE: firm design leaves no unmet heat
+PASS BRE/cascade: internal water = plant supply + mains (incl. outage purchases)
+PASS BRE/hp_only: internal water = plant supply + mains (incl. outage purchases)
+PASS BRE/hp_swro: internal water = plant supply + mains (incl. outage purchases)
+PASS BRE: cascade buys mains water during MED/reactor outages
+PASS BRE: distillate ledger = annual MED output
+PASS STN: non-firm installs no boilers and leaves unmet heat
+PASS STN: non-firm unmet heat equals the heat the firm design takes from boilers (no heat from uninstalled heat pumps)
+PASS STN: non-firm outage grid electricity below firm (heat pumps capped at installed capacity)
+PASS STN: firm design leaves no unmet heat
+PASS STN/cascade: internal water = plant supply + mains (incl. outage purchases)
+PASS STN/hp_only: internal water = plant supply + mains (incl. outage purchases)
+PASS STN/hp_swro: internal water = plant supply + mains (incl. outage purchases)
+PASS STN: cascade buys mains water during MED/reactor outages
+PASS STN: distillate ledger = annual MED output
+PASS LRO: non-firm installs no boilers and leaves unmet heat
+PASS LRO: non-firm unmet heat equals the heat the firm design takes from boilers (no heat from uninstalled heat pumps)
+PASS LRO: non-firm outage grid electricity below firm (heat pumps capped at installed capacity)
+PASS LRO: firm design leaves no unmet heat
+PASS LRO/cascade: internal water = plant supply + mains (incl. outage purchases)
+PASS LRO/hp_only: internal water = plant supply + mains (incl. outage purchases)
+PASS LRO/hp_swro: internal water = plant supply + mains (incl. outage purchases)
+PASS LRO: cascade buys mains water during MED/reactor outages
+PASS LRO: distillate ledger = annual MED output
+PASS FOS: non-firm installs no boilers and leaves unmet heat
+PASS FOS: non-firm unmet heat equals the heat the firm design takes from boilers (no heat from uninstalled heat pumps)
+PASS FOS: non-firm outage grid electricity below firm (heat pumps capped at installed capacity)
+PASS FOS: firm design leaves no unmet heat
+PASS FOS/cascade: internal water = plant supply + mains (incl. outage purchases)
+PASS FOS/hp_only: internal water = plant supply + mains (incl. outage purchases)
+PASS FOS/hp_swro: internal water = plant supply + mains (incl. outage purchases)
+PASS FOS: cascade buys mains water during MED/reactor outages
+PASS FOS: distillate ledger = annual MED output
+PASS DKQ/cascade: no month has in-operation internal demand above that month's plant output (central size)
+PASS DKQ/hp_swro: no month has in-operation internal demand above that month's plant output (central size)
+PASS DKQ: MED loop heat per month proportional to reactor operating days
+PASS LEH/cascade: no month has in-operation internal demand above that month's plant output (central size)
+PASS LEH/hp_swro: no month has in-operation internal demand above that month's plant output (central size)
+PASS LEH: MED loop heat per month proportional to reactor operating days
+PASS BRE/cascade: no month has in-operation internal demand above that month's plant output (central size)
+PASS BRE/hp_swro: no month has in-operation internal demand above that month's plant output (central size)
+PASS BRE: MED loop heat per month proportional to reactor operating days
+PASS STN/cascade: no month has in-operation internal demand above that month's plant output (central size)
+PASS STN/hp_swro: no month has in-operation internal demand above that month's plant output (central size)
+PASS STN: MED loop heat per month proportional to reactor operating days
+PASS LRO/cascade: no month has in-operation internal demand above that month's plant output (central size)
+PASS LRO/hp_swro: no month has in-operation internal demand above that month's plant output (central size)
+PASS LRO: MED loop heat per month proportional to reactor operating days
+PASS FOS/cascade: no month has in-operation internal demand above that month's plant output (central size)
+PASS FOS/hp_swro: no month has in-operation internal demand above that month's plant output (central size)
+PASS FOS: MED loop heat per month proportional to reactor operating days
+PASS F11 constant loads allocated by calendar days
+PASS F10 MED capacity sized for reactor availability x (1 - MED downtime)
+PASS F8 no step in cascade increment across 1.20-1.35 Mm3 (max step 17023 EUR per 0.01 Mm3)
+PASS F8 redundant heat-pump sizing lowers the cascade increment
+387/387 checks passed

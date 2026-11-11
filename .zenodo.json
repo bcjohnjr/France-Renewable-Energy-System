@@ -1,0 +1,34 @@
+{
+  "title": "Model, data and figures for: Cascaded heat utilisation from small modular reactors for desalination, aquaculture and food production: a techno-economic assessment for France",
+  "upload_type": "dataset",
+  "description": "Monthly screening model of six French coastal SMR hubs comparing a multi-effect-distillation heat cascade with heat pumps on the main condenser, with purchased water and with seawater reverse osmosis, on consolidated accounts without heat credits, with firm heat supply and a monthly water balance through reactor and distillation outages. Includes model code, 387 consistency tests, Monte Carlo draws (2,000 draws, 40 inputs), a two-dimensional sensitivity, all outputs as CSV/JSON and scripts that regenerate every figure and document. Sea temperatures, greenhouse climate factors and the outage schedule are illustrative screening inputs.",
+  "creators": [
+    {
+      "name": "Bily, Jonathan Karl",
+      "affiliation": "Kwantlen Polytechnic University",
+      "orcid": "0009-0004-3526-7271"
+    },
+    {
+      "name": "Pahl, Christoph",
+      "affiliation": "Technical University of Munich"
+    },
+    {
+      "name": "Valdés Bacallao, Patricia",
+      "affiliation": "Universidad de Málaga"
+    }
+  ],
+  "keywords": [
+    "small modular reactor",
+    "nuclear cogeneration",
+    "multi-effect distillation",
+    "reverse osmosis",
+    "heat pump",
+    "techno-economic assessment",
+    "France"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "version": "12.0",
+  "notes": "Licences: the record (data, figures, text) is CC BY 4.0; all code files (Code/model, Code/build) are MIT-licensed as stated in LICENSE. AI assistance (Claude, Anthropic) disclosed in the manuscript. Check creators, ORCIDs and affiliations before publishing."
+}
