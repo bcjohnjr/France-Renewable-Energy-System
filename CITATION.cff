@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this model or data, please cite it as below."
+title: "Cascaded heat utilisation from small modular reactors for desalination, aquaculture and food production in France: model and data"
+version: "12.0"
+date-released: 2026-11-11
+license: MIT
+repository-code: "https://github.com/bcjohnjr/France-Renewable-Energy-System"
+authors:
+  - family-names: Bily
+    given-names: Jonathan Karl
+    orcid: "https://orcid.org/0009-0004-3526-7271"
+    affiliation: Kwantlen Polytechnic University
+  - family-names: Pahl
+    given-names: Christoph
+    affiliation: Technical University of Munich
+  - family-names: "Valdés Bacallao"
+    given-names: Patricia
+    affiliation: "Universidad de Málaga"

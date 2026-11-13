@@ -29,6 +29,13 @@
   "license": "cc-by-4.0",
   "access_right": "open",
   "language": "eng",
-  "version": "12.0",
-  "notes": "Licences: the record (data, figures, text) is CC BY 4.0; all code files (Code/model, Code/build) are MIT-licensed as stated in LICENSE. AI assistance (Claude, Anthropic) disclosed in the manuscript. Check creators, ORCIDs and affiliations before publishing."
+  "version": "13.0",
+  "notes": "Licences: the record (data, figures, text) is CC BY 4.0; all code files (Code/model, Code/build) are MIT-licensed as stated in LICENSE. AI assistance (Claude, Anthropic) disclosed in the manuscript. Check creators, ORCIDs and affiliations before publishing. To be published on acceptance from the GitHub repository release.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/bcjohnjr/France-Renewable-Energy-System",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
 }
