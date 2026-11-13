@@ -1,0 +1,5522 @@
+{
+ "scope": "V19: national sweet spot with fuel-specific balances (aviation, shipping, road), two truck classes, step mandates, 2027-2041 transition",
+ "assumptions": {
+  "co2_passenger_land": 72.5,
+  "co2_freight_land": 46.0,
+  "co2_aviation": 21.4,
+  "co2_maritime": 6.9,
+  "co2_hgv": 27.9,
+  "jet_kgCO2_l": 2.53,
+  "marine_kgCO2_l": 2.75,
+  "diesel_kgCO2_l": 2.66,
+  "demand_growth_aviation": 0.0,
+  "demand_growth_maritime": 0.0,
+  "ldv_bev_fleet_2024": 0.025,
+  "ldv_bev_fleet_2026": 0.035,
+  "ldv_bev_sales_2027": 0.3,
+  "ldv_bev_sales_2035": 1.0,
+  "ldv_fleet_life_y": 15.0,
+  "ldv_full_electric_TWh": 95.0,
+  "regional_share": 0.3,
+  "regional_leg_km": 250.0,
+  "regional_km_y": 60000.0,
+  "regional_premium_eur": 20000.0,
+  "hgv_life_y": 7.0,
+  "hyb_sales_mid_year": 2032.0,
+  "hyb_sales_slope_y": 1.6,
+  "hyb_premium_eur": 30000.0,
+  "batt_eur_kWh_2041": 120.0,
+  "batt_eur_kWh_2027": 190.0,
+  "batt_life_y": 8.0,
+  "batt_dod": 0.8,
+  "gen_l_per_km": 0.29,
+  "leg_min_km": 60.0,
+  "leg_max_km": 400.0,
+  "max_lh_capture": 0.95,
+  "hefa_eur_l": 1.55,
+  "hefa_cap_GL": 1.2,
+  "hefa_kgCO2_l": 0.5,
+  "hubs_per_coast": 6,
+  "efuel_kWh_l": 20.0,
+  "efuel_el_eur_MWh": 70.0,
+  "efuel_capex_eur_l": 0.7,
+  "efuel_co2_kg_l": 3.0,
+  "co2_bio_eur_t": 60.0,
+  "co2_dac_eur_t": 250.0,
+  "co2_bio_cap_Mt": 4.0,
+  "grid_kgCO2_kWh": 0.018,
+  "jet_frac_hefa": 0.7,
+  "jet_frac_efuel": 0.6,
+  "jet_frac_kelp": 0.0,
+  "jet_adder_hefa": 0.1,
+  "jet_adder_kelp": 0.1,
+  "marine_adder_kelp": -0.1,
+  "export_value_eur_l": 0.9,
+  "rfnbo_gw_per_coast": 2.0,
+  "rfnbo_buffer_eur_l": 0.1,
+  "rfnbo_import_premium_eur_l": 0.3,
+  "u_ref": 0.685,
+  "lc_counts_synthetic": true,
+  "lc_saving_min": 0.7,
+  "fossil_comparator_g_MJ": 94.0,
+  "jet_MJ_l": 34.4,
+  "lc_el_gCO2_kWh": 20.0,
+  "synth_schedule": "annual_min_backloaded",
+  "kelp_wind_only_until": 2035,
+  "hub_start": "wind_first",
+  "pilot_hubs": 6.0,
+  "kelp_fixed_share": 0.6,
+  "fueleu_ref_g_MJ": 91.16,
+  "jet_fossil_eur_l": 0.75,
+  "marine_fossil_eur_l": 0.7,
+  "rate": 0.06
+ },
+ "refuel": {
+  "2025": 0.02,
+  "2030": 0.06,
+  "2035": 0.2,
+  "2040": 0.34,
+  "2045": 0.42,
+  "2050": 0.7
+ },
+ "synthetic": {
+  "2025": 0.0,
+  "2030": 0.012,
+  "2032": 0.02,
+  "2035": 0.05,
+  "2040": 0.1,
+  "2045": 0.15,
+  "2050": 0.35
+ },
+ "fueleu": {
+  "2025": 0.02,
+  "2030": 0.06,
+  "2035": 0.145,
+  "2040": 0.31,
+  "2045": 0.62,
+  "2050": 0.8
+ },
+ "policy": {
+  "year": 2041,
+  "mode": "policy",
+  "method": "lp",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 0.34,
+  "share_synthetic": 0.1,
+  "marine_reduction": 0.31,
+  "design": {
+   "capture": 0.4550679358598846,
+   "wire_share": 0.34130095189491344,
+   "wire_share_lh": 0.4875727884213049,
+   "leg_km": 118.68527601388959,
+   "range_lh_km": 221.53846153846152,
+   "range_r_km": 332.3076923076923,
+   "gen_share": 0.13487628587486938,
+   "gen_share_lh": 0.07924578684348964,
+   "gen_share_r": 0.2646807836147555,
+   "litres": 1212537810.0150757,
+   "elec_TWh": 37.65364453358219,
+   "infra": 1608880000.0,
+   "vehicles": 4847250348.718428,
+   "energy": 3149067621.889758,
+   "nonfuel": 9605197970.608185,
+   "L": 6500.0,
+   "B": 360.0,
+   "B_r": 540.0,
+   "total": 11118681927.968807
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 1000.0,
+   "B_r": 680.0,
+   "total_bn": 14.120776311531051,
+   "litres_GL": 1.856930792666653,
+   "gen_share": 0.20655514935112937
+  },
+  "ers_value_bn": 3.002094383562243,
+  "liquid_cost_bn": 11.612114260388125,
+  "liquid_cost_without_trucks_bn": 10.099763028398746,
+  "use_GL": {
+   "jet": 2.8758893280632414,
+   "mar": 0.8457413734685967,
+   "road": 1.2125378100150757,
+   "exp": 0.0
+  },
+  "supply_GL": {
+   "hefa": 1.2,
+   "efuel_lc_bio": 1.3333333333333333,
+   "kelp_LEH": 0.06763968831450913,
+   "kelp_DKQ": 0.06149062574046284,
+   "kelp_STN": 0.08608687603664797,
+   "kelp_LRO": 0.055341563166416544,
+   "kelp_BRE": 0.0704608781834746,
+   "efuel_rf_bio_LEH": 0.0,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_lc_dac": 2.0598155467720694,
+   "efuel_rf_bio_STN": 0.0,
+   "kelp_FOS": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_LRO": 0.0,
+   "efuel_rf_bio_BRE": 0.0,
+   "efuel_rf_dac_DKQ": 0.0,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "hefa|jet": 0.8399999999999999,
+   "hefa|road": 0.36000000000000004,
+   "efuel_lc_bio|jet": 0.7999999999999999,
+   "efuel_lc_bio|mar": 0.5047217420270856,
+   "efuel_lc_bio|road": 0.028611591306247686,
+   "kelp_LEH|mar": 0.06763968831450913,
+   "kelp_DKQ|mar": 0.06149062574046284,
+   "kelp_STN|mar": 0.08608687603664797,
+   "kelp_LRO|mar": 0.055341563166416544,
+   "kelp_BRE|mar": 0.0704608781834746,
+   "efuel_lc_dac|jet": 1.2358893280632417,
+   "efuel_lc_dac|road": 0.8239262187088279
+  },
+  "marginal_road": 2.0549295417173945,
+  "marginal_saf": 3.3800469721884037,
+  "marginal_synth": 0.0,
+  "marginal_marine_eur_t": 740.2739942438194,
+  "marginal_marine_eur_l": 2.0549295417173945,
+  "kg_by_use": {
+   "jet": 1152920158.102767,
+   "mar": 213000608.38930246,
+   "road": 486913611.6054272,
+   "exp": 0.0
+  },
+  "liquid_total_GL": 4.934168511546914,
+  "renewable_mandated_GL": 4.934168511546914,
+  "kelp_hubs": 28.29704999756018,
+  "efuel_TWh": 67.86297760210806,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 3.393148880105403,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 67.86297760210806,
+  "electrolyser_GW": 11.309365330484958,
+  "rfnbo_wind_GW": 0.0,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 2.5346478276258395,
+    "utilisation": 0.5187383745051799,
+    "r": 1.69,
+    "cap_GL": 0.2688845065482471
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 2.310343330303722,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.44439958775950256
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 3.0054976557258573,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4371183179744779
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.7454868699857196,
+    "utilisation": 0.48753282851351754,
+    "r": 1.46,
+    "cap_GL": 0.29251969710811054
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.8833932263063162,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3605911037381459
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 3.1102123236205412,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3888722226487273
+   }
+  ],
+  "kelp_area_km2": 2829.704999756018,
+  "marginal_eur_l": 2.0549295417173945,
+  "hgv_cost_bn": 11.118681927968808,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 3.2653180720311927,
+  "hgv_co2_Mt": 1.0415269446090019,
+  "hgv_co2_avoided_Mt": 25.345673055390996,
+  "truck_fuel_cost_bn": 1.5134839573606225,
+  "truck_fuel_avg_eur_l": 1.2481952685185174,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "full": {
+  "year": 2041,
+  "mode": "full",
+  "method": "lp",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 1.0,
+  "share_synthetic": 0.0,
+  "marine_reduction": 1.0,
+  "design": {
+   "capture": 0.3976570096129111,
+   "wire_share": 0.29824275720968335,
+   "wire_share_lh": 0.4260610817281191,
+   "leg_km": 154.17566678474589,
+   "range_lh_km": 147.69230769230768,
+   "range_r_km": 147.69230769230768,
+   "gen_share": 0.3203162502681443,
+   "gen_share_lh": 0.22020848191550185,
+   "gen_share_r": 0.5539010430909767,
+   "litres": 2879643089.910617,
+   "elec_TWh": 29.582555523329294,
+   "infra": 1175720000.0,
+   "vehicles": 3445464675.154994,
+   "energy": 2474062442.6989503,
+   "nonfuel": 7095247117.853945,
+   "L": 4750.0,
+   "B": 240.0,
+   "B_r": 240.0,
+   "total": 9686925898.7735
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 720.0,
+   "B_r": 460.0,
+   "total_bn": 11.241590946732435,
+   "litres_GL": 2.947918526504888,
+   "gen_share": 0.32791084833202316
+  },
+  "ers_value_bn": 1.5546650479589346,
+  "liquid_cost_bn": 37.32662739752034,
+  "liquid_cost_without_trucks_bn": 34.73494861660079,
+  "use_GL": {
+   "jet": 8.458498023715414,
+   "mar": 2.509090909090909,
+   "road": 2.879643089910617,
+   "exp": 0.05026468347541826
+  },
+  "supply_GL": {
+   "hefa": 1.2,
+   "efuel_lc_bio": 1.3333333333333333,
+   "kelp_LEH": 0.0,
+   "kelp_DKQ": 0.0,
+   "kelp_STN": 0.0,
+   "kelp_LRO": 0.0,
+   "kelp_BRE": 0.0,
+   "efuel_rf_bio_LEH": 0.0,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_lc_dac": 11.364163372859027,
+   "efuel_rf_bio_STN": 0.0,
+   "kelp_FOS": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_LRO": 0.0,
+   "efuel_rf_bio_BRE": 0.0,
+   "efuel_rf_dac_DKQ": 0.0,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "hefa|jet": 0.84,
+   "hefa|mar": 0.36,
+   "efuel_lc_bio|jet": 0.7999999999999999,
+   "efuel_lc_bio|road": 0.48306864985791514,
+   "efuel_lc_bio|exp": 0.05026468347541826,
+   "efuel_lc_dac|jet": 6.818498023715415,
+   "efuel_lc_dac|mar": 2.149090909090909,
+   "efuel_lc_dac|road": 2.3965744400527016
+  },
+  "marginal_road": 0.9000000000000004,
+  "marginal_saf": 4.1499999999999995,
+  "marginal_synth": 0.0,
+  "marginal_marine_eur_t": null,
+  "marginal_marine_eur_l": 0.9000000000000004,
+  "kg_by_use": {
+   "jet": 3162659288.5375495,
+   "mar": 953672727.2727273,
+   "road": 1036671512.3678219,
+   "exp": 18095286.05115057
+  },
+  "liquid_total_GL": 13.89749670619236,
+  "renewable_mandated_GL": 13.847232022716941,
+  "kelp_hubs": 0.0,
+  "efuel_TWh": 253.94993412384719,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 12.69749670619236,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 253.9499341238472,
+  "electrolyser_GW": 42.320756944946694,
+  "rfnbo_wind_GW": 0.0,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 2.5346478276258395,
+    "utilisation": 0.5187383745051799,
+    "r": 1.69,
+    "cap_GL": 0.2688845065482471
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 2.310343330303722,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.44439958775950256
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 3.0054976557258573,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4371183179744779
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.7454868699857196,
+    "utilisation": 0.48753282851351754,
+    "r": 1.46,
+    "cap_GL": 0.29251969710811054
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.8833932263063162,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3605911037381459
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 3.1102123236205412,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3888722226487273
+   }
+  ],
+  "kelp_area_km2": 0.0,
+  "marginal_eur_l": 0.9000000000000004,
+  "hgv_cost_bn": 9.6869258987735,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 4.6970741012265,
+  "hgv_co2_Mt": 1.3963789263931123,
+  "hgv_co2_avoided_Mt": 24.990821073606888,
+  "truck_fuel_cost_bn": 2.5916787809195556,
+  "truck_fuel_avg_eur_l": 0.9000000000000001,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "pooled": {
+  "year": 2041,
+  "mode": "policy",
+  "method": "pooled",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 0.34,
+  "share_synthetic": 0.1,
+  "marine_reduction": 0.31,
+  "design": {
+   "capture": 0.467067552876111,
+   "wire_share": 0.35030066465708326,
+   "wire_share_lh": 0.5004295209386904,
+   "leg_km": 111.26733094931322,
+   "range_lh_km": 258.46153846153845,
+   "range_r_km": 418.46153846153845,
+   "gen_share": 0.09052443274332629,
+   "gen_share_lh": 0.04895300575912142,
+   "gen_share_r": 0.18752442903980432,
+   "litres": 813814650.3625033,
+   "elec_TWh": 39.58401458927947,
+   "infra": 1732640000.0,
+   "vehicles": 5518190500.167592,
+   "energy": 3310509254.3256383,
+   "nonfuel": 10561339754.49323,
+   "L": 7000.0,
+   "B": 420.0,
+   "B_r": 680.0,
+   "total": 12880711508.026363
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 1000.0,
+   "B_r": 680.0,
+   "total_bn": 16.130756433529676,
+   "litres_GL": 1.856930792666653,
+   "gen_share": 0.20655514935112937
+  },
+  "ers_value_bn": 3.250044925503312,
+  "marginal_eur_l": 2.85,
+  "hgv_cost_bn": 12.880711508026364,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 1.5032884919736367,
+  "hgv_co2_Mt": 0.9566566577157813,
+  "hgv_co2_avoided_Mt": 25.430543342284217,
+  "truck_fuel_cost_bn": 2.3193717535331335,
+  "truck_fuel_avg_eur_l": 2.8499999999999988,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "pooled_full": {
+  "year": 2041,
+  "mode": "full",
+  "method": "pooled",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 1.0,
+  "share_synthetic": 0.0,
+  "marine_reduction": 1.0,
+  "design": {
+   "capture": 0.467067552876111,
+   "wire_share": 0.35030066465708326,
+   "wire_share_lh": 0.5004295209386904,
+   "leg_km": 111.26733094931322,
+   "range_lh_km": 258.46153846153845,
+   "range_r_km": 418.46153846153845,
+   "gen_share": 0.09052443274332629,
+   "gen_share_lh": 0.04895300575912142,
+   "gen_share_r": 0.18752442903980432,
+   "litres": 813814650.3625033,
+   "elec_TWh": 39.58401458927947,
+   "infra": 1732640000.0,
+   "vehicles": 5518190500.167592,
+   "energy": 3310509254.3256383,
+   "nonfuel": 10561339754.49323,
+   "L": 7000.0,
+   "B": 420.0,
+   "B_r": 680.0,
+   "total": 12880711508.026361
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 1000.0,
+   "B_r": 680.0,
+   "total_bn": 16.130756433529672,
+   "litres_GL": 1.856930792666653,
+   "gen_share": 0.20655514935112937
+  },
+  "ers_value_bn": 3.2500449255033104,
+  "marginal_eur_l": 2.85,
+  "hgv_cost_bn": 12.880711508026362,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 1.5032884919736385,
+  "hgv_co2_Mt": 0.9566566577157813,
+  "hgv_co2_avoided_Mt": 25.430543342284217,
+  "truck_fuel_cost_bn": 2.319371753533131,
+  "truck_fuel_avg_eur_l": 2.849999999999995,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "kelp_jet_sensitivity": {
+  "year": 2041,
+  "mode": "policy",
+  "method": "lp",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 0.34,
+  "share_synthetic": 0.1,
+  "marine_reduction": 0.31,
+  "design": {
+   "capture": 0.46127036352119,
+   "wire_share": 0.34595277264089247,
+   "wire_share_lh": 0.4942182466298464,
+   "leg_km": 114.85104800508256,
+   "range_lh_km": 233.84615384615384,
+   "range_r_km": 344.6153846153846,
+   "gen_share": 0.12180679613766345,
+   "gen_share_lh": 0.06602432525392869,
+   "gen_share_r": 0.2519658948663778,
+   "litres": 1095043097.2775943,
+   "elec_TWh": 38.222481004904346,
+   "infra": 1670760000.0,
+   "vehicles": 4991023238.314676,
+   "energy": 3196640825.922983,
+   "nonfuel": 9858424064.23766,
+   "L": 6750.0,
+   "B": 380.0,
+   "B_r": 560.0,
+   "total": 11065448912.032627
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 1000.0,
+   "B_r": 680.0,
+   "total_bn": 14.120776311531051,
+   "litres_GL": 1.856930792666653,
+   "gen_share": 0.20655514935112937
+  },
+  "ers_value_bn": 3.055327399498424,
+  "liquid_cost_bn": 11.306787876193713,
+  "liquid_cost_without_trucks_bn": 10.099763028398746,
+  "use_GL": {
+   "jet": 2.8758893280632414,
+   "mar": 0.852041415287609,
+   "road": 1.0950430972775944,
+   "exp": 0.0
+  },
+  "supply_GL": {
+   "hefa": 1.2,
+   "efuel_lc_bio": 1.3333333333333333,
+   "kelp_LEH": 0.06763968831450913,
+   "kelp_DKQ": 0.06149062574046284,
+   "kelp_STN": 0.08608687603664797,
+   "kelp_LRO": 0.055341563166416544,
+   "kelp_BRE": 0.07417868752652669,
+   "efuel_rf_bio_LEH": 0.0,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_lc_dac": 1.9449030665105485,
+   "efuel_rf_bio_STN": 0.0,
+   "kelp_FOS": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_LRO": 0.0,
+   "efuel_rf_bio_BRE": 0.0,
+   "efuel_rf_dac_DKQ": 0.0,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "hefa|jet": 0.8399999999999999,
+   "hefa|road": 0.36000000000000004,
+   "efuel_lc_bio|jet": 0.7999999999999999,
+   "efuel_lc_bio|mar": 0.5333333333333333,
+   "kelp_LEH|jet": 0.013527937662901826,
+   "kelp_LEH|mar": 0.0541117506516073,
+   "kelp_DKQ|jet": 0.012298125148092568,
+   "kelp_DKQ|mar": 0.04919250059237027,
+   "kelp_STN|jet": 0.017217375207329595,
+   "kelp_STN|mar": 0.06886950082931838,
+   "kelp_LRO|jet": 0.011068312633283308,
+   "kelp_LRO|mar": 0.04427325053313323,
+   "kelp_BRE|jet": 0.014835737505305339,
+   "kelp_BRE|mar": 0.059342950021221356,
+   "efuel_lc_dac|jet": 1.166941839906329,
+   "efuel_lc_dac|mar": 0.04291812932662509,
+   "efuel_lc_dac|road": 0.7350430972775943
+  },
+  "marginal_road": 1.8065566375828643,
+  "marginal_saf": 3.54562890827809,
+  "marginal_synth": 0.0,
+  "marginal_marine_eur_t": 650.7993927682172,
+  "marginal_marine_eur_l": 1.8065566375828648,
+  "kg_by_use": {
+   "jet": 1134425664.4093096,
+   "mar": 232756934.72971046,
+   "road": 444615515.01993394,
+   "exp": 0.0
+  },
+  "liquid_total_GL": 4.822973840628444,
+  "renewable_mandated_GL": 4.822973840628444,
+  "kelp_hubs": 28.523780249018188,
+  "efuel_TWh": 65.56472799687764,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 3.2782363998438817,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 65.56472799687764,
+  "electrolyser_GW": 10.926362029943277,
+  "rfnbo_wind_GW": 0.0,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 2.5346478276258395,
+    "utilisation": 0.5187383745051799,
+    "r": 1.69,
+    "cap_GL": 0.2688845065482471
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 2.310343330303722,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.44439958775950256
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 3.0054976557258573,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4371183179744779
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.7454868699857196,
+    "utilisation": 0.48753282851351754,
+    "r": 1.46,
+    "cap_GL": 0.29251969710811054
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.8833932263063162,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3605911037381459
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 3.1102123236205412,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3888722226487273
+   }
+  ],
+  "kelp_area_km2": 2852.3780249018187,
+  "marginal_eur_l": 1.8065566375828643,
+  "hgv_cost_bn": 11.065448912032627,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 3.3185510879673727,
+  "hgv_co2_Mt": 1.0165175872715564,
+  "hgv_co2_avoided_Mt": 25.370682412728442,
+  "truck_fuel_cost_bn": 1.2070248477949677,
+  "truck_fuel_avg_eur_l": 1.102262413959572,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "rfnbo_only_sensitivity": {
+  "year": 2041,
+  "mode": "policy",
+  "method": "lp",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 0.34,
+  "share_synthetic": 0.1,
+  "marine_reduction": 0.31,
+  "design": {
+   "capture": 0.4550679358598846,
+   "wire_share": 0.34130095189491344,
+   "wire_share_lh": 0.4875727884213049,
+   "leg_km": 118.68527601388959,
+   "range_lh_km": 233.84615384615384,
+   "range_r_km": 332.3076923076923,
+   "gen_share": 0.12941203835408624,
+   "gen_share_lh": 0.07143971895665656,
+   "gen_share_r": 0.2646807836147555,
+   "litres": 1163414224.803235,
+   "elec_TWh": 37.891470442676756,
+   "infra": 1608880000.0,
+   "vehicles": 4931117867.649572,
+   "energy": 3168957592.150359,
+   "nonfuel": 9708955459.79993,
+   "L": 6500.0,
+   "B": 380.0,
+   "B_r": 540.0,
+   "total": 11093395219.41018
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 1000.0,
+   "B_r": 680.0,
+   "total_bn": 14.093314571869211,
+   "litres_GL": 1.856930792666653,
+   "gen_share": 0.20655514935112937
+  },
+  "ers_value_bn": 2.999919352459031,
+  "liquid_cost_bn": 12.18287553413756,
+  "liquid_cost_without_trucks_bn": 10.798730257503777,
+  "use_GL": {
+   "jet": 2.8758893280632414,
+   "mar": 0.8282898838845216,
+   "road": 1.163414224803235,
+   "exp": 0.0
+  },
+  "supply_GL": {
+   "hefa": 1.2,
+   "efuel_lc_bio": 0.19246816926234417,
+   "kelp_LEH": 0.06763968831450913,
+   "kelp_DKQ": 0.06149062574046284,
+   "kelp_STN": 0.08608687603664797,
+   "kelp_LRO": 0.055341563166416544,
+   "kelp_BRE": 0.0038858033875589304,
+   "efuel_rf_bio_LEH": 0.44439958775950256,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_lc_dac": 1.790931040223822,
+   "efuel_rf_bio_STN": 0.29251969710811054,
+   "kelp_FOS": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_LRO": 0.3605911037381459,
+   "efuel_rf_bio_BRE": 0.04335477546523012,
+   "efuel_rf_dac_DKQ": 0.2688845065482471,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "hefa|jet": 0.8399999999999999,
+   "hefa|road": 0.36000000000000004,
+   "efuel_lc_bio|jet": 0.1154809015574065,
+   "efuel_lc_bio|road": 0.07698726770493768,
+   "kelp_LEH|mar": 0.06763968831450913,
+   "kelp_DKQ|mar": 0.06149062574046284,
+   "kelp_STN|mar": 0.08608687603664797,
+   "kelp_LRO|mar": 0.055341563166416544,
+   "kelp_BRE|mar": 0.0038858033875589304,
+   "efuel_rf_bio_LEH|jet": 0.2666397526557015,
+   "efuel_rf_bio_LEH|mar": 0.17775983510380103,
+   "efuel_lc_dac|jet": 1.0745586241342933,
+   "efuel_lc_dac|road": 0.716372416089529,
+   "efuel_rf_bio_STN|jet": 0.1755118182648663,
+   "efuel_rf_bio_STN|mar": 0.11700787884324422,
+   "efuel_rf_bio_LRO|jet": 0.21635466224288752,
+   "efuel_rf_bio_LRO|mar": 0.14423644149525836,
+   "efuel_rf_bio_BRE|jet": 0.02601286527913807,
+   "efuel_rf_bio_BRE|mar": 0.007287369177323701,
+   "efuel_rf_bio_BRE|road": 0.010054541008768347,
+   "efuel_rf_dac_DKQ|jet": 0.16133070392894824,
+   "efuel_rf_dac_DKQ|mar": 0.10755380261929882
+  },
+  "marginal_road": 2.1437624210266533,
+  "marginal_saf": 3.320825052648898,
+  "marginal_synth": 1.5091627595430959,
+  "marginal_marine_eur_t": 740.2739942438194,
+  "marginal_marine_eur_l": 2.0549295417173945,
+  "kg_by_use": {
+   "jet": 1051418181.8181819,
+   "mar": 158274412.39664274,
+   "road": 468022576.0081124,
+   "exp": 0.0
+  },
+  "liquid_total_GL": 4.867593436750998,
+  "renewable_mandated_GL": 4.867593436750997,
+  "kelp_hubs": 24.236975352387045,
+  "efuel_TWh": 67.86297760210805,
+  "rfnbo_GL": 1.4097496706192363,
+  "lowcarbon_GL": 1.9833992094861663,
+  "rfnbo_TWh": 28.194993412384726,
+  "lowcarbon_TWh": 39.66798418972333,
+  "electrolyser_GW": 12.846742068940008,
+  "rfnbo_wind_GW": 8.198366317230208,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 2.5346478276258395,
+    "utilisation": 0.5187383745051799,
+    "r": 1.69,
+    "cap_GL": 0.2688845065482471
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 2.310343330303722,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.44439958775950256
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 3.0054976557258573,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4371183179744779
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.7454868699857196,
+    "utilisation": 0.48753282851351754,
+    "r": 1.46,
+    "cap_GL": 0.29251969710811054
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.8833932263063162,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3605911037381459
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 3.1102123236205412,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3888722226487273
+   }
+  ],
+  "kelp_area_km2": 2423.6975352387044,
+  "marginal_eur_l": 2.1437624210266533,
+  "hgv_cost_bn": 11.09339521941018,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 3.290604780589821,
+  "hgv_co2_Mt": 1.031070735409152,
+  "hgv_co2_avoided_Mt": 25.356129264590848,
+  "truck_fuel_cost_bn": 1.3844397596102485,
+  "truck_fuel_avg_eur_l": 1.1899800862795837,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "synth_path": {
+  "2027": 0.0,
+  "2028": 0.0,
+  "2029": 0.0,
+  "2030": 0.007,
+  "2031": 0.017,
+  "2032": 0.012,
+  "2033": 0.012,
+  "2034": 0.036000000000000004,
+  "2035": 0.05,
+  "2036": 0.05,
+  "2037": 0.05,
+  "2038": 0.05,
+  "2039": 0.05,
+  "2040": 0.1,
+  "2041": 0.1
+ },
+ "lc_gCO2_MJ": 11.627906976744187,
+ "hub_scan": [
+  {
+   "start": "wind_first",
+   "hubs": 0.0,
+   "cost_bn": 34.12498818260952,
+   "co2_cum_Mt": 1635.8569242905037,
+   "kelp_2041_GL": 0.0
+  },
+  {
+   "start": "wind_first",
+   "hubs": 1.0,
+   "cost_bn": 34.0892541849855,
+   "co2_cum_Mt": 1635.849149313572,
+   "kelp_2041_GL": 0.011273281385751519
+  },
+  {
+   "start": "wind_first",
+   "hubs": 2.0,
+   "cost_bn": 34.05594285363727,
+   "co2_cum_Mt": 1635.8420469412831,
+   "kelp_2041_GL": 0.022546562771503038
+  },
+  {
+   "start": "wind_first",
+   "hubs": 3.0,
+   "cost_bn": 34.01354104340097,
+   "co2_cum_Mt": 1635.8356171736368,
+   "kelp_2041_GL": 0.033819844157254565
+  },
+  {
+   "start": "wind_first",
+   "hubs": 4.0,
+   "cost_bn": 33.96963449460391,
+   "co2_cum_Mt": 1635.8298600106332,
+   "kelp_2041_GL": 0.045093125543006075
+  },
+  {
+   "start": "wind_first",
+   "hubs": 5.0,
+   "cost_bn": 33.93241166152207,
+   "co2_cum_Mt": 1635.8247754522724,
+   "kelp_2041_GL": 0.05636640692875759
+  },
+  {
+   "start": "wind_first",
+   "hubs": 6.0,
+   "cost_bn": 33.88554035854877,
+   "co2_cum_Mt": 1635.8218405335633,
+   "kelp_2041_GL": 0.06763968831450913
+  },
+  {
+   "start": "wind_first",
+   "hubs": 7.0,
+   "cost_bn": 33.88956720520074,
+   "co2_cum_Mt": 1635.8205118325984,
+   "kelp_2041_GL": 0.0778881259379196
+  },
+  {
+   "start": "wind_first",
+   "hubs": 8.0,
+   "cost_bn": 33.893594051852716,
+   "co2_cum_Mt": 1635.8191831316335,
+   "kelp_2041_GL": 0.08813656356133007
+  },
+  {
+   "start": "wind_first",
+   "hubs": 9.0,
+   "cost_bn": 33.8976208985047,
+   "co2_cum_Mt": 1635.8178544306686,
+   "kelp_2041_GL": 0.09838500118474054
+  },
+  {
+   "start": "wind_first",
+   "hubs": 10.0,
+   "cost_bn": 33.90164774515668,
+   "co2_cum_Mt": 1635.8165257297037,
+   "kelp_2041_GL": 0.108633438808151
+  },
+  {
+   "start": "wind_first",
+   "hubs": 11.0,
+   "cost_bn": 33.905674591808655,
+   "co2_cum_Mt": 1635.815197028739,
+   "kelp_2041_GL": 0.11888187643156148
+  },
+  {
+   "start": "wind_first",
+   "hubs": 12.0,
+   "cost_bn": 33.90970143846064,
+   "co2_cum_Mt": 1635.8138683277741,
+   "kelp_2041_GL": 0.12913031405497197
+  },
+  {
+   "start": "wind_first",
+   "hubs": 13.0,
+   "cost_bn": 33.91914202579002,
+   "co2_cum_Mt": 1635.7967197349142,
+   "kelp_2041_GL": 0.14347812672774662
+  },
+  {
+   "start": "wind_first",
+   "hubs": 14.0,
+   "cost_bn": 33.93219177357103,
+   "co2_cum_Mt": 1635.7724378260339,
+   "kelp_2041_GL": 0.15782593940052128
+  },
+  {
+   "start": "wind_first",
+   "hubs": 15.0,
+   "cost_bn": 33.94614381146493,
+   "co2_cum_Mt": 1635.7667783780075,
+   "kelp_2041_GL": 0.17217375207329594
+  },
+  {
+   "start": "wind_first",
+   "hubs": 16.0,
+   "cost_bn": 33.957288305253364,
+   "co2_cum_Mt": 1635.7610133576916,
+   "kelp_2041_GL": 0.18652156474607062
+  },
+  {
+   "start": "wind_first",
+   "hubs": 17.0,
+   "cost_bn": 33.96843279904181,
+   "co2_cum_Mt": 1635.7552483373759,
+   "kelp_2041_GL": 0.20086937741884528
+  },
+  {
+   "start": "wind_first",
+   "hubs": 18.0,
+   "cost_bn": 33.97957729283025,
+   "co2_cum_Mt": 1635.74948331706,
+   "kelp_2041_GL": 0.21521719009161994
+  },
+  {
+   "start": "wind_first",
+   "hubs": 19.0,
+   "cost_bn": 33.98188737490971,
+   "co2_cum_Mt": 1635.7727213061512,
+   "kelp_2041_GL": 0.22444078395268935
+  },
+  {
+   "start": "wind_first",
+   "hubs": 20.0,
+   "cost_bn": 33.98419745698917,
+   "co2_cum_Mt": 1635.7692784256046,
+   "kelp_2041_GL": 0.2336643778137588
+  },
+  {
+   "start": "wind_first",
+   "hubs": 21.0,
+   "cost_bn": 33.98328087014517,
+   "co2_cum_Mt": 1635.7992755730963,
+   "kelp_2041_GL": 0.2428879716748282
+  },
+  {
+   "start": "wind_first",
+   "hubs": 22.0,
+   "cost_bn": 33.980213170685516,
+   "co2_cum_Mt": 1635.797833791705,
+   "kelp_2041_GL": 0.25211156553589764
+  },
+  {
+   "start": "wind_first",
+   "hubs": 23.0,
+   "cost_bn": 33.97714547122587,
+   "co2_cum_Mt": 1635.7963920103136,
+   "kelp_2041_GL": 0.26133515939696705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 24.0,
+   "cost_bn": 33.97407777176622,
+   "co2_cum_Mt": 1635.7949502289223,
+   "kelp_2041_GL": 0.2705587532580365
+  },
+  {
+   "start": "wind_first",
+   "hubs": 25.0,
+   "cost_bn": 33.98267951989636,
+   "co2_cum_Mt": 1635.7933108926127,
+   "kelp_2041_GL": 0.2869562534554932
+  },
+  {
+   "start": "wind_first",
+   "hubs": 26.0,
+   "cost_bn": 33.9912812680265,
+   "co2_cum_Mt": 1635.791671556303,
+   "kelp_2041_GL": 0.30335375365295
+  },
+  {
+   "start": "wind_first",
+   "hubs": 27.0,
+   "cost_bn": 33.99988301615664,
+   "co2_cum_Mt": 1635.7900322199935,
+   "kelp_2041_GL": 0.31975125385040676
+  },
+  {
+   "start": "wind_first",
+   "hubs": 28.0,
+   "cost_bn": 34.01172596931603,
+   "co2_cum_Mt": 1635.7883007492592,
+   "kelp_2041_GL": 0.3361487540478635
+  },
+  {
+   "start": "wind_first",
+   "hubs": 29.0,
+   "cost_bn": 34.02843073001929,
+   "co2_cum_Mt": 1635.786431076888,
+   "kelp_2041_GL": 0.35254625424532027
+  },
+  {
+   "start": "wind_first",
+   "hubs": 30.0,
+   "cost_bn": 34.045135490722544,
+   "co2_cum_Mt": 1635.7845614045166,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 31.0,
+   "cost_bn": 34.064086796456905,
+   "co2_cum_Mt": 1635.7331206669369,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 32.0,
+   "cost_bn": 34.09581445784058,
+   "co2_cum_Mt": 1635.7319666592457,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 33.0,
+   "cost_bn": 34.140546967269046,
+   "co2_cum_Mt": 1635.7308126515543,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 34.0,
+   "cost_bn": 34.191761886756005,
+   "co2_cum_Mt": 1635.7294743750138,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 35.0,
+   "cost_bn": 34.242829262017025,
+   "co2_cum_Mt": 1635.6778389216074,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "wind_first",
+   "hubs": 36.0,
+   "cost_bn": 34.293306460374275,
+   "co2_cum_Mt": 1635.6770147607372,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 0.0,
+   "cost_bn": 34.12498818260952,
+   "co2_cum_Mt": 1635.8569242905037,
+   "kelp_2041_GL": 0.0
+  },
+  {
+   "start": "smr_first",
+   "hubs": 1.0,
+   "cost_bn": 34.043243799541784,
+   "co2_cum_Mt": 1635.8539893717946,
+   "kelp_2041_GL": 0.011273281385751519
+  },
+  {
+   "start": "smr_first",
+   "hubs": 2.0,
+   "cost_bn": 33.991127361256126,
+   "co2_cum_Mt": 1635.8514737271867,
+   "kelp_2041_GL": 0.022546562771503038
+  },
+  {
+   "start": "smr_first",
+   "hubs": 3.0,
+   "cost_bn": 33.95561606692991,
+   "co2_cum_Mt": 1635.8493773566802,
+   "kelp_2041_GL": 0.033819844157254565
+  },
+  {
+   "start": "smr_first",
+   "hubs": 4.0,
+   "cost_bn": 33.942786001231674,
+   "co2_cum_Mt": 1635.847700260275,
+   "kelp_2041_GL": 0.045093125543006075
+  },
+  {
+   "start": "smr_first",
+   "hubs": 5.0,
+   "cost_bn": 33.95931596277862,
+   "co2_cum_Mt": 1635.846442437971,
+   "kelp_2041_GL": 0.05636640692875759
+  },
+  {
+   "start": "smr_first",
+   "hubs": 6.0,
+   "cost_bn": 33.987922101308676,
+   "co2_cum_Mt": 1635.8456038897684,
+   "kelp_2041_GL": 0.06763968831450913
+  },
+  {
+   "start": "smr_first",
+   "hubs": 7.0,
+   "cost_bn": 33.97913824706542,
+   "co2_cum_Mt": 1635.843796446821,
+   "kelp_2041_GL": 0.0778881259379196
+  },
+  {
+   "start": "smr_first",
+   "hubs": 8.0,
+   "cost_bn": 33.97123631920222,
+   "co2_cum_Mt": 1635.8420154340429,
+   "kelp_2041_GL": 0.08813656356133007
+  },
+  {
+   "start": "smr_first",
+   "hubs": 9.0,
+   "cost_bn": 33.963554872934026,
+   "co2_cum_Mt": 1635.8402410288072,
+   "kelp_2041_GL": 0.09838500118474054
+  },
+  {
+   "start": "smr_first",
+   "hubs": 10.0,
+   "cost_bn": 33.95684717004849,
+   "co2_cum_Mt": 1635.838493053741,
+   "kelp_2041_GL": 0.108633438808151
+  },
+  {
+   "start": "smr_first",
+   "hubs": 11.0,
+   "cost_bn": 33.95013946716297,
+   "co2_cum_Mt": 1635.836745078675,
+   "kelp_2041_GL": 0.11888187643156148
+  },
+  {
+   "start": "smr_first",
+   "hubs": 12.0,
+   "cost_bn": 33.94343176427743,
+   "co2_cum_Mt": 1635.8349971036089,
+   "kelp_2041_GL": 0.12913031405497197
+  },
+  {
+   "start": "smr_first",
+   "hubs": 13.0,
+   "cost_bn": 33.94835071303568,
+   "co2_cum_Mt": 1635.7960706684723,
+   "kelp_2041_GL": 0.14347812672774662
+  },
+  {
+   "start": "smr_first",
+   "hubs": 14.0,
+   "cost_bn": 33.95326966179394,
+   "co2_cum_Mt": 1635.7896180646935,
+   "kelp_2041_GL": 0.15782593940052128
+  },
+  {
+   "start": "smr_first",
+   "hubs": 15.0,
+   "cost_bn": 33.95608295247309,
+   "co2_cum_Mt": 1635.7830862816975,
+   "kelp_2041_GL": 0.17217375207329594
+  },
+  {
+   "start": "smr_first",
+   "hubs": 16.0,
+   "cost_bn": 33.95749247109951,
+   "co2_cum_Mt": 1635.7765017125569,
+   "kelp_2041_GL": 0.18652156474607062
+  },
+  {
+   "start": "smr_first",
+   "hubs": 17.0,
+   "cost_bn": 33.95890198972594,
+   "co2_cum_Mt": 1635.769917143416,
+   "kelp_2041_GL": 0.20086937741884528
+  },
+  {
+   "start": "smr_first",
+   "hubs": 18.0,
+   "cost_bn": 33.96031150835237,
+   "co2_cum_Mt": 1635.7633325742752,
+   "kelp_2041_GL": 0.21521719009161994
+  },
+  {
+   "start": "smr_first",
+   "hubs": 19.0,
+   "cost_bn": 33.94621827482947,
+   "co2_cum_Mt": 1635.8203785240858,
+   "kelp_2041_GL": 0.22444078395268935
+  },
+  {
+   "start": "smr_first",
+   "hubs": 20.0,
+   "cost_bn": 33.93212504130657,
+   "co2_cum_Mt": 1635.818504235713,
+   "kelp_2041_GL": 0.2336643778137588
+  },
+  {
+   "start": "smr_first",
+   "hubs": 21.0,
+   "cost_bn": 33.918031807783684,
+   "co2_cum_Mt": 1635.8166299473398,
+   "kelp_2041_GL": 0.2428879716748282
+  },
+  {
+   "start": "smr_first",
+   "hubs": 22.0,
+   "cost_bn": 33.90579698706015,
+   "co2_cum_Mt": 1635.8148214762173,
+   "kelp_2041_GL": 0.25211156553589764
+  },
+  {
+   "start": "smr_first",
+   "hubs": 23.0,
+   "cost_bn": 33.89634978553564,
+   "co2_cum_Mt": 1635.8131117309701,
+   "kelp_2041_GL": 0.26133515939696705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 24.0,
+   "cost_bn": 33.886902584011146,
+   "co2_cum_Mt": 1635.811401985723,
+   "kelp_2041_GL": 0.2705587532580365
+  },
+  {
+   "start": "smr_first",
+   "hubs": 25.0,
+   "cost_bn": 33.894246123017126,
+   "co2_cum_Mt": 1635.8090602547106,
+   "kelp_2041_GL": 0.2869562534554932
+  },
+  {
+   "start": "smr_first",
+   "hubs": 26.0,
+   "cost_bn": 33.90158966202311,
+   "co2_cum_Mt": 1635.8067185236982,
+   "kelp_2041_GL": 0.30335375365295
+  },
+  {
+   "start": "smr_first",
+   "hubs": 27.0,
+   "cost_bn": 33.9089332010291,
+   "co2_cum_Mt": 1635.8043767926858,
+   "kelp_2041_GL": 0.31975125385040676
+  },
+  {
+   "start": "smr_first",
+   "hubs": 28.0,
+   "cost_bn": 33.92911872786033,
+   "co2_cum_Mt": 1635.802166696174,
+   "kelp_2041_GL": 0.3361487540478635
+  },
+  {
+   "start": "smr_first",
+   "hubs": 29.0,
+   "cost_bn": 33.971944205372935,
+   "co2_cum_Mt": 1635.79991053245,
+   "kelp_2041_GL": 0.35254625424532027
+  },
+  {
+   "start": "smr_first",
+   "hubs": 30.0,
+   "cost_bn": 34.02474315601121,
+   "co2_cum_Mt": 1635.7974700998764,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 31.0,
+   "cost_bn": 34.075771575938184,
+   "co2_cum_Mt": 1635.6955768150237,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 32.0,
+   "cost_bn": 34.126799995865156,
+   "co2_cum_Mt": 1635.6943702600595,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 33.0,
+   "cost_bn": 34.193657183647936,
+   "co2_cum_Mt": 1635.692232041882,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 34.0,
+   "cost_bn": 34.263407230855925,
+   "co2_cum_Mt": 1635.6899235533,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 35.0,
+   "cost_bn": 34.33315727806392,
+   "co2_cum_Mt": 1635.687615064718,
+   "kelp_2041_GL": 0.36894375444277705
+  },
+  {
+   "start": "smr_first",
+   "hubs": 36.0,
+   "cost_bn": 34.402907325271926,
+   "co2_cum_Mt": 1635.685306576136,
+   "kelp_2041_GL": 0.36894375444277705
+  }
+ ],
+ "hubs_best": 6.0,
+ "hub_start_best": "wind_first",
+ "hub_scan_optimised": [
+  {
+   "start": "wind_first",
+   "hubs": 0.0,
+   "cost_bn": 16.531675300635733,
+   "co2_cum_Mt": 1635.7905181698445,
+   "kelp_2041_GL": 0.0
+  },
+  {
+   "start": "wind_first",
+   "hubs": 1.0,
+   "cost_bn": 16.39845561752868,
+   "co2_cum_Mt": 1635.7774547632544,
+   "kelp_2041_GL": 0.018787312662901824
+  },
+  {
+   "start": "wind_first",
+   "hubs": 2.0,
+   "cost_bn": 16.26996419452851,
+   "co2_cum_Mt": 1635.7654941178853,
+   "kelp_2041_GL": 0.03757462532580365
+  },
+  {
+   "start": "wind_first",
+   "hubs": 3.0,
+   "cost_bn": 16.145596727196992,
+   "co2_cum_Mt": 1635.7546820191599,
+   "kelp_2041_GL": 0.05636193798870547
+  },
+  {
+   "start": "wind_first",
+   "hubs": 4.0,
+   "cost_bn": 16.025353215534125,
+   "co2_cum_Mt": 1635.7450184670781,
+   "kelp_2041_GL": 0.0751492506516073
+  },
+  {
+   "start": "wind_first",
+   "hubs": 5.0,
+   "cost_bn": 15.909233659539918,
+   "co2_cum_Mt": 1635.73650346164,
+   "kelp_2041_GL": 0.09393656331450911
+  },
+  {
+   "start": "wind_first",
+   "hubs": 6.0,
+   "cost_bn": 15.795969884949493,
+   "co2_cum_Mt": 1635.7324939347232,
+   "kelp_2041_GL": 0.11272387597741095
+  },
+  {
+   "start": "wind_first",
+   "hubs": 7.0,
+   "cost_bn": 15.751336736871993,
+   "co2_cum_Mt": 1635.730680835496,
+   "kelp_2041_GL": 0.1298032511255035
+  },
+  {
+   "start": "wind_first",
+   "hubs": 8.0,
+   "cost_bn": 15.706703588794504,
+   "co2_cum_Mt": 1635.728867736269,
+   "kelp_2041_GL": 0.14688262627359608
+  },
+  {
+   "start": "wind_first",
+   "hubs": 9.0,
+   "cost_bn": 15.662070440717015,
+   "co2_cum_Mt": 1635.7270546370419,
+   "kelp_2041_GL": 0.16396200142168865
+  },
+  {
+   "start": "wind_first",
+   "hubs": 10.0,
+   "cost_bn": 15.61743729263952,
+   "co2_cum_Mt": 1635.7252415378148,
+   "kelp_2041_GL": 0.18104137656978123
+  },
+  {
+   "start": "wind_first",
+   "hubs": 11.0,
+   "cost_bn": 15.572804144562026,
+   "co2_cum_Mt": 1635.7234284385877,
+   "kelp_2041_GL": 0.19812075171787377
+  },
+  {
+   "start": "wind_first",
+   "hubs": 12.0,
+   "cost_bn": 15.528170996484539,
+   "co2_cum_Mt": 1635.7216153393606,
+   "kelp_2041_GL": 0.21520012686596635
+  },
+  {
+   "start": "wind_first",
+   "hubs": 13.0,
+   "cost_bn": 15.479564646138314,
+   "co2_cum_Mt": 1635.7195835866994,
+   "kelp_2041_GL": 0.23911125207329595
+  },
+  {
+   "start": "wind_first",
+   "hubs": 14.0,
+   "cost_bn": 15.427939576747127,
+   "co2_cum_Mt": 1635.7174060650818,
+   "kelp_2041_GL": 0.2630223772806255
+  },
+  {
+   "start": "wind_first",
+   "hubs": 15.0,
+   "cost_bn": 15.375559827594698,
+   "co2_cum_Mt": 1635.7151921012253,
+   "kelp_2041_GL": 0.28693350248795507
+  },
+  {
+   "start": "wind_first",
+   "hubs": 16.0,
+   "cost_bn": 15.31979144186481,
+   "co2_cum_Mt": 1635.7128323684126,
+   "kelp_2041_GL": 0.3108446276952847
+  },
+  {
+   "start": "wind_first",
+   "hubs": 17.0,
+   "cost_bn": 15.277009566311753,
+   "co2_cum_Mt": 1635.7081281329843,
+   "kelp_2041_GL": 0.3347557529026143
+  },
+  {
+   "start": "wind_first",
+   "hubs": 18.0,
+   "cost_bn": 15.260251051371695,
+   "co2_cum_Mt": 1635.702922945873,
+   "kelp_2041_GL": 0.35866687810994385
+  },
+  {
+   "start": "wind_first",
+   "hubs": 19.0,
+   "cost_bn": 15.241571795754176,
+   "co2_cum_Mt": 1635.7003449600163,
+   "kelp_2041_GL": 0.38599387834689197
+  },
+  {
+   "start": "wind_first",
+   "hubs": 20.0,
+   "cost_bn": 15.22289254013666,
+   "co2_cum_Mt": 1635.6977669741595,
+   "kelp_2041_GL": 0.41332087858384015
+  },
+  {
+   "start": "wind_first",
+   "hubs": 21.0,
+   "cost_bn": 15.204662371971635,
+   "co2_cum_Mt": 1635.7003244820532,
+   "kelp_2041_GL": 0.4406478788207882
+  },
+  {
+   "start": "wind_first",
+   "hubs": 22.0,
+   "cost_bn": 15.186731595441605,
+   "co2_cum_Mt": 1635.6976557242574,
+   "kelp_2041_GL": 0.46797487905773627
+  },
+  {
+   "start": "wind_first",
+   "hubs": 23.0,
+   "cost_bn": 15.168800818911578,
+   "co2_cum_Mt": 1635.6949869664613,
+   "kelp_2041_GL": 0.4953018792946844
+  },
+  {
+   "start": "wind_first",
+   "hubs": 24.0,
+   "cost_bn": 15.150870042381552,
+   "co2_cum_Mt": 1635.6923182086655,
+   "kelp_2041_GL": 0.5226288795316325
+  },
+  {
+   "start": "wind_first",
+   "hubs": 25.0,
+   "cost_bn": 15.126861582593612,
+   "co2_cum_Mt": 1635.689243948946,
+   "kelp_2041_GL": 0.5380003171649158
+  },
+  {
+   "start": "wind_first",
+   "hubs": 26.0,
+   "cost_bn": 15.10567928502668,
+   "co2_cum_Mt": 1635.6833064169703,
+   "kelp_2041_GL": 0.5533717547981992
+  },
+  {
+   "start": "wind_first",
+   "hubs": 27.0,
+   "cost_bn": 15.084496987459753,
+   "co2_cum_Mt": 1635.6773688849946,
+   "kelp_2041_GL": 0.5687431924314824
+  },
+  {
+   "start": "wind_first",
+   "hubs": 28.0,
+   "cost_bn": 15.062338760319586,
+   "co2_cum_Mt": 1635.6715584764895,
+   "kelp_2041_GL": 0.5841146300647658
+  },
+  {
+   "start": "wind_first",
+   "hubs": 29.0,
+   "cost_bn": 15.038716638819574,
+   "co2_cum_Mt": 1635.6659387531902,
+   "kelp_2041_GL": 0.599486067698049
+  },
+  {
+   "start": "wind_first",
+   "hubs": 30.0,
+   "cost_bn": 15.015094517319554,
+   "co2_cum_Mt": 1635.6603190298908,
+   "kelp_2041_GL": 0.6148575053313324
+  },
+  {
+   "start": "wind_first",
+   "hubs": 31.0,
+   "cost_bn": 14.99691557484609,
+   "co2_cum_Mt": 1635.591609632859,
+   "kelp_2041_GL": 0.6327585053313324
+  },
+  {
+   "start": "wind_first",
+   "hubs": 32.0,
+   "cost_bn": 14.981175868373956,
+   "co2_cum_Mt": 1635.5797822028048,
+   "kelp_2041_GL": 0.6506595053313323
+  },
+  {
+   "start": "wind_first",
+   "hubs": 33.0,
+   "cost_bn": 14.965675114291965,
+   "co2_cum_Mt": 1635.5683181230565,
+   "kelp_2041_GL": 0.6685605053313324
+  },
+  {
+   "start": "wind_first",
+   "hubs": 34.0,
+   "cost_bn": 14.954806595731908,
+   "co2_cum_Mt": 1635.5617899766764,
+   "kelp_2041_GL": 0.6864615053313323
+  },
+  {
+   "start": "wind_first",
+   "hubs": 35.0,
+   "cost_bn": 14.945453025552466,
+   "co2_cum_Mt": 1635.4853413203448,
+   "kelp_2041_GL": 0.7043625053313324
+  },
+  {
+   "start": "wind_first",
+   "hubs": 36.0,
+   "cost_bn": 14.949939635463968,
+   "co2_cum_Mt": 1635.478869384101,
+   "kelp_2041_GL": 0.7222635053313323
+  },
+  {
+   "start": "smr_first",
+   "hubs": 0.0,
+   "cost_bn": 16.531675300635733,
+   "co2_cum_Mt": 1635.7905181698445,
+   "kelp_2041_GL": 0.0
+  },
+  {
+   "start": "smr_first",
+   "hubs": 1.0,
+   "cost_bn": 16.418411526045304,
+   "co2_cum_Mt": 1635.7865086429279,
+   "kelp_2041_GL": 0.018787312662901824
+  },
+  {
+   "start": "smr_first",
+   "hubs": 2.0,
+   "cost_bn": 16.32588939901399,
+   "co2_cum_Mt": 1635.7830719055705,
+   "kelp_2041_GL": 0.03757462532580365
+  },
+  {
+   "start": "smr_first",
+   "hubs": 3.0,
+   "cost_bn": 16.252588550097816,
+   "co2_cum_Mt": 1635.7802079577727,
+   "kelp_2041_GL": 0.05636193798870547
+  },
+  {
+   "start": "smr_first",
+   "hubs": 4.0,
+   "cost_bn": 16.196988609852816,
+   "co2_cum_Mt": 1635.7779167995345,
+   "kelp_2041_GL": 0.0751492506516073
+  },
+  {
+   "start": "smr_first",
+   "hubs": 5.0,
+   "cost_bn": 16.15756920883502,
+   "co2_cum_Mt": 1635.776198430856,
+   "kelp_2041_GL": 0.09393656331450911
+  },
+  {
+   "start": "smr_first",
+   "hubs": 6.0,
+   "cost_bn": 16.13280997760046,
+   "co2_cum_Mt": 1635.775052851737,
+   "kelp_2041_GL": 0.11272387597741095
+  },
+  {
+   "start": "smr_first",
+   "hubs": 7.0,
+   "cost_bn": 16.068810805439938,
+   "co2_cum_Mt": 1635.772584821137,
+   "kelp_2041_GL": 0.1298032511255035
+  },
+  {
+   "start": "smr_first",
+   "hubs": 8.0,
+   "cost_bn": 16.00577649859745,
+   "co2_cum_Mt": 1635.7701532980095,
+   "kelp_2041_GL": 0.14688262627359608
+  },
+  {
+   "start": "smr_first",
+   "hubs": 9.0,
+   "cost_bn": 15.942983408084462,
+   "co2_cum_Mt": 1635.7677309017502,
+   "kelp_2041_GL": 0.16396200142168865
+  },
+  {
+   "start": "smr_first",
+   "hubs": 10.0,
+   "cost_bn": 15.88124767495069,
+   "co2_cum_Mt": 1635.7653450129635,
+   "kelp_2041_GL": 0.18104137656978123
+  },
+  {
+   "start": "smr_first",
+   "hubs": 11.0,
+   "cost_bn": 15.819511941816922,
+   "co2_cum_Mt": 1635.7629591241769,
+   "kelp_2041_GL": 0.19812075171787377
+  },
+  {
+   "start": "smr_first",
+   "hubs": 12.0,
+   "cost_bn": 15.75777620868315,
+   "co2_cum_Mt": 1635.7605732353902,
+   "kelp_2041_GL": 0.21520012686596635
+  },
+  {
+   "start": "smr_first",
+   "hubs": 13.0,
+   "cost_bn": 15.688401581793508,
+   "co2_cum_Mt": 1635.7577774203396,
+   "kelp_2041_GL": 0.23911125207329595
+  },
+  {
+   "start": "smr_first",
+   "hubs": 14.0,
+   "cost_bn": 15.619026954903866,
+   "co2_cum_Mt": 1635.754981605289,
+   "kelp_2041_GL": 0.2630223772806255
+  },
+  {
+   "start": "smr_first",
+   "hubs": 15.0,
+   "cost_bn": 15.553842033791653,
+   "co2_cum_Mt": 1635.7505668108704,
+   "kelp_2041_GL": 0.28693350248795507
+  },
+  {
+   "start": "smr_first",
+   "hubs": 16.0,
+   "cost_bn": 15.502565999420588,
+   "co2_cum_Mt": 1635.7439084803611,
+   "kelp_2041_GL": 0.3108446276952847
+  },
+  {
+   "start": "smr_first",
+   "hubs": 17.0,
+   "cost_bn": 15.453822893975767,
+   "co2_cum_Mt": 1635.7409304541154,
+   "kelp_2041_GL": 0.3347557529026143
+  },
+  {
+   "start": "smr_first",
+   "hubs": 18.0,
+   "cost_bn": 15.422944740194204,
+   "co2_cum_Mt": 1635.7379524278695,
+   "kelp_2041_GL": 0.35866687810994385
+  },
+  {
+   "start": "smr_first",
+   "hubs": 19.0,
+   "cost_bn": 15.390725552863483,
+   "co2_cum_Mt": 1635.739818990664,
+   "kelp_2041_GL": 0.38599387834689197
+  },
+  {
+   "start": "smr_first",
+   "hubs": 20.0,
+   "cost_bn": 15.358506365532762,
+   "co2_cum_Mt": 1635.7364955965443,
+   "kelp_2041_GL": 0.41332087858384015
+  },
+  {
+   "start": "smr_first",
+   "hubs": 21.0,
+   "cost_bn": 15.326287178202046,
+   "co2_cum_Mt": 1635.7331722024246,
+   "kelp_2041_GL": 0.4406478788207882
+  },
+  {
+   "start": "smr_first",
+   "hubs": 22.0,
+   "cost_bn": 15.293208632666499,
+   "co2_cum_Mt": 1635.7298124995293,
+   "kelp_2041_GL": 0.46797487905773627
+  },
+  {
+   "start": "smr_first",
+   "hubs": 23.0,
+   "cost_bn": 15.262068522451612,
+   "co2_cum_Mt": 1635.7231284812433,
+   "kelp_2041_GL": 0.4953018792946844
+  },
+  {
+   "start": "smr_first",
+   "hubs": 24.0,
+   "cost_bn": 15.232024964500905,
+   "co2_cum_Mt": 1635.715333511982,
+   "kelp_2041_GL": 0.5226288795316325
+  },
+  {
+   "start": "smr_first",
+   "hubs": 25.0,
+   "cost_bn": 15.19302947537898,
+   "co2_cum_Mt": 1635.7081919568268,
+   "kelp_2041_GL": 0.5380003171649158
+  },
+  {
+   "start": "smr_first",
+   "hubs": 26.0,
+   "cost_bn": 15.154033986257053,
+   "co2_cum_Mt": 1635.7010504016716,
+   "kelp_2041_GL": 0.5533717547981992
+  },
+  {
+   "start": "smr_first",
+   "hubs": 27.0,
+   "cost_bn": 15.115040766664952,
+   "co2_cum_Mt": 1635.6939035131215,
+   "kelp_2041_GL": 0.5687431924314824
+  },
+  {
+   "start": "smr_first",
+   "hubs": 28.0,
+   "cost_bn": 15.074803363448941,
+   "co2_cum_Mt": 1635.686026891722,
+   "kelp_2041_GL": 0.5841146300647658
+  },
+  {
+   "start": "smr_first",
+   "hubs": 29.0,
+   "cost_bn": 15.038638047708893,
+   "co2_cum_Mt": 1635.6757409191982,
+   "kelp_2041_GL": 0.599486067698049
+  },
+  {
+   "start": "smr_first",
+   "hubs": 30.0,
+   "cost_bn": 15.007104967490779,
+   "co2_cum_Mt": 1635.6672706312038,
+   "kelp_2041_GL": 0.6148575053313324
+  },
+  {
+   "start": "smr_first",
+   "hubs": 31.0,
+   "cost_bn": 14.996900605294615,
+   "co2_cum_Mt": 1635.525910381898,
+   "kelp_2041_GL": 0.6327585053313324
+  },
+  {
+   "start": "smr_first",
+   "hubs": 32.0,
+   "cost_bn": 14.991142150687205,
+   "co2_cum_Mt": 1635.5136731047937,
+   "kelp_2041_GL": 0.6506595053313323
+  },
+  {
+   "start": "smr_first",
+   "hubs": 33.0,
+   "cost_bn": 14.985383696079797,
+   "co2_cum_Mt": 1635.5020339683304,
+   "kelp_2041_GL": 0.6685605053313324
+  },
+  {
+   "start": "smr_first",
+   "hubs": 34.0,
+   "cost_bn": 14.984868646199304,
+   "co2_cum_Mt": 1635.4935055316332,
+   "kelp_2041_GL": 0.6864615053313323
+  },
+  {
+   "start": "smr_first",
+   "hubs": 35.0,
+   "cost_bn": 14.997629402678875,
+   "co2_cum_Mt": 1635.4849697812988,
+   "kelp_2041_GL": 0.7043625053313324
+  },
+  {
+   "start": "smr_first",
+   "hubs": 36.0,
+   "cost_bn": 15.010390159158451,
+   "co2_cum_Mt": 1635.4764340309641,
+   "kelp_2041_GL": 0.7222635053313323
+  }
+ ],
+ "hubs_best_optimised": 35.0,
+ "hub_start_best_optimised": "wind_first",
+ "transition_flat_synth_cost_bn": 33.961638327373706,
+ "transition_rfnbo_only_cost_bn": 37.657976702686426,
+ "transition_rfnbo_only_2041": {
+  "year": 2041,
+  "ldv_bev_fleet": 0.5623786250000098,
+  "ers_km": 6500.0,
+  "ers_built_km": 97.42812050815883,
+  "hybrid_fleet": 0.7290440578293709,
+  "hybrid_sales": 0.9764782694702082,
+  "battery_eur_kWh": 120.0,
+  "gen_share": 0.13487628587486938,
+  "hyb_fuel_GL": 0.8839934852849295,
+  "diesel_GL": 2.6878829463326412,
+  "saf_share": 0.34,
+  "synthetic_share": 0.1,
+  "maritime_reduction": 0.31,
+  "jet_GL": 2.875889328063242,
+  "marine_GL": 0.8477957099857912,
+  "road_GL": 0.8839934852849295,
+  "export_GL": 0.053110045085949895,
+  "renewable_GL": 4.607678523333963,
+  "hubs": 6.0,
+  "hefa_GL": 1.2,
+  "kelp_GL": 0.06763968831450913,
+  "efuel_GL": 3.3400388350194534,
+  "marginal_road": 0.8999999999999999,
+  "marginal_saf": 4.1499999999999995,
+  "co2_ldv": 41.58404214105679,
+  "co2_hgv": 8.012527276398295,
+  "co2_aviation": 15.175418181818182,
+  "co2_maritime": 4.788004608029993,
+  "co2_total": 69.55999220730327,
+  "co2_reduction_vs_2024": 0.5261580912309043,
+  "cum_co2_avoided_Mt": 566.7815333098105,
+  "elec_TWh": 148.74011277993645,
+  "kelp_capacity_GL": 0.06763968831450913,
+  "kelp_utilisation": 1.0,
+  "kelp_idle_cost_bn": 0.0,
+  "kelp_fixed_cost_bn": 0.09285712257576882,
+  "rfnbo_GL": 1.4097496706192363,
+  "lowcarbon_GL": 1.9833992094861672,
+  "rfnbo_TWh": 28.194993412384726,
+  "lowcarbon_TWh": 39.66798418972334,
+  "electrolyser_GW": 12.846742068940012,
+  "rfnbo_wind_GW": 8.198366317230208,
+  "ldv_TWh": 53.42596937500093,
+  "hgv_TWh": 27.451165802827468,
+  "hgv_extra_cost_bn": -2.2524274900751258,
+  "liquid_premium_bn": 8.129611495364218,
+  "ers_capex_bn": 0.33125560972774,
+  "cum_ers_capex_bn": 22.1
+ },
+ "transition_hybrid_early_cost_bn": 33.83485174831974,
+ "kelp_wind_tiers": [
+  {
+   "name": "kelp_DKQ",
+   "price": 2.6451495810735572
+  },
+  {
+   "name": "kelp_LEH",
+   "price": 2.587790089116607
+  },
+  {
+   "name": "kelp_BRE",
+   "price": 2.741948853366488
+  },
+  {
+   "name": "kelp_STN",
+   "price": 2.6830946272241785
+  },
+  {
+   "name": "kelp_LRO",
+   "price": 2.7165907093260286
+  },
+  {
+   "name": "kelp_FOS",
+   "price": 3.596945714378594
+  }
+ ],
+ "early_kelp_wind_GL": 0.1690992207862728,
+ "transition_28hubs_cost_bn": 34.01668811844217,
+ "transition_cost_bn": 33.88554035854877,
+ "transition_28hubs_2041": {
+  "year": 2041,
+  "ldv_bev_fleet": 0.5623786250000098,
+  "ers_km": 6500.0,
+  "ers_built_km": 97.42812050815883,
+  "hybrid_fleet": 0.7290440578293709,
+  "hybrid_sales": 0.9764782694702082,
+  "battery_eur_kWh": 120.0,
+  "gen_share": 0.13487628587486938,
+  "hyb_fuel_GL": 0.8839934852849295,
+  "diesel_GL": 2.6878829463326412,
+  "saf_share": 0.34,
+  "synthetic_share": 0.1,
+  "maritime_reduction": 0.31,
+  "jet_GL": 2.8758893280632414,
+  "marine_GL": 0.8457413734685967,
+  "road_GL": 0.8839934852849295,
+  "export_GL": 0.32854432473014605,
+  "renewable_GL": 4.605624186816768,
+  "hubs": 28.29704999756018,
+  "hefa_GL": 1.2,
+  "kelp_GL": 0.3410196314415111,
+  "efuel_GL": 3.0646045553752566,
+  "marginal_road": 0.8999999999999999,
+  "marginal_saf": 4.1499999999999995,
+  "co2_ldv": 41.58404214105679,
+  "co2_hgv": 8.012527276398295,
+  "co2_aviation": 15.276920158102769,
+  "co2_maritime": 4.787211831350661,
+  "co2_total": 69.66070140690852,
+  "co2_reduction_vs_2024": 0.5254720612608412,
+  "cum_co2_avoided_Mt": 566.2122546369143,
+  "elec_TWh": 148.74011277993645,
+  "kelp_capacity_GL": 0.3410196314415111,
+  "kelp_utilisation": 1.0,
+  "kelp_idle_cost_bn": 0.0,
+  "kelp_fixed_cost_bn": 0.475045149139128,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 3.393148880105403,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 67.86297760210806,
+  "electrolyser_GW": 11.309365330484958,
+  "rfnbo_wind_GW": 0.0,
+  "ldv_TWh": 53.42596937500093,
+  "hgv_TWh": 27.451165802827468,
+  "hgv_extra_cost_bn": -2.252427490075124,
+  "liquid_premium_bn": 7.771894273899111,
+  "ers_capex_bn": 0.33125560972774,
+  "cum_ers_capex_bn": 22.1
+ },
+ "transition_28hubs_idle_cost_bn": 0.0,
+ "transition_idle_cost_bn": 0.0,
+ "transition_optimised_kelp": [
+  {
+   "year": 2027,
+   "hubs": 0.0,
+   "kelp_GL": 0.0,
+   "util": 0.0
+  },
+  {
+   "year": 2028,
+   "hubs": 0.0,
+   "kelp_GL": 0.0,
+   "util": 0.0
+  },
+  {
+   "year": 2029,
+   "hubs": 0.0,
+   "kelp_GL": 0.0,
+   "util": 0.0
+  },
+  {
+   "year": 2030,
+   "hubs": 1,
+   "kelp_GL": 0.018787312662901824,
+   "util": 1.0
+  },
+  {
+   "year": 2031,
+   "hubs": 2,
+   "kelp_GL": 0.03757462532580365,
+   "util": 1.0
+  },
+  {
+   "year": 2032,
+   "hubs": 3,
+   "kelp_GL": 0.05636193798870547,
+   "util": 1.0
+  },
+  {
+   "year": 2033,
+   "hubs": 4,
+   "kelp_GL": 0.0751492506516073,
+   "util": 1.0
+  },
+  {
+   "year": 2034,
+   "hubs": 5,
+   "kelp_GL": 0.09393656331450911,
+   "util": 1.0
+  },
+  {
+   "year": 2035,
+   "hubs": 6.0,
+   "kelp_GL": 0.11272387597741095,
+   "util": 1.0
+  },
+  {
+   "year": 2036,
+   "hubs": 10.833333333333332,
+   "kelp_GL": 0.19527418919319164,
+   "util": 1.0
+  },
+  {
+   "year": 2037,
+   "hubs": 15.666666666666666,
+   "kelp_GL": 0.3028742526261748,
+   "util": 1.0
+  },
+  {
+   "year": 2038,
+   "hubs": 20.5,
+   "kelp_GL": 0.42698437870231415,
+   "util": 1.0
+  },
+  {
+   "year": 2039,
+   "hubs": 25.333333333333332,
+   "kelp_GL": 0.5431241297093435,
+   "util": 1.0
+  },
+  {
+   "year": 2040,
+   "hubs": 30.166666666666668,
+   "kelp_GL": 0.6178410053313325,
+   "util": 1.0
+  },
+  {
+   "year": 2041,
+   "hubs": 35.0,
+   "kelp_GL": 0.7043625053313324,
+   "util": 1.0
+  }
+ ],
+ "policy_optimised": {
+  "year": 2041,
+  "mode": "policy",
+  "method": "lp",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 0.34,
+  "share_synthetic": 0.1,
+  "marine_reduction": 0.31,
+  "design": {
+   "capture": 0.44133207671491675,
+   "wire_share": 0.3309990575361876,
+   "wire_share_lh": 0.472855796480268,
+   "leg_km": 127.17653439441513,
+   "range_lh_km": 196.9230769230769,
+   "range_r_km": 258.46153846153845,
+   "gen_share": 0.18513425450587476,
+   "gen_share_lh": 0.11206186611843523,
+   "gen_share_r": 0.35563649407656706,
+   "litres": 1664356948.007814,
+   "elec_TWh": 35.46621670688631,
+   "infra": 1485120000.0,
+   "vehicles": 4320083086.865513,
+   "energy": 2966127610.9135256,
+   "nonfuel": 8771330697.779037,
+   "L": 6000.0,
+   "B": 320.0,
+   "B_r": 420.0,
+   "total": 10470420913.590446
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 720.0,
+   "B_r": 440.0,
+   "total_bn": 12.428434363071599,
+   "litres_GL": 2.991781368572396,
+   "gen_share": 0.3327899186398661
+  },
+  "ers_value_bn": 1.958013449481152,
+  "liquid_cost_bn": 8.451299068393261,
+  "liquid_cost_without_trucks_bn": 6.752208852581851,
+  "use_GL": {
+   "jet": 2.8758893280632414,
+   "mar": 0.805549446902406,
+   "road": 1.664356948007814,
+   "exp": 0.0
+  },
+  "supply_GL": {
+   "kelp_LEH": 0.11272387597741095,
+   "kelp_DKQ": 0.1024762508885554,
+   "kelp_STN": 0.14346675124397754,
+   "kelp_BRE": 0.16396200142168862,
+   "kelp_LRO": 0.09222862579969987,
+   "efuel_lc_bio": 1.3333333333333333,
+   "hefa": 1.2,
+   "kelp_FOS": 0.10740599999999997,
+   "efuel_lc_dac": 2.090198884308796,
+   "efuel_rf_bio_LEH": 0.0,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_STN": 0.0,
+   "efuel_rf_dac_DKQ": 0.0,
+   "efuel_rf_bio_LRO": 0.0,
+   "efuel_rf_bio_BRE": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "kelp_LEH|mar": 0.11272387597741095,
+   "kelp_DKQ|mar": 0.1024762508885554,
+   "kelp_STN|mar": 0.14346675124397754,
+   "kelp_BRE|mar": 0.16396200142168862,
+   "kelp_LRO|mar": 0.09222862579969987,
+   "efuel_lc_bio|jet": 0.7999999999999999,
+   "efuel_lc_bio|road": 0.5333333333333333,
+   "hefa|jet": 0.821769997477964,
+   "hefa|road": 0.378230002522036,
+   "kelp_FOS|mar": 0.10740599999999997,
+   "efuel_lc_dac|jet": 1.2541193305852776,
+   "efuel_lc_dac|mar": 0.08328594157107379,
+   "efuel_lc_dac|road": 0.7527936121524447
+  },
+  "marginal_road": 1.69,
+  "marginal_saf": 1.7900000000000003,
+  "marginal_synth": 0.0,
+  "marginal_marine_eur_t": 597.1934030270992,
+  "marginal_marine_eur_l": 1.69,
+  "kg_by_use": {
+   "jet": 1039445513.8980769,
+   "mar": 86962585.1026792,
+   "road": 582669846.579666,
+   "exp": 0.0
+  },
+  "liquid_total_GL": 5.345795722973461,
+  "renewable_mandated_GL": 5.345795722973461,
+  "kelp_hubs": 36.0,
+  "efuel_TWh": 58.2000476999162,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 3.4235322176421294,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 58.2000476999162,
+  "electrolyser_GW": 9.699038046181414,
+  "rfnbo_wind_GW": 0.0,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 1.9727332371933142,
+    "utilisation": 0.4883906185584067,
+    "r": 1.48,
+    "cap_GL": 0.340087584942102
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 1.8070467995860473,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.5228230444229441
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 2.395067144573812,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.5142568446758564
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.138060263803708,
+    "utilisation": 0.4557715060234927,
+    "r": 1.27,
+    "cap_GL": 0.3698525607008612
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.254222278819371,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.42422482792723043
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 2.462411838215795,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4574967325279145
+   }
+  ],
+  "kelp_area_km2": 3600.0,
+  "marginal_eur_l": 1.69,
+  "hgv_cost_bn": 10.470420913590447,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 3.9135790864095537,
+  "hgv_co2_Mt": 1.1376989851262977,
+  "hgv_co2_avoided_Mt": 25.2495010148737,
+  "truck_fuel_cost_bn": 1.6990902158114098,
+  "truck_fuel_avg_eur_l": 1.0208688814290532,
+  "tiers": [
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 1.2497421167521756,
+    "cap_GL": 0.11272387597741095,
+    "kg": 0.08242519887809979
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 1.2559841726870042,
+    "cap_GL": 0.1024762508885554,
+    "kg": 0.08357992986393246
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 1.2658538452181145,
+    "cap_GL": 0.14346675124397754,
+    "kg": 0.08007081228282627
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 1.2675556033541266,
+    "cap_GL": 0.16396200142168862,
+    "kg": 0.07908165744777075
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 1.2723267016579065,
+    "cap_GL": 0.09222862579969987,
+    "kg": 0.08452824782991317
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 1.48,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.306
+   },
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 1.618148689230528,
+    "cap_GL": 0.10740599999999997,
+    "kg": 0.10586960641886259
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 1.75,
+    "cap_GL": 100000.0,
+    "kg": 0.306
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 1.9870467995860472,
+    "cap_GL": 0.5228230444229441,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.1527332371933143,
+    "cap_GL": 0.340087584942102,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 2.2570467995860475,
+    "cap_GL": 0.5228230444229441,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.318060263803708,
+    "cap_GL": 0.3698525607008612,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.4227332371933143,
+    "cap_GL": 0.340087584942102,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 2.4342222788193713,
+    "cap_GL": 0.42422482792723043,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 2.5750671445738123,
+    "cap_GL": 0.5142568446758564,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 2.5880602638037082,
+    "cap_GL": 0.3698525607008612,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 2.642411838215795,
+    "cap_GL": 0.4574967325279145,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 2.7042222788193713,
+    "cap_GL": 0.42422482792723043,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 2.8450671445738123,
+    "cap_GL": 0.5142568446758564,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 2.912411838215795,
+    "cap_GL": 0.4574967325279145,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 3.212411838215795,
+    "cap_GL": 100000.0,
+    "kg": 0.20400000000000001
+   }
+  ]
+ },
+ "full_optimised": {
+  "year": 2041,
+  "mode": "full",
+  "method": "lp",
+  "aviation_GL": 8.458498023715416,
+  "maritime_GL": 2.509090909090909,
+  "share_aviation": 1.0,
+  "share_synthetic": 0.0,
+  "marine_reduction": 1.0,
+  "design": {
+   "capture": 0.3976570096129111,
+   "wire_share": 0.29824275720968335,
+   "wire_share_lh": 0.4260610817281191,
+   "leg_km": 154.17566678474589,
+   "range_lh_km": 147.69230769230768,
+   "range_r_km": 123.07692307692307,
+   "gen_share": 0.3375102186308591,
+   "gen_share_lh": 0.22020848191550185,
+   "gen_share_r": 0.6112142709666928,
+   "litres": 3034216865.491423,
+   "elec_TWh": 28.83420524431049,
+   "infra": 1175720000.0,
+   "vehicles": 3325653933.824786,
+   "energy": 2411476053.9793005,
+   "nonfuel": 6912849987.804087,
+   "L": 4750.0,
+   "B": 240.0,
+   "B_r": 200.0,
+   "total": 9670170732.723688
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 620.0,
+   "B_r": 360.0,
+   "total_bn": 10.96411854121107,
+   "litres_GL": 3.5362251497536343,
+   "gen_share": 0.39335096215279586
+  },
+  "ers_value_bn": 1.2939478084873812,
+  "liquid_cost_bn": 23.924547792190378,
+  "liquid_cost_without_trucks_bn": 21.1677022397892,
+  "use_GL": {
+   "jet": 8.458498023715416,
+   "mar": 2.509090909090909,
+   "road": 3.034216865491423,
+   "exp": 0.0
+  },
+  "supply_GL": {
+   "kelp_LEH": 0.10430909210538752,
+   "kelp_DKQ": 0.0,
+   "kelp_STN": 0.0,
+   "kelp_BRE": 0.0,
+   "kelp_LRO": 0.0,
+   "efuel_lc_bio": 1.3333333333333333,
+   "hefa": 1.2,
+   "kelp_FOS": 0.0,
+   "efuel_lc_dac": 11.364163372859029,
+   "efuel_rf_bio_LEH": 0.0,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_STN": 0.0,
+   "efuel_rf_dac_DKQ": 0.0,
+   "efuel_rf_bio_LRO": 0.0,
+   "efuel_rf_bio_BRE": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "kelp_LEH|mar": 0.10430909210538752,
+   "efuel_lc_bio|jet": 0.7999999999999999,
+   "efuel_lc_bio|mar": 0.5333333333333333,
+   "hefa|jet": 0.84,
+   "hefa|road": 0.36,
+   "efuel_lc_dac|jet": 6.818498023715416,
+   "efuel_lc_dac|mar": 1.871448483652188,
+   "efuel_lc_dac|road": 2.6742168654914233
+  },
+  "marginal_road": 1.1497421167521753,
+  "marginal_saf": 2.1501719221652165,
+  "marginal_synth": 0.0,
+  "marginal_marine_eur_t": null,
+  "marginal_marine_eur_l": 1.1497421167521755,
+  "kg_by_use": {
+   "jet": 2751260395.256917,
+   "mar": 744460933.6591501,
+   "road": 998310360.8403754,
+   "exp": 0.0
+  },
+  "liquid_total_GL": 14.001805798297749,
+  "renewable_mandated_GL": 14.001805798297747,
+  "kelp_hubs": 5.552102846053146,
+  "efuel_TWh": 215.85744400527014,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 12.697496706192362,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 215.85744400527017,
+  "electrolyser_GW": 35.97264340320471,
+  "rfnbo_wind_GW": 0.0,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 1.9727332371933142,
+    "utilisation": 0.4883906185584067,
+    "r": 1.48,
+    "cap_GL": 0.340087584942102
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 1.8070467995860473,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.5228230444229441
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 2.395067144573812,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.5142568446758564
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.138060263803708,
+    "utilisation": 0.4557715060234927,
+    "r": 1.27,
+    "cap_GL": 0.3698525607008612
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.254222278819371,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.42422482792723043
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 2.462411838215795,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4574967325279145
+   }
+  ],
+  "kelp_area_km2": 555.2102846053147,
+  "marginal_eur_l": 1.1497421167521753,
+  "hgv_cost_bn": 9.670170732723689,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 4.713829267276312,
+  "hgv_co2_Mt": 1.4292807540450156,
+  "hgv_co2_avoided_Mt": 24.957919245954983,
+  "truck_fuel_cost_bn": 2.7573207449196016,
+  "truck_fuel_avg_eur_l": 0.9087421457177302,
+  "tiers": [
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 1.2497421167521756,
+    "cap_GL": 0.11272387597741095,
+    "kg": 0.08242519887809979
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 1.2559841726870042,
+    "cap_GL": 0.1024762508885554,
+    "kg": 0.08357992986393246
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 1.2658538452181145,
+    "cap_GL": 0.14346675124397754,
+    "kg": 0.08007081228282627
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 1.2675556033541266,
+    "cap_GL": 0.16396200142168862,
+    "kg": 0.07908165744777075
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 1.2723267016579065,
+    "cap_GL": 0.09222862579969987,
+    "kg": 0.08452824782991317
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 1.48,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.306
+   },
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 1.618148689230528,
+    "cap_GL": 0.10740599999999997,
+    "kg": 0.10586960641886259
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 1.75,
+    "cap_GL": 100000.0,
+    "kg": 0.306
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 1.9870467995860472,
+    "cap_GL": 0.5228230444229441,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.1527332371933143,
+    "cap_GL": 0.340087584942102,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 2.2570467995860475,
+    "cap_GL": 0.5228230444229441,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.318060263803708,
+    "cap_GL": 0.3698525607008612,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.4227332371933143,
+    "cap_GL": 0.340087584942102,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 2.4342222788193713,
+    "cap_GL": 0.42422482792723043,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 2.5750671445738123,
+    "cap_GL": 0.5142568446758564,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 2.5880602638037082,
+    "cap_GL": 0.3698525607008612,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 2.642411838215795,
+    "cap_GL": 0.4574967325279145,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 2.7042222788193713,
+    "cap_GL": 0.42422482792723043,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 2.8450671445738123,
+    "cap_GL": 0.5142568446758564,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 2.912411838215795,
+    "cap_GL": 0.4574967325279145,
+    "kg": 0.20400000000000001
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 3.212411838215795,
+    "cap_GL": 100000.0,
+    "kg": 0.20400000000000001
+   }
+  ]
+ },
+ "full_demand_measures": {
+  "year": 2041,
+  "mode": "full",
+  "method": "lp",
+  "aviation_GL": 6.343873517786561,
+  "maritime_GL": 1.7061818181818182,
+  "share_aviation": 1.0,
+  "share_synthetic": 0.0,
+  "marine_reduction": 1.0,
+  "design": {
+   "capture": 0.4169134911432569,
+   "wire_share": 0.31268511835744267,
+   "wire_share_lh": 0.44669302622491813,
+   "leg_km": 142.27166002053215,
+   "range_lh_km": 184.6153846153846,
+   "range_r_km": 172.3076923076923,
+   "gen_share": 0.2563951346994488,
+   "gen_share_lh": 0.15115217303714037,
+   "gen_share_r": 0.5019620452448351,
+   "litres": 2304992260.948045,
+   "elec_TWh": 32.364658157341196,
+   "infra": 1299480000.0,
+   "vehicles": 3816877973.278639,
+   "energy": 2706736581.791313,
+   "nonfuel": 7823094555.069952,
+   "L": 5250.0,
+   "B": 300.0,
+   "B_r": 280.0,
+   "total": 9901051256.120268
+  },
+  "no_ers": {
+   "L": 0.0,
+   "B": 880.0,
+   "B_r": 520.0,
+   "total_bn": 11.850785556469122,
+   "litres_GL": 2.375002999286574,
+   "gen_share": 0.264182758541332
+  },
+  "ers_value_bn": 1.9497343003488545,
+  "liquid_cost_bn": 27.3111317700311,
+  "liquid_cost_without_trucks_bn": 25.23663873517786,
+  "use_GL": {
+   "jet": 6.34387351778656,
+   "mar": 1.7061818181818185,
+   "road": 2.304992260948045,
+   "exp": 0.018074932727844367
+  },
+  "supply_GL": {
+   "hefa": 1.2,
+   "efuel_lc_bio": 1.3333333333333333,
+   "kelp_LEH": 0.0,
+   "kelp_DKQ": 0.0,
+   "kelp_STN": 0.0,
+   "kelp_LRO": 0.0,
+   "kelp_BRE": 0.0,
+   "efuel_rf_bio_LEH": 0.0,
+   "efuel_rf_bio_DKQ": 0.0,
+   "efuel_lc_dac": 7.839789196310934,
+   "efuel_rf_bio_STN": 0.0,
+   "kelp_FOS": 0.0,
+   "efuel_rf_dac_LEH": 0.0,
+   "efuel_rf_bio_LRO": 0.0,
+   "efuel_rf_bio_BRE": 0.0,
+   "efuel_rf_dac_DKQ": 0.0,
+   "efuel_rf_bio_FOS": 0.0,
+   "efuel_rf_dac_STN": 0.0,
+   "efuel_rf_dac_LRO": 0.0,
+   "efuel_rf_dac_BRE": 0.0,
+   "efuel_rf_dac_FOS": 0.0,
+   "efuel_rf_import": 0.0
+  },
+  "alloc_GL": {
+   "hefa|jet": 0.84,
+   "hefa|mar": 0.36,
+   "efuel_lc_bio|jet": 0.7999999999999999,
+   "efuel_lc_bio|road": 0.515258400605489,
+   "efuel_lc_bio|exp": 0.018074932727844367,
+   "efuel_lc_dac|jet": 4.70387351778656,
+   "efuel_lc_dac|mar": 1.3461818181818186,
+   "efuel_lc_dac|road": 1.789733860342556
+  },
+  "marginal_road": 0.9000000000000004,
+  "marginal_saf": 4.1499999999999995,
+  "marginal_synth": 0.0,
+  "marginal_marine_eur_t": null,
+  "marginal_marine_eur_l": 0.9000000000000004,
+  "kg_by_use": {
+   "jet": 2401394466.4031615,
+   "mar": 664625454.5454546,
+   "road": 829797213.9412961,
+   "exp": 6506975.782023971
+  },
+  "liquid_total_GL": 10.373122529644268,
+  "renewable_mandated_GL": 10.355047596916425,
+  "kelp_hubs": 0.0,
+  "efuel_TWh": 183.46245059288538,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 9.173122529644267,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 183.46245059288535,
+  "electrolyser_GW": 30.574017697044518,
+  "rfnbo_wind_GW": 0.0,
+  "rfnbo_sites": [
+   {
+    "key": "DKQ",
+    "price_ex_co2": 2.5346478276258395,
+    "utilisation": 0.5187383745051799,
+    "r": 1.69,
+    "cap_GL": 0.2688845065482471
+   },
+   {
+    "key": "LEH",
+    "price_ex_co2": 2.310343330303722,
+    "utilisation": 0.578328230645928,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.44439958775950256
+   },
+   {
+    "key": "BRE",
+    "price_ex_co2": 3.0054976557258573,
+    "utilisation": 0.5688526055832248,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.4371183179744779
+   },
+   {
+    "key": "STN",
+    "price_ex_co2": 2.7454868699857196,
+    "utilisation": 0.48753282851351754,
+    "r": 1.46,
+    "cap_GL": 0.29251969710811054
+   },
+   {
+    "key": "LRO",
+    "price_ex_co2": 2.8833932263063162,
+    "utilisation": 0.4692623952756693,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3605911037381459
+   },
+   {
+    "key": "FOS",
+    "price_ex_co2": 3.1102123236205412,
+    "utilisation": 0.5060665911182068,
+    "r": 1.1400000000000001,
+    "cap_GL": 0.3888722226487273
+   }
+  ],
+  "kelp_area_km2": 0.0,
+  "marginal_eur_l": 0.9000000000000004,
+  "hgv_cost_bn": 9.901051256120267,
+  "hgv_diesel_cost_bn": 14.384,
+  "hgv_saving_bn": 4.482948743879732,
+  "hgv_co2_Mt": 1.2740615251165548,
+  "hgv_co2_avoided_Mt": 25.113138474883446,
+  "truck_fuel_cost_bn": 2.077956701050316,
+  "truck_fuel_avg_eur_l": 0.9015026801849872,
+  "tiers": [
+   {
+    "name": "hefa",
+    "kind": "hefa",
+    "price": 1.55,
+    "cap_GL": 1.2,
+    "kg": 0.5
+   },
+   {
+    "name": "efuel_lc_bio",
+    "kind": "efuel_lc",
+    "price": 2.28,
+    "cap_GL": 1.3333333333333333,
+    "kg": 0.36
+   },
+   {
+    "name": "kelp_LEH",
+    "kind": "kelp",
+    "price": 2.288033472892532,
+    "cap_GL": 0.06763968831450913,
+    "kg": 0.09246977676623863
+   },
+   {
+    "name": "kelp_DKQ",
+    "kind": "kelp",
+    "price": 2.3090907298750354,
+    "cap_GL": 0.06149062574046284,
+    "kg": 0.0935432623050293
+   },
+   {
+    "name": "kelp_STN",
+    "kind": "kelp",
+    "price": 2.3181066139522524,
+    "cap_GL": 0.08608687603664797,
+    "kg": 0.09028104190612213
+   },
+   {
+    "name": "kelp_LRO",
+    "kind": "kelp",
+    "price": 2.339638004640597,
+    "cap_GL": 0.055341563166416544,
+    "kg": 0.09442485778929835
+   },
+   {
+    "name": "kelp_BRE",
+    "kind": "kelp",
+    "price": 2.3552761978527474,
+    "cap_GL": 0.09838500118474054,
+    "kg": 0.08936148278448716
+   },
+   {
+    "name": "efuel_rf_bio_LEH",
+    "kind": "efuel_rf",
+    "price": 2.4903433303037223,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_DKQ",
+    "kind": "efuel_rf",
+    "price": 2.7146478276258397,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_lc_dac",
+    "kind": "efuel_lc",
+    "price": 2.8499999999999996,
+    "cap_GL": 100000.0,
+    "kg": 0.36
+   },
+   {
+    "name": "efuel_rf_bio_STN",
+    "kind": "efuel_rf",
+    "price": 2.9254868699857197,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "kelp_FOS",
+    "kind": "kelp",
+    "price": 3.052743563464911,
+    "cap_GL": 0.06885,
+    "kg": 0.11993367514832948
+   },
+   {
+    "name": "efuel_rf_dac_LEH",
+    "kind": "efuel_rf",
+    "price": 3.060343330303722,
+    "cap_GL": 0.44439958775950256,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_LRO",
+    "kind": "efuel_rf",
+    "price": 3.0633932263063164,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_BRE",
+    "kind": "efuel_rf",
+    "price": 3.1854976557258574,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_DKQ",
+    "kind": "efuel_rf",
+    "price": 3.2846478276258395,
+    "cap_GL": 0.2688845065482471,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_bio_FOS",
+    "kind": "efuel_rf",
+    "price": 3.2902123236205414,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_STN",
+    "kind": "efuel_rf",
+    "price": 3.4954868699857196,
+    "cap_GL": 0.29251969710811054,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_LRO",
+    "kind": "efuel_rf",
+    "price": 3.6333932263063162,
+    "cap_GL": 0.3605911037381459,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_BRE",
+    "kind": "efuel_rf",
+    "price": 3.7554976557258573,
+    "cap_GL": 0.4371183179744779,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_dac_FOS",
+    "kind": "efuel_rf",
+    "price": 3.8602123236205412,
+    "cap_GL": 0.3888722226487273,
+    "kg": 0.24
+   },
+   {
+    "name": "efuel_rf_import",
+    "kind": "efuel_rf",
+    "price": 4.1602123236205415,
+    "cap_GL": 100000.0,
+    "kg": 0.24
+   }
+  ]
+ },
+ "sweep": [
+  {
+   "price": 1.0,
+   "L": 4000.0,
+   "B": 180.0,
+   "B_r": 120.0,
+   "gen_share": 0.45052270748558043,
+   "litres_GL": 4.050199140295367,
+   "elec_TWh": 23.915449679397593,
+   "cost_bn": 9.874817368964639
+  },
+  {
+   "price": 1.25,
+   "L": 5000.0,
+   "B": 260.0,
+   "B_r": 260.0,
+   "gen_share": 0.29196505105107695,
+   "litres_GL": 2.6247658089491814,
+   "elec_TWh": 30.816513118052924,
+   "cost_bn": 10.685056200810779
+  },
+  {
+   "price": 1.5,
+   "L": 5750.0,
+   "B": 300.0,
+   "B_r": 360.0,
+   "gen_share": 0.21607501047527147,
+   "litres_GL": 1.9425143441726904,
+   "elec_TWh": 34.11955124407429,
+   "cost_bn": 11.247013612567892
+  },
+  {
+   "price": 1.75,
+   "L": 6000.0,
+   "B": 340.0,
+   "B_r": 440.0,
+   "gen_share": 0.1727732777922268,
+   "litres_GL": 1.5532317673521188,
+   "elec_TWh": 36.00421585737112,
+   "cost_bn": 11.678253382698708
+  },
+  {
+   "price": 2.0,
+   "L": 6500.0,
+   "B": 360.0,
+   "B_r": 520.0,
+   "gen_share": 0.13888324092640097,
+   "litres_GL": 1.2485603359283448,
+   "elec_TWh": 37.479245821919335,
+   "cost_bn": 12.027827875273097
+  },
+  {
+   "price": 2.25,
+   "L": 6750.0,
+   "B": 380.0,
+   "B_r": 580.0,
+   "gen_share": 0.1181755710696497,
+   "litres_GL": 1.0623983839161506,
+   "elec_TWh": 38.38052644476457,
+   "cost_bn": 12.321943530586172
+  },
+  {
+   "price": 2.5,
+   "L": 6750.0,
+   "B": 400.0,
+   "B_r": 620.0,
+   "gen_share": 0.10673148039005781,
+   "litres_GL": 0.9595160087066196,
+   "elec_TWh": 38.87861904750313,
+   "cost_bn": 12.575672167758267
+  },
+  {
+   "price": 2.75,
+   "L": 7000.0,
+   "B": 420.0,
+   "B_r": 660.0,
+   "gen_share": 0.09336333154045352,
+   "litres_GL": 0.8393363505486771,
+   "elec_TWh": 39.4604543580333,
+   "cost_bn": 12.799275699437466
+  },
+  {
+   "price": 3.0,
+   "L": 7250.0,
+   "B": 420.0,
+   "B_r": 720.0,
+   "gen_share": 0.08249506096190927,
+   "litres_GL": 0.7416305980475643,
+   "elec_TWh": 39.93348496669386,
+   "cost_bn": 12.997149363837925
+  },
+  {
+   "price": 3.25,
+   "L": 7250.0,
+   "B": 440.0,
+   "B_r": 740.0,
+   "gen_share": 0.0766493626663053,
+   "litres_GL": 0.6890777703700846,
+   "elec_TWh": 40.18791313931173,
+   "cost_bn": 13.17681167170422
+  },
+  {
+   "price": 3.5,
+   "L": 7500.0,
+   "B": 440.0,
+   "B_r": 780.0,
+   "gen_share": 0.06978117189980691,
+   "litres_GL": 0.6273327353792642,
+   "elec_TWh": 40.48684427423281,
+   "cost_bn": 13.33966458491295
+  },
+  {
+   "price": 3.75,
+   "L": 7500.0,
+   "B": 460.0,
+   "B_r": 820.0,
+   "gen_share": 0.06279796957057471,
+   "litres_GL": 0.5645537464394665,
+   "elec_TWh": 40.790781172410306,
+   "cost_bn": 13.490173816637325
+  },
+  {
+   "price": 4.0,
+   "L": 7750.0,
+   "B": 460.0,
+   "B_r": 840.0,
+   "gen_share": 0.05894985718675917,
+   "litres_GL": 0.5299592161089649,
+   "elec_TWh": 40.9582664158035,
+   "cost_bn": 13.628726708629626
+  },
+  {
+   "price": 4.25,
+   "L": 7750.0,
+   "B": 460.0,
+   "B_r": 880.0,
+   "gen_share": 0.05539194456624033,
+   "litres_GL": 0.4979735816505006,
+   "elec_TWh": 41.11312100469896,
+   "cost_bn": 13.758039180635546
+  },
+  {
+   "price": 4.5,
+   "L": 7750.0,
+   "B": 480.0,
+   "B_r": 900.0,
+   "gen_share": 0.05134927092876806,
+   "litres_GL": 0.46162994564962484,
+   "elec_TWh": 41.289074332096305,
+   "cost_bn": 13.877474516534349
+  }
+ ],
+ "offwire_legs": [
+  {
+   "leg_min_km": 40,
+   "regional_leg_km": 150,
+   "L": 6750.0,
+   "B": 320.0,
+   "B_r": 440.0,
+   "gen_share": 0.09687739815802059,
+   "litres_GL": 0.870927809440605,
+   "hgv_saving_bn": 4.2265757498240815,
+   "ers_value_bn": 3.0396138360394698,
+   "marginal_road": 1.9956964481665922
+  },
+  {
+   "leg_min_km": 40,
+   "regional_leg_km": 250,
+   "L": 7000.0,
+   "B": 320.0,
+   "B_r": 520.0,
+   "gen_share": 0.12672349512686368,
+   "litres_GL": 1.1392442211905043,
+   "hgv_saving_bn": 3.49118585851968,
+   "ers_value_bn": 3.2279621700507306,
+   "marginal_road": 2.0549295417173945
+  },
+  {
+   "leg_min_km": 40,
+   "regional_leg_km": 350,
+   "L": 7000.0,
+   "B": 340.0,
+   "B_r": 620.0,
+   "gen_share": 0.13886567705921843,
+   "litres_GL": 1.2484024367623736,
+   "hgv_saving_bn": 2.9233861100864504,
+   "ers_value_bn": 3.384169458131062,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 60,
+   "regional_leg_km": 150,
+   "L": 6500.0,
+   "B": 360.0,
+   "B_r": 440.0,
+   "gen_share": 0.10480806222844331,
+   "litres_GL": 0.9422244794337054,
+   "hgv_saving_bn": 4.0066750435912155,
+   "ers_value_bn": 2.819713129806603,
+   "marginal_road": 2.015613637608628
+  },
+  {
+   "leg_min_km": 60,
+   "regional_leg_km": 250,
+   "L": 6500.0,
+   "B": 360.0,
+   "B_r": 540.0,
+   "gen_share": 0.13487628587486938,
+   "litres_GL": 1.2125378100150757,
+   "hgv_saving_bn": 3.2653180720311927,
+   "ers_value_bn": 3.002094383562243,
+   "marginal_road": 2.0549295417173945
+  },
+  {
+   "leg_min_km": 60,
+   "regional_leg_km": 350,
+   "L": 6750.0,
+   "B": 400.0,
+   "B_r": 640.0,
+   "gen_share": 0.13888943706431467,
+   "litres_GL": 1.2486160392081889,
+   "hgv_saving_bn": 2.673386433684988,
+   "ers_value_bn": 3.1341697817296,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 90,
+   "regional_leg_km": 150,
+   "L": 6000.0,
+   "B": 400.0,
+   "B_r": 440.0,
+   "gen_share": 0.12181720074739026,
+   "litres_GL": 1.0951366347190383,
+   "hgv_saving_bn": 3.7152300410375654,
+   "ers_value_bn": 2.5282681272529537,
+   "marginal_road": 2.044077833496173
+  },
+  {
+   "leg_min_km": 90,
+   "regional_leg_km": 250,
+   "L": 6250.0,
+   "B": 420.0,
+   "B_r": 560.0,
+   "gen_share": 0.13845394431056438,
+   "litres_GL": 1.2447009593519738,
+   "hgv_saving_bn": 2.959714115265011,
+   "ers_value_bn": 2.6964904267960623,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 90,
+   "regional_leg_km": 350,
+   "L": 6500.0,
+   "B": 460.0,
+   "B_r": 680.0,
+   "gen_share": 0.1406513128464596,
+   "litres_GL": 1.2644553024896716,
+   "hgv_saving_bn": 2.328012103207558,
+   "ers_value_bn": 2.7887954512521684,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 120,
+   "regional_leg_km": 150,
+   "L": 5750.0,
+   "B": 440.0,
+   "B_r": 440.0,
+   "gen_share": 0.13202105177828433,
+   "litres_GL": 1.186869255486776,
+   "hgv_saving_bn": 3.45850153678051,
+   "ers_value_bn": 2.2715396229958973,
+   "marginal_road": 2.0549295417173945
+  },
+  {
+   "leg_min_km": 120,
+   "regional_leg_km": 250,
+   "L": 5750.0,
+   "B": 500.0,
+   "B_r": 580.0,
+   "gen_share": 0.13924655446098613,
+   "litres_GL": 1.2518265246042652,
+   "hgv_saving_bn": 2.674651925820412,
+   "ers_value_bn": 2.411428237351462,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 120,
+   "regional_leg_km": 350,
+   "L": 6250.0,
+   "B": 520.0,
+   "B_r": 720.0,
+   "gen_share": 0.14100168146962383,
+   "litres_GL": 1.2676051164119182,
+   "hgv_saving_bn": 2.011193873129629,
+   "ers_value_bn": 2.4719772211742406,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 160,
+   "regional_leg_km": 150,
+   "L": 5500.0,
+   "B": 500.0,
+   "B_r": 460.0,
+   "gen_share": 0.1360374027044042,
+   "litres_GL": 1.2229762503125936,
+   "hgv_saving_bn": 3.147220092989683,
+   "ers_value_bn": 1.9602581792050717,
+   "marginal_road": 2.0549295417173945
+  },
+  {
+   "leg_min_km": 160,
+   "regional_leg_km": 250,
+   "L": 5750.0,
+   "B": 540.0,
+   "B_r": 640.0,
+   "gen_share": 0.1394956860883611,
+   "litres_GL": 1.2540662179343662,
+   "hgv_saving_bn": 2.322020783140688,
+   "ers_value_bn": 2.058797094671739,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 160,
+   "regional_leg_km": 350,
+   "L": 5750.0,
+   "B": 580.0,
+   "B_r": 760.0,
+   "gen_share": 0.14773024435931942,
+   "litres_GL": 1.3280948967902813,
+   "hgv_saving_bn": 1.622338712356968,
+   "ers_value_bn": 2.08312206040158,
+   "marginal_road": 2.79
+  },
+  {
+   "leg_min_km": 200,
+   "regional_leg_km": 150,
+   "L": 5250.0,
+   "B": 560.0,
+   "B_r": 480.0,
+   "gen_share": 0.13859407663521478,
+   "litres_GL": 1.2459607489505808,
+   "hgv_saving_bn": 2.8575904556269,
+   "ers_value_bn": 1.6706285418422873,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 200,
+   "regional_leg_km": 250,
+   "L": 5500.0,
+   "B": 620.0,
+   "B_r": 660.0,
+   "gen_share": 0.1394499139404787,
+   "litres_GL": 1.2536547263249034,
+   "hgv_saving_bn": 1.9894770400733872,
+   "ers_value_bn": 1.7262533516044378,
+   "marginal_road": 2.7177099858234235
+  },
+  {
+   "leg_min_km": 200,
+   "regional_leg_km": 350,
+   "L": 5500.0,
+   "B": 640.0,
+   "B_r": 760.0,
+   "gen_share": 0.1552681913757776,
+   "litres_GL": 1.3958610404682408,
+   "hgv_saving_bn": 1.271556602433279,
+   "ers_value_bn": 1.7323399504778898,
+   "marginal_road": 2.79
+  }
+ ],
+ "kelp_levers": {
+  "base": 2.43880210942294,
+  "levers": [
+   {
+    "lever": "Farm-gate seaweed cost 400 -> 250 EUR/t (mechanised longlines, learning)",
+    "price": 1.9848270624507027,
+    "delta": -0.45397504697223723
+   },
+   {
+    "lever": "HTL fuel yield +20 % (catalytic HTL, aqueous-phase recycle)",
+    "price": 2.12651320934032,
+    "delta": -0.3122889000826201
+   },
+   {
+    "lever": "Finance at 3 % instead of 6 % (farm and HTL capital)",
+    "price": 2.238591692929734,
+    "delta": -0.20021041649320592
+   },
+   {
+    "lever": "HTL plant cost 0.45 -> 0.32 EUR/L (nth-of-a-kind, 3x scale)",
+    "price": 2.30880210942294,
+    "delta": -0.1299999999999999
+   },
+   {
+    "lever": "SMR electricity 105 -> 80 EUR/MWh (series build)",
+    "price": 2.3315291702109637,
+    "delta": -0.10727293921197623
+   },
+   {
+    "lever": "Marine harvest 70 -> 50 EUR/t (electric Grid Harvester at scale)",
+    "price": 2.3708879375495173,
+    "delta": -0.06791417187342264
+   },
+   {
+    "lever": "Turbine anchors carry 75 % of farm moorings",
+    "price": 2.3717010061323656,
+    "delta": -0.0671011032905744
+   },
+   {
+    "lever": "Kelp yield +30 % (breeding)",
+    "price": 2.427408177876353,
+    "delta": -0.011393931546586966
+   }
+  ],
+  "all": 1.3155407012693963
+ },
+ "efuel_levers": {
+  "base_dac": 2.8499999999999996,
+  "base_bio": 2.28,
+  "levers": [
+   {
+    "lever": "CO2 from biogenic point sources instead of DAC",
+    "price": 2.28,
+    "delta": -0.5699999999999998
+   },
+   {
+    "lever": "Electrolyser power 70 -> 50 EUR/MWh (surplus nuclear and wind, 92 TWh exported in 2025)",
+    "price": 2.45,
+    "delta": -0.39999999999999947
+   },
+   {
+    "lever": "DAC 250 -> 150 EUR/t",
+    "price": 2.55,
+    "delta": -0.2999999999999998
+   },
+   {
+    "lever": "Plant cost 0.70 -> 0.45 EUR/L (electrolyser learning, scale)",
+    "price": 2.5999999999999996,
+    "delta": -0.25
+   },
+   {
+    "lever": "Efficiency 20 -> 17 kWh/L (SMR/HTL steam to high-temperature electrolysis)",
+    "price": 2.6399999999999997,
+    "delta": -0.20999999999999996
+   }
+  ],
+  "all_dac": 1.75,
+  "all_bio": 1.48
+ },
+ "demand_levers": {
+  "base_cost_bn": 37.32662739752034,
+  "measures_cost_bn": 27.3111317700311,
+  "base_GL": 13.89749670619236,
+  "measures_GL": 10.373122529644268
+ },
+ "pool_effect": {
+  "sweet_spot": {
+   "truck_GL": 2.879643089910617,
+   "pool_cost_bn": 37.32662739752034,
+   "marginal_road": 0.9000000000000004
+  },
+  "no_ers": {
+   "truck_GL": 2.947918526504888,
+   "pool_cost_bn": 37.411273743344275,
+   "marginal_road": 2.1880334728925317
+  },
+  "generator_only": {
+   "truck_GL": 8.99,
+   "pool_cost_bn": 54.328255320374495,
+   "marginal_road": 2.8499999999999996
+  }
+ },
+ "joint_sensitivity": [
+  {
+   "capex_mult": 1.0,
+   "capture_mult": 1.0,
+   "L": 6500.0,
+   "B": 360.0,
+   "B_r": 540.0,
+   "gen_share": 0.13487628587486938,
+   "hgv_saving_bn": 3.2653180720311927,
+   "ers_value_bn": 3.002094383562243
+  },
+  {
+   "capex_mult": 1.0,
+   "capture_mult": 0.9,
+   "L": 6500.0,
+   "B": 380.0,
+   "B_r": 540.0,
+   "gen_share": 0.13417026421174397,
+   "hgv_saving_bn": 3.192496965164604,
+   "ers_value_bn": 2.929273276695655
+  },
+  {
+   "capex_mult": 1.0,
+   "capture_mult": 0.8,
+   "L": 6500.0,
+   "B": 400.0,
+   "B_r": 540.0,
+   "gen_share": 0.13306508213525423,
+   "hgv_saving_bn": 3.125582787378603,
+   "ers_value_bn": 2.8623590989096535
+  },
+  {
+   "capex_mult": 1.0,
+   "capture_mult": 0.7,
+   "L": 6750.0,
+   "B": 400.0,
+   "B_r": 540.0,
+   "gen_share": 0.133096040266927,
+   "hgv_saving_bn": 3.0632435607508715,
+   "ers_value_bn": 2.800019872281922
+  },
+  {
+   "capex_mult": 1.2,
+   "capture_mult": 1.0,
+   "L": 5750.0,
+   "B": 400.0,
+   "B_r": 540.0,
+   "gen_share": 0.1373503496383168,
+   "hgv_saving_bn": 2.959865842606628,
+   "ers_value_bn": 2.6966421541376793
+  },
+  {
+   "capex_mult": 1.2,
+   "capture_mult": 0.9,
+   "L": 5750.0,
+   "B": 420.0,
+   "B_r": 540.0,
+   "gen_share": 0.1367693569624653,
+   "hgv_saving_bn": 2.8850885327145863,
+   "ers_value_bn": 2.6218648442456374
+  },
+  {
+   "capex_mult": 1.2,
+   "capture_mult": 0.8,
+   "L": 6000.0,
+   "B": 420.0,
+   "B_r": 540.0,
+   "gen_share": 0.13642994278910753,
+   "hgv_saving_bn": 2.8161430054879912,
+   "ers_value_bn": 2.5529193170190414
+  },
+  {
+   "capex_mult": 1.2,
+   "capture_mult": 0.7,
+   "L": 6000.0,
+   "B": 440.0,
+   "B_r": 540.0,
+   "gen_share": 0.13510694707649512,
+   "hgv_saving_bn": 2.752975072085806,
+   "ers_value_bn": 2.4897513836168574
+  },
+  {
+   "capex_mult": 1.4,
+   "capture_mult": 1.0,
+   "L": 5250.0,
+   "B": 420.0,
+   "B_r": 560.0,
+   "gen_share": 0.1385536851581588,
+   "hgv_saving_bn": 2.6858815703699435,
+   "ers_value_bn": 2.422657881900994
+  },
+  {
+   "capex_mult": 1.4,
+   "capture_mult": 0.9,
+   "L": 5250.0,
+   "B": 440.0,
+   "B_r": 560.0,
+   "gen_share": 0.1379976484242943,
+   "hgv_saving_bn": 2.6107137999112586,
+   "ers_value_bn": 2.34749011144231
+  },
+  {
+   "capex_mult": 1.4,
+   "capture_mult": 0.8,
+   "L": 5250.0,
+   "B": 460.0,
+   "B_r": 560.0,
+   "gen_share": 0.1371013484821921,
+   "hgv_saving_bn": 2.540869786222252,
+   "ers_value_bn": 2.277646097753303
+  },
+  {
+   "capex_mult": 1.4,
+   "capture_mult": 0.7,
+   "L": 5250.0,
+   "B": 480.0,
+   "B_r": 560.0,
+   "gen_share": 0.1359250007615957,
+   "hgv_saving_bn": 2.4754073989345073,
+   "ers_value_bn": 2.212183710465558
+  },
+  {
+   "capex_mult": 1.6,
+   "capture_mult": 1.0,
+   "L": 4750.0,
+   "B": 460.0,
+   "B_r": 580.0,
+   "gen_share": 0.13601600924436355,
+   "hgv_saving_bn": 2.436065628849976,
+   "ers_value_bn": 2.1728419403810264
+  },
+  {
+   "capex_mult": 1.6,
+   "capture_mult": 0.9,
+   "L": 4750.0,
+   "B": 480.0,
+   "B_r": 560.0,
+   "gen_share": 0.1391227994661736,
+   "hgv_saving_bn": 2.363085953125372,
+   "ers_value_bn": 2.099862264656423
+  },
+  {
+   "capex_mult": 1.6,
+   "capture_mult": 0.8,
+   "L": 4750.0,
+   "B": 500.0,
+   "B_r": 560.0,
+   "gen_share": 0.13830174335102688,
+   "hgv_saving_bn": 2.2924733751332056,
+   "ers_value_bn": 2.029249686664256
+  },
+  {
+   "capex_mult": 1.6,
+   "capture_mult": 0.7,
+   "L": 4750.0,
+   "B": 500.0,
+   "B_r": 580.0,
+   "gen_share": 0.13872408512924472,
+   "hgv_saving_bn": 2.225960046726946,
+   "ers_value_bn": 1.962736358257997
+  }
+ ],
+ "transition": [
+  {
+   "year": 2027,
+   "ldv_bev_fleet": 0.05266666666666667,
+   "ers_km": 0.0,
+   "ers_built_km": 0.0,
+   "hybrid_fleet": 0.005892281908186637,
+   "hybrid_sales": 0.04124597335730646,
+   "battery_eur_kWh": 190.0,
+   "gen_share": 0.4817187592783619,
+   "hyb_fuel_GL": 0.025517420343868752,
+   "diesel_GL": 9.86154856347079,
+   "saf_share": 0.02,
+   "synthetic_share": 0.0,
+   "maritime_reduction": 0.02,
+   "jet_GL": 0.16916996047430832,
+   "marine_GL": 0.059700719132273546,
+   "road_GL": 0.025517420343868752,
+   "export_GL": 0.0,
+   "renewable_GL": 0.25438809995045064,
+   "hubs": 0.0,
+   "hefa_GL": 0.2543880999504506,
+   "kelp_GL": 0.0,
+   "efuel_GL": 0.0,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 88.0764382051282,
+   "co2_hgv": 26.246870380007817,
+   "co2_aviation": 21.056584980237155,
+   "co2_maritime": 6.765673381952384,
+   "co2_total": 142.14556694732556,
+   "co2_reduction_vs_2024": 0.03170594722530273,
+   "cum_co2_avoided_Mt": 4.654433052674449,
+   "elec_TWh": 5.13624950019907,
+   "kelp_capacity_GL": 0.0,
+   "kelp_utilisation": 0.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.0,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.0,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 0.0,
+   "electrolyser_GW": 0.0,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 5.003333333333333,
+   "hgv_TWh": 0.13291616686573685,
+   "hgv_extra_cost_bn": -0.0030973368870735466,
+   "liquid_premium_bn": 0.21131902581403236,
+   "ers_capex_bn": 0.0,
+   "cum_ers_capex_bn": 0.0
+  },
+  {
+   "year": 2028,
+   "ldv_bev_fleet": 0.07498888888888888,
+   "ers_km": 97.42812050815795,
+   "ers_built_km": 97.42812050815795,
+   "hybrid_fleet": 0.015670672552848357,
+   "hybrid_sales": 0.07434101642081868,
+   "battery_eur_kWh": 185.0,
+   "gen_share": 0.4706321732212406,
+   "hyb_fuel_GL": 0.06630235288767537,
+   "diesel_GL": 9.764546928275745,
+   "saf_share": 0.02,
+   "synthetic_share": 0.0,
+   "maritime_reduction": 0.02,
+   "jet_GL": 0.16916996047430832,
+   "marine_GL": 0.059700719132273546,
+   "road_GL": 0.06630235288767537,
+   "export_GL": 0.0,
+   "renewable_GL": 0.2951730324942572,
+   "hubs": 0.0,
+   "hefa_GL": 0.2951730324942572,
+   "kelp_GL": 0.0,
+   "efuel_GL": 0.0,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 86.04035963247863,
+   "co2_hgv": 26.01334500488579,
+   "co2_aviation": 21.056584980237155,
+   "co2_maritime": 6.765673381952384,
+   "co2_total": 139.87596299955396,
+   "co2_reduction_vs_2024": 0.04716646458069518,
+   "cum_co2_avoided_Mt": 11.578470053120498,
+   "elec_TWh": 7.484999957137043,
+   "kelp_capacity_GL": 0.0,
+   "kelp_utilisation": 0.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.0,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.0,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 0.0,
+   "electrolyser_GW": 0.0,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 7.123944444444444,
+   "hgv_TWh": 0.3610555126925988,
+   "hgv_extra_cost_bn": 0.0258556585239864,
+   "liquid_premium_bn": 0.21131902581403236,
+   "ers_capex_bn": 0.331255609727737,
+   "cum_ers_capex_bn": 0.331255609727737
+  },
+  {
+   "year": 2029,
+   "ldv_bev_fleet": 0.10165629629629629,
+   "ers_km": 260.568610019531,
+   "ers_built_km": 163.14048951137303,
+   "hybrid_fleet": 0.03204699867299469,
+   "hybrid_sales": 0.13030495539387266,
+   "battery_eur_kWh": 180.0,
+   "gen_share": 0.45269590403682414,
+   "hyb_fuel_GL": 0.1304228298730847,
+   "diesel_GL": 9.602093773163892,
+   "saf_share": 0.02,
+   "synthetic_share": 0.0,
+   "maritime_reduction": 0.02,
+   "jet_GL": 0.16916996047430832,
+   "marine_GL": 0.059700719132273546,
+   "road_GL": 0.1304228298730847,
+   "export_GL": 0.0,
+   "renewable_GL": 0.3592935094796666,
+   "hubs": 0.0,
+   "hefa_GL": 0.3592935094796666,
+   "kelp_GL": 0.0,
+   "efuel_GL": 0.0,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 83.60794334928775,
+   "co2_hgv": 25.620521820794284,
+   "co2_aviation": 21.056584980237155,
+   "co2_maritime": 6.765673381952384,
+   "co2_total": 137.05072353227158,
+   "co2_reduction_vs_2024": 0.06641196503902203,
+   "cum_co2_avoided_Mt": 21.327746520848933,
+   "elec_TWh": 10.420735328247392,
+   "kelp_capacity_GL": 0.0,
+   "kelp_utilisation": 0.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.0,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.0,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 0.0,
+   "electrolyser_GW": 0.0,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 9.657348148148147,
+   "hgv_TWh": 0.7633871800992451,
+   "hgv_extra_cost_bn": 0.06665708656212521,
+   "liquid_premium_bn": 0.21131902581403236,
+   "ers_capex_bn": 0.5546776643386684,
+   "cum_ers_capex_bn": 0.8859332740664054
+  },
+  {
+   "year": 2030,
+   "ldv_bev_fleet": 0.1323792098765432,
+   "ers_km": 526.2588226619856,
+   "ers_built_km": 265.69021264245464,
+   "hybrid_fleet": 0.05864687544096726,
+   "hybrid_sales": 0.21824613604880266,
+   "battery_eur_kWh": 175.0,
+   "gen_share": 0.42509481860383874,
+   "hyb_fuel_GL": 0.22412504106656653,
+   "diesel_GL": 9.338222995625607,
+   "saf_share": 0.06,
+   "synthetic_share": 0.007,
+   "maritime_reduction": 0.06,
+   "jet_GL": 0.507509881422925,
+   "marine_GL": 0.1752627074060244,
+   "road_GL": 0.22412504106656653,
+   "export_GL": 0.0,
+   "renewable_GL": 0.9068976298955159,
+   "hubs": 1,
+   "hefa_GL": 0.7969418715664178,
+   "kelp_GL": 0.011273281385751519,
+   "efuel_GL": 0.09868247694334653,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 80.80561186959166,
+   "co2_hgv": 24.978150189756366,
+   "co2_aviation": 20.36146561264822,
+   "co2_maritime": 6.495538486747905,
+   "co2_total": 132.64076615874416,
+   "co2_reduction_vs_2024": 0.09645254660256031,
+   "cum_co2_avoided_Mt": 35.48698036210479,
+   "elec_TWh": 16.01714674708133,
+   "kelp_capacity_GL": 0.011273281385751519,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.017503731505122303,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.09868247694334653,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 1.9736495388669306,
+   "electrolyser_GW": 0.3289086989412609,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 12.576024938271603,
+   "hgv_TWh": 1.4674722699427987,
+   "hgv_extra_cost_bn": 0.08118798592839122,
+   "liquid_premium_bn": 0.8324389895285155,
+   "ers_capex_bn": 0.9033467229843458,
+   "cum_ers_capex_bn": 1.7892799970507514
+  },
+  {
+   "year": 2031,
+   "ldv_bev_fleet": 0.16688726255144032,
+   "ers_km": 939.9826676318653,
+   "ers_built_km": 413.7238449698797,
+   "hybrid_fleet": 0.09907906932472435,
+   "hybrid_sales": 0.34167223262726687,
+   "battery_eur_kWh": 170.0,
+   "gen_share": 0.38581729013592647,
+   "hyb_fuel_GL": 0.34365549814413215,
+   "diesel_GL": 8.937135632298734,
+   "saf_share": 0.06,
+   "synthetic_share": 0.017,
+   "maritime_reduction": 0.06,
+   "jet_GL": 0.507509881422925,
+   "marine_GL": 0.17052474994050973,
+   "road_GL": 0.34365549814413215,
+   "export_GL": 0.0,
+   "renewable_GL": 1.0216901295075669,
+   "hubs": 2,
+   "hefa_GL": 0.7594861227307936,
+   "kelp_GL": 0.022546562771503038,
+   "efuel_GL": 0.23965744400527017,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 77.65802620649066,
+   "co2_hgv": 23.99228244529109,
+   "co2_aviation": 20.34962371541502,
+   "co2_maritime": 6.493710090010133,
+   "co2_total": 128.4936424572069,
+   "co2_reduction_vs_2024": 0.12470270805717376,
+   "cum_co2_avoided_Mt": 53.793337904897896,
+   "elec_TWh": 23.29598961718029,
+   "kelp_capacity_GL": 0.022546562771503038,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.035007463010244606,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.23965744400527017,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 4.793148880105403,
+   "electrolyser_GW": 0.798778268857348,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 15.85428994238683,
+   "hgv_TWh": 2.648550794688056,
+   "hgv_extra_cost_bn": 0.10359154550440049,
+   "liquid_premium_bn": 1.0850447574322433,
+   "ers_capex_bn": 1.4066610728975908,
+   "cum_ers_capex_bn": 3.195941069948342
+  },
+  {
+   "year": 2032,
+   "ldv_bev_fleet": 0.20492811171467762,
+   "ers_km": 1541.2688317217562,
+   "ers_built_km": 601.2861640898909,
+   "hybrid_fleet": 0.15492491656404944,
+   "hybrid_sales": 0.49,
+   "battery_eur_kWh": 165.0,
+   "gen_share": 0.3359669687100407,
+   "hyb_fuel_GL": 0.46792639481516024,
+   "diesel_GL": 8.38314482768463,
+   "saf_share": 0.06,
+   "synthetic_share": 0.012,
+   "maritime_reduction": 0.06,
+   "jet_GL": 0.507509881422925,
+   "marine_GL": 0.17027932984858737,
+   "road_GL": 0.46792639481516024,
+   "export_GL": 0.0,
+   "renewable_GL": 1.1457156060866724,
+   "hubs": 3,
+   "hefa_GL": 0.9427258014551096,
+   "kelp_GL": 0.033819844157254565,
+   "efuel_GL": 0.16916996047430832,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 74.18820330554513,
+   "co2_hgv": 22.613724211283103,
+   "co2_aviation": 20.35554466403162,
+   "co2_maritime": 6.493615381414979,
+   "co2_total": 123.65108756227484,
+   "co2_reduction_vs_2024": 0.15769013922156117,
+   "cum_co2_avoided_Mt": 76.94225034262307,
+   "elec_TWh": 27.32911272429186,
+   "kelp_capacity_GL": 0.033819844157254565,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.05251119451536693,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.16916996047430832,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 3.3833992094861665,
+   "electrolyser_GW": 0.5638434838993044,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 19.468170612894372,
+   "hgv_TWh": 4.477542901911326,
+   "hgv_extra_cost_bn": 0.11705325043069363,
+   "liquid_premium_bn": 0.9637167346740434,
+   "ers_capex_bn": 2.044372957905629,
+   "cum_ers_capex_bn": 5.240314027853971
+  },
+  {
+   "year": 2033,
+   "ldv_bev_fleet": 0.24626623760036578,
+   "ers_km": 2332.959727266594,
+   "ers_built_km": 791.690895544838,
+   "hybrid_fleet": 0.22398246667957566,
+   "hybrid_sales": 0.6383277673727331,
+   "battery_eur_kWh": 160.0,
+   "gen_share": 0.2816253480952533,
+   "hyb_fuel_GL": 0.5670814699113621,
+   "diesel_GL": 7.69809393053861,
+   "saf_share": 0.06,
+   "synthetic_share": 0.012,
+   "maritime_reduction": 0.06,
+   "jet_GL": 0.507509881422925,
+   "marine_GL": 0.1685363972988009,
+   "road_GL": 0.5670814699113621,
+   "export_GL": 0.0,
+   "renewable_GL": 1.2431277486330878,
+   "hubs": 4,
+   "hefa_GL": 1.0288646626157734,
+   "kelp_GL": 0.045093125543006075,
+   "efuel_GL": 0.16916996047430832,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 70.41762564927801,
+   "co2_hgv": 20.886527405101337,
+   "co2_aviation": 20.35554466403162,
+   "co2_maritime": 6.492942776772288,
+   "co2_total": 118.15264049518325,
+   "co2_reduction_vs_2024": 0.1951455007140106,
+   "cum_co2_avoided_Mt": 105.58960984743983,
+   "elec_TWh": 33.78184816557396,
+   "kelp_capacity_GL": 0.045093125543006075,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.07001492602048921,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.16916996047430832,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 3.3833992094861665,
+   "electrolyser_GW": 0.5638434838993044,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 23.395292572034748,
+   "hgv_TWh": 7.003156384053051,
+   "hgv_extra_cost_bn": 0.06267771726478147,
+   "liquid_premium_bn": 0.9647374307681438,
+   "ers_capex_bn": 2.691749044852449,
+   "cum_ers_capex_bn": 7.93206307270642
+  },
+  {
+   "year": 2034,
+   "ldv_bev_fleet": 0.2906818217603414,
+   "ers_km": 3250.0,
+   "ers_built_km": 917.0402727334058,
+   "hybrid_fleet": 0.3008069520040931,
+   "hybrid_sales": 0.7617538639511973,
+   "battery_eur_kWh": 155.0,
+   "gen_share": 0.23203087872889297,
+   "hyb_fuel_GL": 0.6274705475974142,
+   "diesel_GL": 6.935995036119397,
+   "saf_share": 0.06,
+   "synthetic_share": 0.036000000000000004,
+   "maritime_reduction": 0.06,
+   "jet_GL": 0.507509881422925,
+   "marine_GL": 0.16463695274129564,
+   "road_GL": 0.6274705475974142,
+   "export_GL": 0.0,
+   "renewable_GL": 1.2996173817616348,
+   "hubs": 5,
+   "hefa_GL": 0.7357410934099522,
+   "kelp_GL": 0.05636640692875759,
+   "efuel_GL": 0.507509881422925,
+   "marginal_road": 1.55,
+   "marginal_saf": 1.6500000000000001,
+   "co2_ldv": 66.36634355471077,
+   "co2_hgv": 18.93120037226705,
+   "co2_aviation": 20.327124110671935,
+   "co2_maritime": 6.491437965519767,
+   "co2_total": 112.11610600316952,
+   "co2_reduction_vs_2024": 0.23626630788031666,
+   "cum_co2_avoided_Mt": 140.27350384427032,
+   "elec_TWh": 47.81946954772822,
+   "kelp_capacity_GL": 0.05636640692875759,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.08751865752561153,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 0.507509881422925,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 10.1501976284585,
+   "electrolyser_GW": 1.6915304516979133,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 27.614773067232434,
+   "hgv_TWh": 10.054498852037286,
+   "hgv_extra_cost_bn": -0.09459263234614658,
+   "liquid_premium_bn": 1.4548563557989278,
+   "ers_capex_bn": 3.1179369272935795,
+   "cum_ers_capex_bn": 11.049999999999999
+  },
+  {
+   "year": 2035,
+   "ldv_bev_fleet": 0.33796970030965195,
+   "ers_km": 4167.040272733406,
+   "ers_built_km": 917.0402727334058,
+   "hybrid_fleet": 0.3792195366615265,
+   "hybrid_sales": 0.8496950446061272,
+   "battery_eur_kWh": 150.0,
+   "gen_share": 0.19406264562469006,
+   "hyb_fuel_GL": 0.6615951955483736,
+   "diesel_GL": 6.158142196317658,
+   "saf_share": 0.2,
+   "synthetic_share": 0.05,
+   "maritime_reduction": 0.145,
+   "jet_GL": 1.6916996047430835,
+   "marine_GL": 0.40448201044492926,
+   "road_GL": 0.6615951955483735,
+   "export_GL": 0.0,
+   "renewable_GL": 2.7577768107363863,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 1.4901371224218771,
+   "marginal_road": 3.5228571428571427,
+   "marginal_saf": 3.622857142857142,
+   "co2_ldv": 62.05307065106337,
+   "co2_hgv": 16.91460420701968,
+   "co2_aviation": 17.8406782840881,
+   "co2_maritime": 5.915192334122376,
+   "co2_total": 102.72354547629354,
+   "co2_reduction_vs_2024": 0.300248327818164,
+   "cum_co2_avoided_Mt": 184.3499583679768,
+   "elec_TWh": 75.21198179995932,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 1.4901371224218771,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 29.80274244843754,
+   "electrolyser_GW": 4.966627078698388,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 32.107121529416936,
+   "hgv_TWh": 13.302117822104844,
+   "hgv_extra_cost_bn": -0.3954378121206856,
+   "liquid_premium_bn": 4.57294461522534,
+   "ers_capex_bn": 3.1179369272935795,
+   "cum_ers_capex_bn": 14.167936927293578
+  },
+  {
+   "year": 2036,
+   "ldv_bev_fleet": 0.3821050536223418,
+   "ers_km": 4958.731168278244,
+   "ers_built_km": 791.690895544838,
+   "hybrid_fleet": 0.4544251719354772,
+   "hybrid_sales": 0.9056589835791814,
+   "battery_eur_kWh": 145.0,
+   "gen_share": 0.16882825477771848,
+   "hyb_fuel_GL": 0.6897110802573321,
+   "diesel_GL": 5.412102294400065,
+   "saf_share": 0.2,
+   "synthetic_share": 0.05,
+   "maritime_reduction": 0.145,
+   "jet_GL": 1.6916996047430832,
+   "marine_GL": 0.40448201044492926,
+   "road_GL": 0.6897110802573322,
+   "export_GL": 0.0,
+   "renewable_GL": 2.785892695445345,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 1.5182530071308356,
+   "marginal_road": 3.4007142857142845,
+   "marginal_saf": 3.500714285714285,
+   "co2_ldv": 58.02734927432582,
+   "co2_hgv": 14.999089868058206,
+   "co2_aviation": 17.838316549772554,
+   "co2_maritime": 5.915192334122376,
+   "co2_total": 96.77994802627896,
+   "co2_reduction_vs_2024": 0.34073604886730957,
+   "cum_co2_avoided_Mt": 234.37001034169785,
+   "elec_TWh": 83.10428846598548,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 1.5182530071308356,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 30.365060142616713,
+   "electrolyser_GW": 5.060337323370448,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 36.299980094122475,
+   "hgv_TWh": 16.439248229246285,
+   "hgv_extra_cost_bn": -0.5677594311929712,
+   "liquid_premium_bn": 4.333433039844199,
+   "ers_capex_bn": 2.691749044852449,
+   "cum_ers_capex_bn": 16.85968597214603
+  },
+  {
+   "year": 2037,
+   "ldv_bev_fleet": 0.423298050047519,
+   "ers_km": 5560.017332368136,
+   "ers_built_km": 601.2861640898918,
+   "hybrid_fleet": 0.5236150083222224,
+   "hybrid_sales": 0.9387540266426935,
+   "battery_eur_kWh": 140.0,
+   "gen_share": 0.15349234000625572,
+   "hyb_fuel_GL": 0.7225343270790591,
+   "diesel_GL": 4.725739117443554,
+   "saf_share": 0.2,
+   "synthetic_share": 0.05,
+   "maritime_reduction": 0.145,
+   "jet_GL": 1.6916996047430832,
+   "marine_GL": 0.40448201044492926,
+   "road_GL": 0.7225343270790591,
+   "export_GL": 0.0,
+   "renewable_GL": 2.8187159422670716,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 1.5510762539525627,
+   "marginal_road": 3.278571428571428,
+   "marginal_saf": 3.3785714285714286,
+   "co2_ldv": 54.270009322704105,
+   "co2_hgv": 13.239282494657774,
+   "co2_aviation": 17.83555939703953,
+   "co2_maritime": 5.915192334122376,
+   "co2_total": 91.2600435485238,
+   "co2_reduction_vs_2024": 0.37833757800733114,
+   "cum_co2_avoided_Mt": 289.9099667931741,
+   "elec_TWh": 90.52659671364748,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 1.5510762539525624,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 31.021525079051248,
+   "electrolyser_GW": 5.169737206121262,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 40.21331475451431,
+   "hgv_TWh": 19.29175688008193,
+   "hgv_extra_cost_bn": -0.7678103781596622,
+   "liquid_premium_bn": 4.0998435423851385,
+   "ers_capex_bn": 2.0443729579056322,
+   "cum_ers_capex_bn": 18.90405893005166
+  },
+  {
+   "year": 2038,
+   "ldv_bev_fleet": 0.46174484671101773,
+   "ers_km": 5973.741177338015,
+   "ers_built_km": 413.7238449698798,
+   "hybrid_fleet": 0.585596032488787,
+   "hybrid_sales": 0.9574821774881748,
+   "battery_eur_kWh": 135.0,
+   "gen_share": 0.1445693302805012,
+   "hyb_fuel_GL": 0.7610864438240849,
+   "diesel_GL": 4.110887357711233,
+   "saf_share": 0.2,
+   "synthetic_share": 0.05,
+   "maritime_reduction": 0.145,
+   "jet_GL": 1.6916996047430835,
+   "marine_GL": 0.40448201044492926,
+   "road_GL": 0.761086443824085,
+   "export_GL": 0.0,
+   "renewable_GL": 2.8572680590120973,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 1.5896283706975884,
+   "marginal_road": 3.1564285714285716,
+   "marginal_saf": 3.2564285714285712,
+   "co2_ldv": 50.763158701190505,
+   "co2_hgv": 11.666092253762622,
+   "co2_aviation": 17.83232101923294,
+   "co2_maritime": 5.915192334122376,
+   "co2_total": 86.17676430830845,
+   "co2_reduction_vs_2024": 0.4129648207880896,
+   "cum_co2_avoided_Mt": 350.5332024848656,
+   "elec_TWh": 97.46110140702658,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 1.5896283706975882,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 31.792567413951765,
+   "electrolyser_GW": 5.298231412517375,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 43.86576043754668,
+   "hgv_TWh": 21.802773555528123,
+   "hgv_extra_cost_bn": -0.9848812798651753,
+   "liquid_premium_bn": 3.872176122848152,
+   "ers_capex_bn": 1.4066610728975915,
+   "cum_ers_capex_bn": 20.310720002949253
+  },
+  {
+   "year": 2039,
+   "ldv_bev_fleet": 0.49762852359694987,
+   "ers_km": 6239.431389980469,
+   "ers_built_km": 265.69021264245384,
+   "hybrid_fleet": 0.6401990252995142,
+   "hybrid_sales": 0.9678169821638778,
+   "battery_eur_kWh": 130.0,
+   "gen_share": 0.13945890226867103,
+   "hyb_fuel_GL": 0.8026402651826732,
+   "diesel_GL": 3.569225669028819,
+   "saf_share": 0.2,
+   "synthetic_share": 0.05,
+   "maritime_reduction": 0.145,
+   "jet_GL": 1.6916996047430832,
+   "marine_GL": 0.40448201044492926,
+   "road_GL": 0.8026402651826733,
+   "export_GL": 0.0,
+   "renewable_GL": 2.898821880370686,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 1.6311821920561766,
+   "marginal_road": 3.034285714285714,
+   "marginal_saf": 3.134285714285714,
+   "co2_ldv": 47.49009812111114,
+   "co2_hgv": 10.282878589816468,
+   "co2_aviation": 17.828830498238823,
+   "co2_maritime": 5.915192334122376,
+   "co2_total": 81.5169995432888,
+   "co2_reduction_vs_2024": 0.4447070875797766,
+   "cum_co2_avoided_Mt": 415.8162029415768,
+   "elec_TWh": 103.87648998646476,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 1.6311821920561766,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 32.62364384112353,
+   "electrolyser_GW": 5.436730300490539,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 47.27470974171024,
+   "hgv_TWh": 23.97813640363098,
+   "hgv_extra_cost_bn": -1.2146864544722222,
+   "liquid_premium_bn": 3.650430781233245,
+   "ers_capex_bn": 0.903346722984343,
+   "cum_ers_capex_bn": 21.214066725933595
+  },
+  {
+   "year": 2040,
+   "ldv_bev_fleet": 0.5311199553571533,
+   "ers_km": 6402.571879491841,
+   "ers_built_km": 163.14048951137192,
+   "hybrid_fleet": 0.687805022555898,
+   "hybrid_sales": 0.9734410060942009,
+   "battery_eur_kWh": 125.0,
+   "gen_share": 0.13654209766318687,
+   "hyb_fuel_GL": 0.8442899216618903,
+   "diesel_GL": 3.0969741762454914,
+   "saf_share": 0.34,
+   "synthetic_share": 0.1,
+   "maritime_reduction": 0.31,
+   "jet_GL": 2.8758893280632414,
+   "marine_GL": 0.8721726279878992,
+   "road_GL": 0.8442899216618903,
+   "export_GL": 0.06843669070688073,
+   "renewable_GL": 4.592351877713031,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 3.324712189398522,
+   "marginal_road": 0.8999999999999999,
+   "marginal_saf": 4.353571428571429,
+   "co2_ldv": 44.43524157970372,
+   "co2_hgv": 9.057568645386302,
+   "co2_aviation": 15.276920158102769,
+   "co2_maritime": 4.797411758194677,
+   "co2_total": 73.56714214138748,
+   "co2_reduction_vs_2024": 0.49886142955458124,
+   "cum_co2_avoided_Mt": 489.04906080018935,
+   "elec_TWh": 144.167871404094,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 3.393148880105403,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 67.86297760210806,
+   "electrolyser_GW": 11.309365330484958,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 50.45639575892956,
+   "hgv_TWh": 25.848498043056374,
+   "hgv_extra_cost_bn": -1.963407835397747,
+   "liquid_premium_bn": 7.795457894013441,
+   "ers_capex_bn": 0.5546776643386645,
+   "cum_ers_capex_bn": 21.76874439027226
+  },
+  {
+   "year": 2041,
+   "ldv_bev_fleet": 0.5623786250000098,
+   "ers_km": 6500.0,
+   "ers_built_km": 97.42812050815883,
+   "hybrid_fleet": 0.7290440578293709,
+   "hybrid_sales": 0.9764782694702082,
+   "battery_eur_kWh": 120.0,
+   "gen_share": 0.13487628587486938,
+   "hyb_fuel_GL": 0.8839934852849295,
+   "diesel_GL": 2.6878829463326412,
+   "saf_share": 0.34,
+   "synthetic_share": 0.1,
+   "maritime_reduction": 0.31,
+   "jet_GL": 2.8758893280632414,
+   "marine_GL": 0.8721726279878992,
+   "road_GL": 0.8839934852849295,
+   "export_GL": 0.028733127083841552,
+   "renewable_GL": 4.63205544133607,
+   "hubs": 6.0,
+   "hefa_GL": 1.2,
+   "kelp_GL": 0.06763968831450913,
+   "efuel_GL": 3.3644157530215613,
+   "marginal_road": 0.8999999999999999,
+   "marginal_saf": 4.1499999999999995,
+   "co2_ldv": 41.58404214105679,
+   "co2_hgv": 8.012527276398295,
+   "co2_aviation": 15.276920158102769,
+   "co2_maritime": 4.797411758194677,
+   "co2_total": 69.67090133375254,
+   "co2_reduction_vs_2024": 0.5254025794703505,
+   "cum_co2_avoided_Mt": 566.1781594664368,
+   "elec_TWh": 148.74011277993645,
+   "kelp_capacity_GL": 0.06763968831450913,
+   "kelp_utilisation": 1.0,
+   "kelp_idle_cost_bn": 0.0,
+   "kelp_fixed_cost_bn": 0.09285712257576882,
+   "rfnbo_GL": 0.0,
+   "lowcarbon_GL": 3.393148880105403,
+   "rfnbo_TWh": 0.0,
+   "lowcarbon_TWh": 67.86297760210806,
+   "electrolyser_GW": 11.309365330484958,
+   "rfnbo_wind_GW": 0.0,
+   "ldv_TWh": 53.42596937500093,
+   "hgv_TWh": 27.451165802827468,
+   "hgv_extra_cost_bn": -2.252427490075124,
+   "liquid_premium_bn": 7.413580423657709,
+   "ers_capex_bn": 0.33125560972774,
+   "cum_ers_capex_bn": 22.1
+  }
+ ],
+ "transition_optimised_2041": {
+  "year": 2041,
+  "ldv_bev_fleet": 0.5623786250000098,
+  "ers_km": 6000.0,
+  "ers_built_km": 89.9336496998385,
+  "hybrid_fleet": 0.7290440578293709,
+  "hybrid_sales": 0.9764782694702082,
+  "battery_eur_kWh": 120.0,
+  "gen_share": 0.18513425450587476,
+  "hyb_fuel_GL": 1.213389543052124,
+  "diesel_GL": 2.6878829463326412,
+  "saf_share": 0.34,
+  "synthetic_share": 0.1,
+  "maritime_reduction": 0.31,
+  "jet_GL": 2.8758893280632414,
+  "marine_GL": 0.806815402982717,
+  "road_GL": 1.213389543052124,
+  "export_GL": 0.40141711133865254,
+  "renewable_GL": 4.896094274098083,
+  "hubs": 35.0,
+  "hefa_GL": 0.84,
+  "kelp_GL": 0.7043625053313324,
+  "efuel_GL": 3.3517317687667503,
+  "marginal_road": 0.9,
+  "marginal_saf": 2.316666666666667,
+  "co2_ldv": 41.58404214105679,
+  "co2_hgv": 7.986481659207971,
+  "co2_aviation": 15.166982134387352,
+  "co2_maritime": 4.772190143636278,
+  "co2_total": 69.5096960782884,
+  "co2_reduction_vs_2024": 0.5265007079135668,
+  "cum_co2_avoided_Mt": 566.5146586796554,
+  "elec_TWh": 136.965934880637,
+  "kelp_capacity_GL": 0.7043625053313324,
+  "kelp_utilisation": 1.0,
+  "kelp_idle_cost_bn": 0.0,
+  "kelp_fixed_cost_bn": 0.5527203351713745,
+  "rfnbo_GL": 0.0,
+  "lowcarbon_GL": 3.393148880105403,
+  "rfnbo_TWh": 0.0,
+  "lowcarbon_TWh": 57.683530961791845,
+  "electrolyser_GW": 9.612960530912217,
+  "rfnbo_wind_GW": 0.0,
+  "ldv_TWh": 53.42596937500093,
+  "hgv_TWh": 25.85643454384422,
+  "hgv_extra_cost_bn": -2.5974305257621566,
+  "liquid_premium_bn": 4.1977610811832475,
+  "ers_capex_bn": 0.3057744089794509,
+  "cum_ers_capex_bn": 20.400000000000002
+ },
+ "monte_carlo": {
+  "n": 400,
+  "seed": 20261112,
+  "inputs": [
+   "capex_eur_km",
+   "elec_eur_MWh",
+   "capture_max",
+   "on_wire_share",
+   "batt_eur_kWh_2041",
+   "hyb_premium_eur",
+   "leg_min_km",
+   "leg_max_km",
+   "regional_share",
+   "regional_leg_km",
+   "efuel_el_eur_MWh",
+   "efuel_capex_eur_l",
+   "co2_dac_eur_t",
+   "hefa_cap_GL",
+   "export_value_eur_l",
+   "rfnbo_gw_per_coast",
+   "jet_frac_efuel",
+   "demand_growth_aviation"
+  ],
+  "L": [
+   4750.0,
+   6500.0,
+   8250.0
+  ],
+  "B": [
+   300.0,
+   440.0,
+   600.0
+  ],
+  "B_r": [
+   420.0,
+   560.0,
+   720.0
+  ],
+  "gen_share": [
+   0.09733980911834969,
+   0.13278381736182027,
+   0.18332961079436716
+  ],
+  "hgv_saving_bn": [
+   0.32832261035946236,
+   2.358987634305599,
+   4.340862519595123
+  ],
+  "marginal_road": [
+   1.9956964481665922,
+   2.4839743218726897,
+   3.194433480238994
+  ],
+  "marginal_saf": [
+   2.5901563684340654,
+   3.543443335876879,
+   4.719445626680344
+  ],
+  "marginal_synth": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ers_value_bn": [
+   1.535098579368832,
+   2.9005697375178494,
+   4.711595836143517
+  ],
+  "share_L_ge_5000": 0.9275,
+  "share_saving_pos": 0.9675,
+  "share_ers_value_pos": 1.0
+ },
+ "baseline_2024": {
+  "total": 146.8
+ }
+}

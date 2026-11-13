@@ -58,11 +58,11 @@ function image(f) {
 const children = [];
 for (const b of spec.blocks) {
   switch (b.kind) {
-    case 'articletype': children.push(para(b.text, { align: AlignmentType.LEFT, italics: true, color: '52514E', after: 120 })); break;
-    case 'title': children.push(para(b.text, { align: AlignmentType.LEFT, bold: true, size: SIZE + 8, after: 240, line: Math.min(LINE, 360) })); break;
-    case 'subtitle': children.push(para(b.text, { align: AlignmentType.LEFT, italics: true, size: SIZE, after: 200 })); break;
-    case 'authors': children.push(para(b.text, { align: AlignmentType.LEFT, after: 120 })); break;
-    case 'affil': children.push(para(b.text, { align: AlignmentType.LEFT, size: SIZE - 2, after: 40 })); break;
+    case 'articletype': children.push(para(b.text, { align: AlignmentType.CENTER, italics: true, color: '52514E', after: 120 })); break;
+    case 'title': children.push(para(b.text, { align: AlignmentType.CENTER, bold: true, size: SIZE + 8, after: 240, line: Math.min(LINE, 360) })); break;
+    case 'subtitle': children.push(para(b.text, { align: AlignmentType.CENTER, italics: true, size: SIZE, after: 200 })); break;
+    case 'authors': children.push(para(b.text, { align: AlignmentType.CENTER, after: 120 })); break;
+    case 'affil': children.push(para(b.text, { align: AlignmentType.CENTER, size: SIZE - 2, after: 40 })); break;
     case 'date': children.push(para(b.text, { align: AlignmentType.RIGHT, after: 240 })); break;
     case 'addr': b.text.split('\n').forEach((l, i, a) => children.push(para(l, { align: AlignmentType.LEFT, after: i === a.length - 1 ? 240 : 0 }))); break;
     case 'h1': children.push(new Paragraph({ heading: HeadingLevel.HEADING_1, keepNext: true, spacing: { before: 300, after: 120, line: Math.min(LINE, 360) },
@@ -71,21 +71,21 @@ for (const b of spec.blocks) {
       children: [new TextRun({ text: b.text, font: FONT, size: SIZE, bold: true, italics: true })] })); break;
     case 'h': children.push(para(b.text, { bold: true, align: AlignmentType.LEFT, keepNext: true, before: 160, after: 60 })); break;
     case 'p': children.push(para(b.text)); break;
-    case 'keywords': children.push(para(b.text, { align: AlignmentType.LEFT, italics: true, after: 200 })); break;
+    case 'keywords': children.push(para(b.text, { align: AlignmentType.JUSTIFIED, italics: true, after: 200 })); break;
     case 'eq': children.push(para(b.text, { align: AlignmentType.CENTER, italics: true })); break;
     case 'bullet': children.push(para(b.text, { bullet: true, after: 60 })); break;
-    case 'ref': children.push(para(b.text, { align: AlignmentType.LEFT, size: SIZE - 2, after: 60, indent: { left: 400, hanging: 400 } })); break;
+    case 'ref': children.push(para(b.text, { align: AlignmentType.JUSTIFIED, size: SIZE - 2, after: 60, indent: { left: 400, hanging: 400 } })); break;
     case 'pagebreak': children.push(new Paragraph({ children: [new PageBreak()] })); break;
     case 'table':
       if (b.newPage) children.push(new Paragraph({ children: [new PageBreak()] }));
-      children.push(para(b.caption, { align: AlignmentType.LEFT, bold: false, italics: false, size: SIZE - 2, keepNext: true, after: 80, line: Math.min(LINE, 300) }));
+      children.push(para(b.caption, { align: AlignmentType.JUSTIFIED, bold: false, italics: false, size: SIZE - 2, keepNext: true, after: 80, line: Math.min(LINE, 300) }));
       children.push(table(b));
       children.push(para('', { after: 120 }));
       break;
     case 'figure':
       if (b.newPage) children.push(new Paragraph({ children: [new PageBreak()] }));
       if (b.path) children.push(image(b));
-      children.push(para(b.caption, { align: AlignmentType.LEFT, size: SIZE - 2, after: 200, line: Math.min(LINE, 300) }));
+      children.push(para(b.caption, { align: AlignmentType.JUSTIFIED, size: SIZE - 2, after: 200, line: Math.min(LINE, 300) }));
       break;
     default: throw new Error('unknown block ' + b.kind);
   }

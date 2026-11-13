@@ -1,0 +1,25 @@
+{
+ "cycle_m2": 14400.0,
+ "conventional": {
+  "width_m": 10.0,
+  "turns": 10,
+  "missed_m2": 214.6018366025517,
+  "missed_pct": 1.4902905319621647
+ },
+ "grid": {
+  "head_m": 6.0,
+  "span_m": 100.0,
+  "laps": 24,
+  "turns": 23,
+  "forward": {
+   "missed_m2": 355.38064141382563,
+   "missed_pct": 2.467921120929345,
+   "lmm_twice_pct": 9.032078879070655
+  },
+  "in_place": {
+   "missed_m2": 88.84516035345641,
+   "missed_pct": 0.6169802802323362,
+   "lmm_twice_pct": 2.875
+  }
+ }
+}

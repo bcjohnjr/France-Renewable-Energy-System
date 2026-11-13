@@ -1,0 +1,14 @@
+chain,lever,price,delta
+kelp HTL hub,"Farm-gate seaweed cost 400 -> 250 EUR/t (mechanised longlines, learning)",1.9848270624507027,-0.45397504697223723
+kelp HTL hub,"HTL fuel yield +20 % (catalytic HTL, aqueous-phase recycle)",2.12651320934032,-0.3122889000826201
+kelp HTL hub,Finance at 3 % instead of 6 % (farm and HTL capital),2.238591692929734,-0.20021041649320592
+kelp HTL hub,"HTL plant cost 0.45 -> 0.32 EUR/L (nth-of-a-kind, 3x scale)",2.30880210942294,-0.1299999999999999
+kelp HTL hub,SMR electricity 105 -> 80 EUR/MWh (series build),2.3315291702109637,-0.10727293921197623
+kelp HTL hub,Marine harvest 70 -> 50 EUR/t (electric Grid Harvester at scale),2.3708879375495173,-0.06791417187342264
+kelp HTL hub,Turbine anchors carry 75 % of farm moorings,2.3717010061323656,-0.0671011032905744
+kelp HTL hub,Kelp yield +30 % (breeding),2.427408177876353,-0.011393931546586966
+e-fuel (DAC CO2),CO2 from biogenic point sources instead of DAC,2.28,-0.5699999999999998
+e-fuel (DAC CO2),"Electrolyser power 70 -> 50 EUR/MWh (surplus nuclear and wind, 92 TWh exported in 2025)",2.45,-0.39999999999999947
+e-fuel (DAC CO2),DAC 250 -> 150 EUR/t,2.55,-0.2999999999999998
+e-fuel (DAC CO2),"Plant cost 0.70 -> 0.45 EUR/L (electrolyser learning, scale)",2.5999999999999996,-0.25
+e-fuel (DAC CO2),Efficiency 20 -> 17 kWh/L (SMR/HTL steam to high-temperature electrolysis),2.6399999999999997,-0.20999999999999996

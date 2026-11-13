@@ -1,7 +1,7 @@
 {
-  "title": "Model, data and figures for: Cascaded heat utilisation from small modular reactors for desalination, aquaculture and food production: a techno-economic assessment for France",
+  "title": "Model, data and figures for: Small modular reactors and offshore wind for seaweed fuel, food and electric freight in France",
   "upload_type": "dataset",
-  "description": "Monthly screening model of six French coastal SMR hubs comparing a multi-effect-distillation heat cascade with heat pumps on the main condenser, with purchased water and with seawater reverse osmosis, on consolidated accounts without heat credits, with firm heat supply and a monthly water balance through reactor and distillation outages. Includes model code, 387 consistency tests, Monte Carlo draws (2,000 draws, 40 inputs), a two-dimensional sensitivity, all outputs as CSV/JSON and scripts that regenerate every figure and document. Sea temperatures, greenhouse climate factors and the outage schedule are illustrative screening inputs.",
+  "description": "Monthly screening model of six French coastal hubs combining small modular reactors, offshore wind with turbine-anchored kelp farms, co-located fish, a renewable-powered harvester and utility drones: kelp drop-in fuel cost under three power-supply options, an MED heat cascade compared with heat pumps and reverse osmosis on consolidated accounts with firm heat, co-products, national electric motorways with the transport CO2 they avoid, the national cost-minimising split between electrification and liquid fuels for transport including international aviation and shipping, levers on the price of renewable liquid fuel, RFNBO versus low-carbon e-fuel, and a 2027-2041 transition. Includes model code, 720 consistency tests, hourly ERA5 wind and solar inputs (CC BY 4.0), Monte Carlo draws, all outputs as CSV/JSON and figure scripts. Seaweed cost, anchor sharing, wind prices, drone performance, sea temperatures and the outage schedule are screening inputs.",
   "creators": [
     {
       "name": "Bily, Jonathan Karl",
@@ -19,9 +19,11 @@
   ],
   "keywords": [
     "small modular reactor",
-    "nuclear cogeneration",
-    "multi-effect distillation",
-    "reverse osmosis",
+    "offshore wind",
+    "seaweed biofuel",
+    "electric road system",
+    "sustainable aviation fuel",
+    "e-fuel",
     "heat pump",
     "techno-economic assessment",
     "France"
@@ -29,8 +31,8 @@
   "license": "cc-by-4.0",
   "access_right": "open",
   "language": "eng",
-  "version": "13.0",
-  "notes": "Licences: the record (data, figures, text) is CC BY 4.0; all code files (Code/model, Code/build) are MIT-licensed as stated in LICENSE. AI assistance (Claude, Anthropic) disclosed in the manuscript. Check creators, ORCIDs and affiliations before publishing. To be published on acceptance from the GitHub repository release.",
+  "version": "20.1",
+  "notes": "Licences: the record (data, figures, text) is CC BY 4.0; all code files (Code/model, Code/build) are MIT-licensed as stated in LICENSE. AI assistance (Artificial Inventor/Synthetic Scientist V63) disclosed in the manuscript. Check creators, ORCIDs and affiliations before publishing. To be published on acceptance from the GitHub repository release.",
   "related_identifiers": [
     {
       "identifier": "https://github.com/bcjohnjr/France-Renewable-Energy-System",
