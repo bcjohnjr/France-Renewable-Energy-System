@@ -5,9 +5,9 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import content_v20 as C
 
-ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'build' / 'docs'; OUT.mkdir(parents=True, exist_ok=True)
-SPEC = ROOT / 'build' / 'specs'; SPEC.mkdir(exist_ok=True)
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / 'docs'; OUT.mkdir(parents=True, exist_ok=True)
+SPEC = ROOT / 'specs'; SPEC.mkdir(exist_ok=True)
 
 
 def fig_block(lang, stem, caption, embed, new_page=False):
@@ -21,7 +21,7 @@ def fig_block(lang, stem, caption, embed, new_page=False):
 def render(spec, name):
     sp = SPEC / f'{name}.json'; sp.write_text(json.dumps(spec, ensure_ascii=False), encoding='utf8')
     docx = OUT / f'{name}.docx'
-    subprocess.run(['node', str(ROOT / 'build' / 'make_docx.js'), str(sp), str(docx)], check=True, capture_output=True)
+    subprocess.run(['node', str(ROOT / 'make_docx.js'), str(sp), str(docx)], check=True, capture_output=True)
     subprocess.run(['zip', '-d', str(docx), '*/'], capture_output=True)
     subprocess.run(['soffice', '--headless', '--convert-to', 'pdf', '--outdir', str(OUT), str(docx)], check=True, capture_output=True)
 

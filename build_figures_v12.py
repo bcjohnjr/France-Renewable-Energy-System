@@ -9,12 +9,12 @@ from matplotlib.lines import Line2D
 from matplotlib import font_manager
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / 'model'))
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
 import geo_france as g
 import france_v12 as m
 
-D = ROOT / 'data'
+D = ROOT
 R = json.loads((D / 'v12_results.json').read_text())
 FONT = 'Inter' if any('Inter' == f.name for f in font_manager.fontManager.ttflist) else 'DejaVu Sans'
 plt.rcParams.update({'font.family': FONT, 'font.size': 8.5, 'pdf.fonttype': 42, 'axes.spines.top': False, 'axes.spines.right': False,
@@ -447,7 +447,7 @@ CORRIDORS = None
 
 def figS3(lang):
     import importlib.util
-    spec = importlib.util.spec_from_file_location('corr', ROOT / 'model' / 'ers_corridors.py'); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    spec = importlib.util.spec_from_file_location('corr', ROOT / 'ers_corridors.py'); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
     t = T[lang]; fig, ax = plt.subplots(figsize=(5.8, 5.4)); base_map(ax); france_on_top(ax)
     for tier, cs in mod.CORRIDORS.items():
         for name, pts in cs.items():

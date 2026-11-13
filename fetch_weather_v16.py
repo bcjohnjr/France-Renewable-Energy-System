@@ -161,7 +161,7 @@ def synthetic_year(key, year):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--start', type=int, default=2015); ap.add_argument('--end', type=int, default=2024)
-    ap.add_argument('--out', default='weather_v16'); ap.add_argument('--hub-height', type=float, default=150.0)
+    ap.add_argument('--out', default='.'); ap.add_argument('--hub-height', type=float, default=150.0)
     ap.add_argument('--alpha', type=float, default=0.11, help='offshore wind-shear exponent (100 m -> hub height)')
     ap.add_argument('--loss', type=float, default=0.12, help='wake + electrical + availability losses')
     ap.add_argument('--backup-price', type=float, default=130.0, help='EUR/MWh paid for the hub load the array cannot cover')

@@ -27,9 +27,9 @@ from pathlib import Path
 import csv, json, math, sys
 import numpy as np
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / 'data'; DATA.mkdir(exist_ok=True)
-sys.path.insert(0, str(ROOT / 'model'))
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT; DATA.mkdir(exist_ok=True)
+sys.path.insert(0, str(ROOT))
 from france_model import P as P6, simulate as simulate_v6  # noqa: E402
 
 K = 273.15

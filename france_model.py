@@ -11,8 +11,8 @@ from pathlib import Path
 import csv,json, math
 import numpy as np
 
-ROOT=Path(__file__).resolve().parent.parent
-DATA=ROOT/'archive_v6'/'data_v6_rerun'; DATA.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parent
+DATA=ROOT/'archive_v6_rerun'  # created only when this archived model is run on its own
 
 @dataclass
 class P:
@@ -265,6 +265,7 @@ def trajectory(p, hubs_target=6, ev_target=.90):
 
 
 def main():
+    DATA.mkdir(parents=True,exist_ok=True)
     p=P(); a=simulate(p,'nuclear'); b=simulate(p,'variable_firm');check(p,a)
     meta={'scope':'scenario screening, not a commissioned French SMR or approved marine licence',
           'currency':'EUR constant 2026, illustrative economic inputs; not actual market offers',

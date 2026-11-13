@@ -16,7 +16,7 @@ from dataclasses import dataclass, asdict, replace
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 RHO, G, MU_W = 1025.0, 9.81, 0.0012
 KN = 0.514444
 
@@ -104,7 +104,7 @@ def main():
         fc[hs] = sum(r['fuel_eur_l'] for r in rows) / len(rows)
     res['fleet_saving_assumed'] = S.Sys().harvester_fuel_saving
     res['fuel_cost_hybrid_central'] = fc[S.Sys().harvester_fuel_saving]; res['fuel_cost_hybrid_no_fleet_saving'] = fc[0.0]
-    (ROOT / 'data' / 'v20_grid_harvester_engineering.json').write_text(json.dumps(res, indent=1))
+    (ROOT / 'v20_grid_harvester_engineering.json').write_text(json.dumps(res, indent=1))
     return res
 
 

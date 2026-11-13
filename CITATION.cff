@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this model or data, please cite it as below."
 title: "Small modular reactors and offshore wind for seaweed fuel, food and electric freight in France: model and data"
-version: "20.1"
+version: "20.2"
 date-released: 2026-11-12
 license: MIT
 repository-code: "https://github.com/bcjohnjr/France-Renewable-Energy-System"

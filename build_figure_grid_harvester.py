@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import build_figures_v12 as F
 
-ROOT = Path(__file__).resolve().parent.parent
-ART = ROOT / 'data' / 'artwork'
+ROOT = Path(__file__).resolve().parent
+ART = ROOT
 CYCLE_M2 = 14_400.0
 
 
@@ -27,7 +27,7 @@ def turns(w_cv=10.0, n_cv=10, head_m=6.0, span_m=100.0):
 
 
 T = turns()
-(ROOT / 'data' / 'v19_grid_harvester_turns.json').write_text(json.dumps(T, indent=1))
+(ROOT / 'v19_grid_harvester_turns.json').write_text(json.dumps(T, indent=1))
 
 LAB = dict(en=dict(a='a  Grid Harvester, side view', b='b  Grid Harvester, top view with the path of the harvesting head'),
            fr=dict(a='a  Grid Harvester, vue de côté', b='b  Grid Harvester, vue de dessus et trajet de la tête de récolte',

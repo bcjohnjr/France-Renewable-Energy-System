@@ -172,7 +172,7 @@ def fig12(lang):
 
 def figS9(lang):
     t = T[lang]; wc = SR['weather_contracts']; keys = ['DKQ', 'LEH', 'BRE', 'STN', 'LRO', 'FOS']
-    mon = list(csv.DictReader(open(D / 'weather' / 'cf_and_pv_by_site_month_v16.csv')))
+    mon = list(csv.DictReader(open(D / 'cf_and_pv_by_site_month_v16.csv')))
     fig, axs = plt.subplots(1, 3, figsize=(7.4, 2.9), gridspec_kw=dict(width_ratios=[1.1, 1, 1.2]))
     ax = axs[0]
     for k, col in zip(keys, [C[0], C[1], C[2], C[3], C[6], C[4]]):
