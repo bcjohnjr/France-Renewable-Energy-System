@@ -1,0 +1,18 @@
+PASS throughput derived from head width x speed x crop equals the system-model input (416.7 t/h)
+PASS hose velocity at the 10% slurry design is 1.0 m/s (+/-2%)
+PASS hose flow is turbulent and friction factor in the smooth-pipe range
+PASS pump energy = rho g Q H / eta x cycle time
+PASS grid energy is the sum of its parts
+PASS conventional vessel at C_DA 30 m2 needs 90.9 MJ per 1.44-ha cycle (Spanish study)
+PASS central energy ratio within 5% of the Spanish study (2.68)
+PASS ratio falls as the conventional vessel becomes more streamlined
+PASS ratio rises with slurry concentration
+PASS a bare hose and a pulp-like slurry each cost energy
+PASS worst combined case loses the energy advantage (ratio < 1)
+PASS harvesting-energy saving is below 1 kWh per dry tonne
+PASS head hydraulics save under 1% of fleet fuel, far below the 16.1% fleet saving assumed
+PASS removing the assumed fleet saving raises fuel cost by under 1 cent per litre
+PASS one harvester-year (2,400 h) handles 1.0 Mt wet
+PASS turn losses: conventional 1.5%, forward 2.5%, in place 0.6%
+PASS turning in place misses (2 - pi/2) R^2 per turn
+17/17 checks passed

@@ -1,0 +1,186 @@
+PASS weather data present for all six hubs
+PASS DKQ: contract with zero wind equals the backup price
+PASS DKQ: wind used never exceeds load or output, and rises with contracted capacity
+PASS LEH: contract with zero wind equals the backup price
+PASS LEH: wind used never exceeds load or output, and rises with contracted capacity
+PASS BRE: contract with zero wind equals the backup price
+PASS BRE: wind used never exceeds load or output, and rises with contracted capacity
+PASS STN: contract with zero wind equals the backup price
+PASS STN: wind used never exceeds load or output, and rises with contracted capacity
+PASS LRO: contract with zero wind equals the backup price
+PASS LRO: wind used never exceeds load or output, and rises with contracted capacity
+PASS FOS: contract with zero wind equals the backup price
+PASS FOS: wind used never exceeds load or output, and rises with contracted capacity
+PASS DKQ: SMR conventional fuel cost reproduces the V12 hub model
+PASS DKQ: SMR conventional litres reproduce the V12 hub model
+PASS DKQ/smr: cost components sum to the total
+PASS DKQ/smr: no turbine anchors without turbines
+PASS DKQ/smr+d: cost components sum to the total
+PASS DKQ/smr+d: no turbine anchors without turbines
+PASS DKQ/wind+d: cost components sum to the total
+PASS DKQ/wind+d: no turbine anchors without turbines
+PASS DKQ/hybrid+d: cost components sum to the total
+PASS DKQ/hybrid+d: no turbine anchors without turbines
+PASS DKQ: wind and hybrid hubs have turbines anchoring the whole farm
+PASS DKQ: anchor saving = cost x share x shared x (1 - interface)
+PASS DKQ: weather contract never dearer than reactor power for the hybrid (r = 0 is allowed)
+PASS DKQ: hourly balance closes (wind used + residual = load)
+PASS DKQ: contract cost identity
+PASS DKQ: ERA5 capacity factor reproduces the downloaded summary
+PASS DKQ: wind-only hub backed by grid power at the grid price
+PASS DKQ: hybrid never costs more than SMR with drones (same steam, cheaper or equal power, anchors)
+PASS DKQ: wind-only buys all HTL heat as electricity
+PASS DKQ: Grid Harvester count covers the wet harvest
+PASS DKQ: drone density sets marginal benefit = marginal cost
+PASS DKQ: marine fuel falls with harvester and drones
+PASS DKQ: marine CO2 = fuel x emission factor
+PASS LEH: SMR conventional fuel cost reproduces the V12 hub model
+PASS LEH: SMR conventional litres reproduce the V12 hub model
+PASS LEH/smr: cost components sum to the total
+PASS LEH/smr: no turbine anchors without turbines
+PASS LEH/smr+d: cost components sum to the total
+PASS LEH/smr+d: no turbine anchors without turbines
+PASS LEH/wind+d: cost components sum to the total
+PASS LEH/wind+d: no turbine anchors without turbines
+PASS LEH/hybrid+d: cost components sum to the total
+PASS LEH/hybrid+d: no turbine anchors without turbines
+PASS LEH: wind and hybrid hubs have turbines anchoring the whole farm
+PASS LEH: anchor saving = cost x share x shared x (1 - interface)
+PASS LEH: weather contract never dearer than reactor power for the hybrid (r = 0 is allowed)
+PASS LEH: hourly balance closes (wind used + residual = load)
+PASS LEH: contract cost identity
+PASS LEH: ERA5 capacity factor reproduces the downloaded summary
+PASS LEH: wind-only hub backed by grid power at the grid price
+PASS LEH: hybrid never costs more than SMR with drones (same steam, cheaper or equal power, anchors)
+PASS LEH: wind-only buys all HTL heat as electricity
+PASS LEH: Grid Harvester count covers the wet harvest
+PASS LEH: drone density sets marginal benefit = marginal cost
+PASS LEH: marine fuel falls with harvester and drones
+PASS LEH: marine CO2 = fuel x emission factor
+PASS BRE: SMR conventional fuel cost reproduces the V12 hub model
+PASS BRE: SMR conventional litres reproduce the V12 hub model
+PASS BRE/smr: cost components sum to the total
+PASS BRE/smr: no turbine anchors without turbines
+PASS BRE/smr+d: cost components sum to the total
+PASS BRE/smr+d: no turbine anchors without turbines
+PASS BRE/wind+d: cost components sum to the total
+PASS BRE/wind+d: no turbine anchors without turbines
+PASS BRE/hybrid+d: cost components sum to the total
+PASS BRE/hybrid+d: no turbine anchors without turbines
+PASS BRE: wind and hybrid hubs have turbines anchoring the whole farm
+PASS BRE: anchor saving = cost x share x shared x (1 - interface)
+PASS BRE: weather contract never dearer than reactor power for the hybrid (r = 0 is allowed)
+PASS BRE: hourly balance closes (wind used + residual = load)
+PASS BRE: contract cost identity
+PASS BRE: ERA5 capacity factor reproduces the downloaded summary
+PASS BRE: wind-only hub backed by grid power at the grid price
+PASS BRE: hybrid never costs more than SMR with drones (same steam, cheaper or equal power, anchors)
+PASS BRE: wind-only buys all HTL heat as electricity
+PASS BRE: Grid Harvester count covers the wet harvest
+PASS BRE: drone density sets marginal benefit = marginal cost
+PASS BRE: marine fuel falls with harvester and drones
+PASS BRE: marine CO2 = fuel x emission factor
+PASS STN: SMR conventional fuel cost reproduces the V12 hub model
+PASS STN: SMR conventional litres reproduce the V12 hub model
+PASS STN/smr: cost components sum to the total
+PASS STN/smr: no turbine anchors without turbines
+PASS STN/smr+d: cost components sum to the total
+PASS STN/smr+d: no turbine anchors without turbines
+PASS STN/wind+d: cost components sum to the total
+PASS STN/wind+d: no turbine anchors without turbines
+PASS STN/hybrid+d: cost components sum to the total
+PASS STN/hybrid+d: no turbine anchors without turbines
+PASS STN: wind and hybrid hubs have turbines anchoring the whole farm
+PASS STN: anchor saving = cost x share x shared x (1 - interface)
+PASS STN: weather contract never dearer than reactor power for the hybrid (r = 0 is allowed)
+PASS STN: hourly balance closes (wind used + residual = load)
+PASS STN: contract cost identity
+PASS STN: ERA5 capacity factor reproduces the downloaded summary
+PASS STN: wind-only hub backed by grid power at the grid price
+PASS STN: hybrid never costs more than SMR with drones (same steam, cheaper or equal power, anchors)
+PASS STN: wind-only buys all HTL heat as electricity
+PASS STN: Grid Harvester count covers the wet harvest
+PASS STN: drone density sets marginal benefit = marginal cost
+PASS STN: marine fuel falls with harvester and drones
+PASS STN: marine CO2 = fuel x emission factor
+PASS LRO: SMR conventional fuel cost reproduces the V12 hub model
+PASS LRO: SMR conventional litres reproduce the V12 hub model
+PASS LRO/smr: cost components sum to the total
+PASS LRO/smr: no turbine anchors without turbines
+PASS LRO/smr+d: cost components sum to the total
+PASS LRO/smr+d: no turbine anchors without turbines
+PASS LRO/wind+d: cost components sum to the total
+PASS LRO/wind+d: no turbine anchors without turbines
+PASS LRO/hybrid+d: cost components sum to the total
+PASS LRO/hybrid+d: no turbine anchors without turbines
+PASS LRO: wind and hybrid hubs have turbines anchoring the whole farm
+PASS LRO: anchor saving = cost x share x shared x (1 - interface)
+PASS LRO: weather contract never dearer than reactor power for the hybrid (r = 0 is allowed)
+PASS LRO: hourly balance closes (wind used + residual = load)
+PASS LRO: contract cost identity
+PASS LRO: ERA5 capacity factor reproduces the downloaded summary
+PASS LRO: wind-only hub backed by grid power at the grid price
+PASS LRO: hybrid never costs more than SMR with drones (same steam, cheaper or equal power, anchors)
+PASS LRO: wind-only buys all HTL heat as electricity
+PASS LRO: Grid Harvester count covers the wet harvest
+PASS LRO: drone density sets marginal benefit = marginal cost
+PASS LRO: marine fuel falls with harvester and drones
+PASS LRO: marine CO2 = fuel x emission factor
+PASS FOS: SMR conventional fuel cost reproduces the V12 hub model
+PASS FOS: SMR conventional litres reproduce the V12 hub model
+PASS FOS/smr: cost components sum to the total
+PASS FOS/smr: no turbine anchors without turbines
+PASS FOS/smr+d: cost components sum to the total
+PASS FOS/smr+d: no turbine anchors without turbines
+PASS FOS/wind+d: cost components sum to the total
+PASS FOS/wind+d: no turbine anchors without turbines
+PASS FOS/hybrid+d: cost components sum to the total
+PASS FOS/hybrid+d: no turbine anchors without turbines
+PASS FOS: wind and hybrid hubs have turbines anchoring the whole farm
+PASS FOS: anchor saving = cost x share x shared x (1 - interface)
+PASS FOS: weather contract never dearer than reactor power for the hybrid (r = 0 is allowed)
+PASS FOS: hourly balance closes (wind used + residual = load)
+PASS FOS: contract cost identity
+PASS FOS: ERA5 capacity factor reproduces the downloaded summary
+PASS FOS: wind-only hub backed by grid power at the grid price
+PASS FOS: hybrid never costs more than SMR with drones (same steam, cheaper or equal power, anchors)
+PASS FOS: wind-only buys all HTL heat as electricity
+PASS FOS: Grid Harvester count covers the wet harvest
+PASS FOS: drone density sets marginal benefit = marginal cost
+PASS FOS: marine fuel falls with harvester and drones
+PASS FOS: marine CO2 = fuel x emission factor
+PASS ERS with SMR fuel price reproduces the V12 motorway result
+PASS ERS net CO2 subtracts marine-operation emissions of the kelp fuel
+PASS cheaper kelp fuel raises the ERS saving
+PASS MC input anchor_cost_share changes at least one output
+PASS MC input anchor_shared_frac changes at least one output
+PASS MC input interface_frac changes at least one output
+PASS MC input balancing_eur_MWh changes at least one output
+PASS MC input wind_price_mult changes at least one output
+PASS MC input harvester_fuel_saving changes at least one output
+PASS MC input drone_seed_avoid changes at least one output
+PASS MC input drone_capex_eur changes at least one output
+PASS MC input seaweed_dry_cost_eur_t changes at least one output
+PASS MC input nuclear_electric_eur_MWh changes at least one output
+PASS MC input diesel_eur_l changes at least one output
+PASS MC input ers_capex_eur_km changes at least one output
+PASS MC input ers_capture_max changes at least one output
+PASS MC input ers_on_wire_share changes at least one output
+PASS MC input ers_elec_kWh_km changes at least one output
+PASS MC input ers_truck_premium_eur changes at least one output
+PASS MC input kelp_yield_mult changes at least one output
+PASS MC input fuel_yield_mult changes at least one output
+PASS MC input wind_delivery_eur_MWh changes at least one output
+PASS MC input ws_mult changes at least one output
+PASS MC input surplus_value_eur_MWh changes at least one output
+PASS MC input grid_buy_eur_MWh changes at least one output
+PASS decomposition closes: SMR+drones + electricity + anchors = combined
+PASS anchor sharing is the larger part of the combined-option advantage
+PASS without anchors, wind delivery charges of 1-60 EUR/MWh erase the electricity advantage
+PASS delivery charges raise wind and combined fuel cost
+PASS joint grid: central cell reproduces the motorway saving
+PASS joint grid: saving falls with catenary capital at every capture level
+PASS joint grid: saving falls with lower capture at every capital level
+PASS joint grid: +40 % capital and -20 % capture turns the saving negative
+PASS capital break-even multiplier above 1
+185/185 checks passed

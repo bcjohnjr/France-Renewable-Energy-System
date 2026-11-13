@@ -1,0 +1,133 @@
+PASS ReFuelEU SAF steps: 2039 = 20 %, 2040-2044 = 34 %
+PASS ReFuelEU synthetic minima (Annex I): 0.7 % 2030-31, 1.2 % 2032-33, 2 % 2034, 5 % 2035, 10 % 2040
+PASS synthetic path never below the annual minimum
+PASS synthetic path meets the 2030-2031 volume-weighted average of 1.2%
+PASS synthetic path meets the 2032-2034 volume-weighted average of 2.0%
+PASS flat schedule (period average every year) is a compliant but dearer path
+PASS synthetic low-carbon e-fuel meets the 70 % lifecycle-savings threshold
+PASS FuelEU steps: 2041 = 31 %
+PASS 2024 split sums to ~147 Mt
+PASS DKQ: kelp tier = weather-based hybrid hub fuel cost
+PASS LEH: kelp tier = weather-based hybrid hub fuel cost
+PASS BRE: kelp tier = weather-based hybrid hub fuel cost
+PASS STN: kelp tier = weather-based hybrid hub fuel cost
+PASS LRO: kelp tier = weather-based hybrid hub fuel cost
+PASS FOS: kelp tier = weather-based hybrid hub fuel cost
+PASS no network, no batteries: all truck-km on the generator
+PASS generator share falls with network length
+PASS regional trucks do not use the wire (their generator share is independent of network length)
+PASS generator share falls with both batteries
+PASS class shares recombine to the fleet share
+PASS non-fuel cost = infrastructure + vehicles + energy
+PASS long-haul wire share never exceeds the cap
+PASS LP: SAF minimum met
+PASS LP: synthetic minimum met by RFNBO or certified low-carbon e-jet (central case)
+PASS LP: RFNBO-only scenario meets the synthetic minimum with RFNBO jet
+PASS LP: RFNBO-only procurement never cheaper than the central case
+PASS LP: shared cap bio respected
+PASS LP: shared cap rf_LEH respected
+PASS LP: shared cap rf_DKQ respected
+PASS LP: shared cap rf_STN respected
+PASS LP: shared cap rf_LRO respected
+PASS LP: shared cap rf_BRE respected
+PASS LP: shared cap rf_FOS respected
+PASS RFNBO: hourly matching lowers electrolyser utilisation below the baseload reference at every coast
+PASS RFNBO: hourly-matched e-fuel dearer than baseload low-carbon e-fuel (same CO2 source)
+PASS RFNBO: utilisation equals the ERA5 coverage at the chosen contract
+PASS RFNBO import backstop priced above every domestic RFNBO tier
+PASS RFNBO-only procurement adds a synthetic premium and raises liquid cost
+PASS RFNBO-only transition costs more than the central transition
+PASS LP: no kelp HTL in jet (no ASTM annex)
+PASS LP: hefa within supply cap
+PASS LP: hefa jet fraction respected
+PASS LP: efuel_lc_bio within supply cap
+PASS LP: efuel_lc_bio jet fraction respected
+PASS LP: kelp_LEH within supply cap
+PASS LP: kelp_LEH jet fraction respected
+PASS LP: kelp_DKQ within supply cap
+PASS LP: kelp_DKQ jet fraction respected
+PASS LP: kelp_STN within supply cap
+PASS LP: kelp_STN jet fraction respected
+PASS LP: kelp_LRO within supply cap
+PASS LP: kelp_LRO jet fraction respected
+PASS LP: kelp_BRE within supply cap
+PASS LP: kelp_BRE jet fraction respected
+PASS LP: efuel_rf_bio_LEH within supply cap
+PASS LP: efuel_rf_bio_LEH jet fraction respected
+PASS LP: efuel_rf_bio_DKQ within supply cap
+PASS LP: efuel_rf_bio_DKQ jet fraction respected
+PASS LP: efuel_lc_dac within supply cap
+PASS LP: efuel_lc_dac jet fraction respected
+PASS LP: efuel_rf_bio_STN within supply cap
+PASS LP: efuel_rf_bio_STN jet fraction respected
+PASS LP: kelp_FOS within supply cap
+PASS LP: kelp_FOS jet fraction respected
+PASS LP: efuel_rf_dac_LEH within supply cap
+PASS LP: efuel_rf_dac_LEH jet fraction respected
+PASS LP: efuel_rf_bio_LRO within supply cap
+PASS LP: efuel_rf_bio_LRO jet fraction respected
+PASS LP: efuel_rf_bio_BRE within supply cap
+PASS LP: efuel_rf_bio_BRE jet fraction respected
+PASS LP: efuel_rf_dac_DKQ within supply cap
+PASS LP: efuel_rf_dac_DKQ jet fraction respected
+PASS LP: efuel_rf_bio_FOS within supply cap
+PASS LP: efuel_rf_bio_FOS jet fraction respected
+PASS LP: efuel_rf_dac_STN within supply cap
+PASS LP: efuel_rf_dac_STN jet fraction respected
+PASS LP: efuel_rf_dac_LRO within supply cap
+PASS LP: efuel_rf_dac_LRO jet fraction respected
+PASS LP: efuel_rf_dac_BRE within supply cap
+PASS LP: efuel_rf_dac_BRE jet fraction respected
+PASS LP: efuel_rf_dac_FOS within supply cap
+PASS LP: efuel_rf_dac_FOS jet fraction respected
+PASS LP: efuel_rf_import within supply cap
+PASS LP: efuel_rf_import jet fraction respected
+PASS LP: FuelEU intensity reduction met (>= 31 %)
+PASS LP: road requirement met
+PASS LP: road dual equals the incremental cost of road fuel
+PASS LP cost is convex in truck demand
+PASS the fuel-specific model needs at least the mandated SAF and marine volumes
+PASS kelp build size is the cost minimum of the scan
+PASS hub scan covers every integer 0-36 under both commissioning schedules
+PASS DKQ: wind-only tier = weather-based wind-only hub cost
+PASS LEH: wind-only tier = weather-based wind-only hub cost
+PASS BRE: wind-only tier = weather-based wind-only hub cost
+PASS STN: wind-only tier = weather-based wind-only hub cost
+PASS LRO: wind-only tier = weather-based wind-only hub cost
+PASS FOS: wind-only tier = weather-based wind-only hub cost
+PASS pricing early hubs as wind-only raises transition cost
+PASS at central costs building 28 hubs costs more than the chosen build
+PASS with all cost levers the optimal build is larger than at central costs
+PASS reported policy design is the grid minimum
+PASS policy optimum interior in all three dimensions
+PASS policy optimum beats diesel trucks
+PASS the network adds value over battery-only trucks
+PASS full decarbonisation needs more renewable liquid than the policy case
+PASS fixed-price sweep: generator share falls as the liquid price rises
+PASS longer long-haul legs never enlarge the network
+PASS longer legs never raise the saving
+PASS central leg cell reproduces the policy design
+PASS electrification still beats diesel at 200 km legs and 350 km regional duty
+PASS joint grid: network never grows with catenary cost
+PASS joint grid: saving falls with catenary cost
+PASS every kelp lever lowers the price
+PASS every e-fuel lever lowers the price
+PASS kelp base = litre-weighted weather-based hybrid mean
+PASS all kelp levers together beat the best single lever
+PASS transition covers 2027-2041
+PASS network ends at the sweet spot and never shrinks
+PASS segment CO2 sums to total
+PASS SAF meets the ReFuelEU step every year
+PASS supply mix covers mandated uses every year
+PASS total transport CO2 falls every year
+PASS 2041 CO2 at least 40 % below 2024
+PASS built kelp hubs pay their fixed cost every year (hybrid prices from SMR start)
+PASS hubs before the reactor enters service pay wind-only fixed costs
+PASS synthetic share in the transition follows the compliant path
+PASS kelp utilisation within [0, 1]
+PASS electricity split adds up
+PASS Monte Carlo samples off-wire legs and regional duty
+PASS Monte Carlo quantiles ordered
+PASS network adds value in every draw
+
+131/131 checks passed
